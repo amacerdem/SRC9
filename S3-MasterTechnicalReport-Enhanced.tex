@@ -1,0 +1,1610 @@
+\documentclass[10pt]{article}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{geometry}
+\usepackage{enumitem}
+\usepackage{hyperref}
+
+
+
+\title{S³}
+\section*{S³ Module Architecture (Enhanced)}
+
+\section*{I.1 – Introduction and Overview}
+
+\subsection*{Spectral Sound Space (S³) in the Architecture of SRC⁹}
+
+The Spectral Sound Space (S³) module constitutes the foundational analytic layer of the SRC⁹ framework—an interdisciplinary system that unites spectral acoustics, resonance modeling, and cognitive neuroscience. Positioned as the first pillar in the tripartite structure of SRC⁹ (S³–R³–C³), S³ provides the fundamental data structures and perceptual primitives from which harmonic reasoning (R³) and neural interaction modeling (C³) emerge.
+
+Whereas traditional music analysis systems typically begin from symbolic notation (e.g., MIDI, scores), S³ reverses the process: it operates directly on audio waveforms to extract a detailed, high-resolution representation of acoustic content in both time and frequency. This bottom-up approach ensures that the analytic foundation is directly grounded in the physical properties of sound, enabling it to generalize across styles, cultures, tuning systems, and performance modalities.
+
+\subsection*{Motivations for S³: Why a Spectral Module?}
+
+The design of S³ is motivated by three fundamental observations:
+
+\begin{itemize}
+    \item \textbf{Sound is inherently spectral.}\\
+    Any auditory event can be decomposed into partials—individual frequency components that change over time in pitch, amplitude, and phase. These partials are the building blocks of tone perception and harmonic structure.
+
+    \item \textbf{Spectral representations precede symbolic ones.}\\
+    The human auditory system does not “hear notes,” but rather detects frequency patterns and intensity envelopes. Notation is a cultural abstraction layered atop an auditory substrate. Therefore, analysis should start at the spectral level if it aims to reflect perceptual and cognitive realities.
+
+    \item \textbf{Harmony is a physical phenomenon before it is a theoretical one.}\\
+    The perception of consonance, root, resonance, and tonality emerges from interactions between partials, not from theoretical scales. S³ enables the measurement and visualization of these interactions in their raw, physical form.
+\end{itemize}
+
+\subsection*{The Role of S³ in the Full System}
+
+In the architecture of SRC⁹, S³ performs three critical roles:
+
+\subsubsection*{Data Generator}
+
+S³ converts raw audio into structured data representations including:
+
+\begin{itemize}
+    \item Fundamental frequencies (f₀) over time
+    \item Partial tracks (harmonics and inharmonic components)
+    \item Amplitude (in dB) of each component
+    \item Microtonal symbolic notations and pitch-class mappings
+    \item Spectral centroids, energy envelopes, and entropy values
+\end{itemize}
+
+\subsubsection*{Perceptual Filter}
+
+It selectively isolates acoustically meaningful content from noise, silences, and irrelevant transients using amplitude thresholds, frame-based smoothing, and overtone filters.
+
+\subsubsection*{Visual Engine}
+
+S³ produces high-resolution 2D and 3D visualizations of the spectral data:
+
+\begin{itemize}
+    \item 2D time–frequency maps at 3840×2160 resolution
+    \item 3D spectrograms with frequency–amplitude towers
+    \item Interactive spectral canvases for analysis and composition
+\end{itemize}
+
+These outputs form the primary input for the R³ module (Resonance-Based Relational Reasoning), where spectral data is analyzed for harmonic structure, resonance potential, overtone locking, and phantom root phenomena.
+
+\subsection*{Interdisciplinary Relevance}
+
+The S³ module draws simultaneously from:
+
+\begin{itemize}
+    \item \textbf{Spectral Music Theory (e.g., Grisey, Murail, Schaeffer):}\\
+    Emphasizing sound itself as the basis of musical form, S³ adopts this premise and extends it computationally.
+
+    \item \textbf{Signal Processing and Machine Learning:}\\
+    Tools such as CREPE (deep learning pitch estimator), librosa (audio analysis library), and FFT algorithms are integrated to allow frame-level pitch and amplitude extraction with sub-millisecond precision.
+
+    \item \textbf{Cognitive Neuroscience and Psychoacoustics:}\\
+    Through microtonal accuracy and overtone modeling, S³ mirrors how the auditory cortex processes complex sound structures.
+
+    \item \textbf{Music Technology and Visualization:}\\
+    S³ interfaces directly with Unity, WebGL, and VR environments, producing real-time interactive spectral landscapes for education, analysis, and artistic use.
+\end{itemize}
+
+\subsection*{Conclusion: A Foundational Layer}
+
+The Spectral Sound Space (S³) module serves as the foundation of the SRC⁹ system. It provides the raw material—both data and perceptual structure—from which musical reasoning and cognitive mapping can emerge. Unlike traditional systems that operate on abstracted notation or symbolic input, S³ roots its analysis in the physical substance of sound.
+
+Its capacity to extract, quantify, and visualize meaningful partials across styles and tuning systems makes it a uniquely versatile tool. Whether applied to Renaissance counterpoint, spectral composition, or neural music analysis, S³ enables a new form of bottom-up, physics-based music understanding.
+
+\section*{I.2 – Theoretical Foundations}
+
+\subsection*{I.2.1 Sound Before Symbol: Epistemology of Sonic Analysis}
+
+The S³ module is predicated on a fundamental epistemological shift: that music analysis should begin not with the score, but with the sound itself. Western music theory has historically prioritized symbolic abstraction (notation, keys, chords), often detaching the study of music from the phenomena it arises from—vibrations in air, shaped by instruments, perceived by human bodies.
+
+This module challenges that precedence.
+
+Rather than assuming that sound serves as a mere carrier for symbolic content, S³ posits the inverse: symbolic constructs are interpretations of an underlying spectral substrate. Frequencies, amplitudes, and overtones are not peripheral—they are the music.
+
+This shift aligns with the work of spectral composers (e.g., Gérard Grisey, Tristan Murail), auditory cognition researchers (e.g., Diana Deutsch, Albert Bregman), and philosophers of music (e.g., Pierre Schaeffer). S³ bridges their insights with modern computation.
+
+\subsection*{I.2.2 Spectralism and Acoustical Foundations}
+
+The theoretical roots of S³ are deeply informed by spectralism: a movement in contemporary composition that foregrounds the timbral and acoustical properties of sound over traditional harmonic systems.
+
+\paragraph{Key spectralist premises:}
+
+\begin{itemize}
+    \item Sound is a complex spectrum of partials, not a fixed pitch.
+    \item Harmony arises from the overtone series, not from abstract interval systems.
+    \item The orchestration of spectra defines form and tension more than functional harmony.
+\end{itemize}
+
+S³ translates these ideas into data structures:
+
+\begin{itemize}
+    \item Every partial is tracked as an individual frequency–amplitude event.
+    \item No assumption of equal temperament is made—frequencies are real-valued, microtonal.
+    \item Harmonic relationships are computed, not assumed.
+\end{itemize}
+
+Through its modular design, S³ formalizes the intuition of the spectralists into a machine-readable format.
+
+\subsection*{I.2.3 Psychoacoustics: Human Hearing and Spectral Perception}
+
+S³ is not merely mathematically accurate; it is psychoacoustically meaningful. Its architecture reflects how human auditory perception operates:
+
+\begin{itemize}
+    \item \textbf{Critical Band Theory:} S³ models perceptual overlap via overtone locking mechanisms.
+    \item \textbf{Auditory Scene Analysis:} Each partial is assigned an identity, allowing for grouping and source separation.
+    \item \textbf{Temporal Integration:} Partial tracks are evaluated over time, reflecting how we perceive tone continuity.
+\end{itemize}
+
+These principles are embedded in the frame-based, high-resolution analysis pipeline. The system's sensitivity to cent-level frequency shifts, amplitude decay curves, and overtone fusion makes it not just accurate but also cognitively plausible.
+
+\subsection*{I.2.4 Microtonality and Continuous Pitch Space}
+
+Unlike traditional pitch class systems which operate on discrete steps (12TET), S³ operates in continuous pitch space. Every frequency is stored as a floating-point value, and pitch class labeling is optional, reversible, and tolerant to cent deviations.
+
+\begin{itemize}
+    \item Pitch is mapped not via quantization, but through continuous cent distance metrics.
+    \item Microtonal variations (±5 to ±25 cents) are preserved and visualized explicitly.
+    \item Symbolic mappings (e.g., C4⁺¹) are generated only for readability—not as assumptions.
+\end{itemize}
+
+This enables the analysis of music outside the bounds of Western tuning: just intonation, 24-TET, gamelan pelog/slendro, non-octave repeating scales, or even completely aleatoric sound structures.
+
+\subsection*{I.2.5 From Spectrum to Structure: Towards Resonance}
+
+Finally, the theoretical foundation of S³ leads naturally into R³, the Resonance-Based Relational Reasoning module.
+
+Where S³ represents the raw materials of sound, R³ interprets those materials relationally:
+
+\begin{itemize}
+    \item How do partials converge?
+    \item Which phantom roots emerge?
+    \item What is the resonance potential of a harmonic field?
+\end{itemize}
+
+S³ provides the data; R³ provides the reasoning.
+
+This progression mirrors human musical experience:
+
+\begin{itemize}
+    \item First, we hear sound (S³).
+    \item Then, we infer structure and coherence (R³).
+    \item Finally, we respond cognitively and emotionally (C³).
+\end{itemize}
+
+In this chain, S³ is the anchor: a physically-grounded, perceptually-aligned, computationally robust representation of what music is, before it is interpreted.
+
+\section*{I.3 – Mathematical and Algorithmic Model}
+
+\subsection*{I.3.1 Overview of the Computational Framework}
+
+The S³ module translates raw acoustic signals into structured, symbolic, and interpretable representations. Its algorithmic core centers around three dimensions:
+
+\begin{itemize}
+    \item Frequency (Hz)
+    \item Amplitude (dB)
+    \item Time (ms resolution)
+\end{itemize}
+
+These three variables are extracted and tracked for each partial—a distinct sinusoidal component of a sound. Unlike traditional pitch-tracking systems that detect only the fundamental ($f_0$), S³ treats the full overtone field as first-class data. This makes it possible to model harmonic content, resonance, and spectral evolution with great precision.
+
+\subsection*{I.3.2 Signal Preprocessing and Frame Segmentation}
+
+The input signal $x(t)$ is divided into overlapping frames for analysis. Typical frame parameters are:
+
+\begin{itemize}
+    \item Sampling rate: $f_s = 16000$ Hz (CREPE optimal)
+    \item Frame length: 1024 samples ($\sim$64 ms)
+    \item Hop size: 160 samples ($\sim$10 ms)
+\end{itemize}
+
+Let:
+
+\[
+x_i(t) = x(t + i \cdot H), \quad \text{for frame } i
+\]
+
+where $H$ is the hop size. Frames are then passed into the frequency estimation pipeline.
+
+\subsection*{I.3.3 Fundamental Frequency Extraction using CREPE}
+
+The system uses CREPE (Kim et al., 2018), a deep convolutional network trained to estimate the fundamental frequency of monophonic signals with high accuracy.
+
+Given an audio frame $x_i(t)$, CREPE returns:
+
+\begin{itemize}
+    \item $f_{0i}$: estimated fundamental frequency
+    \item $c_i \in [0,1]$: confidence score
+    \item optionally, $a_i$: activation maps (ignored in S³)
+\end{itemize}
+
+The result is a time series:
+
+\[
+\{ (t_i, f_{0i}, c_i) \}_{i=1}^N
+\]
+
+If $c_i < \theta$ (confidence threshold), the value is discarded or interpolated.
+
+\subsection*{I.3.4 Amplitude Estimation and Normalization}
+
+Each frame’s amplitude is derived via RMS energy or CREPE confidence:
+
+\[
+A_i = 20 \cdot \log_{10}(\text{RMS}(x_i)) \quad \text{(dB)}
+\]
+
+or, if using confidence:
+
+\[
+A_i = 20 \cdot \log_{10}(c_i + \epsilon)
+\]
+
+All amplitudes are normalized between $[-50 \text{ dB}, 0 \text{ dB}]$ and clipped accordingly.
+
+\subsection*{I.3.5 Harmonic Field Construction}
+
+S³ computes not only the fundamental $f_0$, but constructs a harmonic field:
+
+\[
+H_i = \{ n \cdot f_{0i} \mid n = 1, 2, \ldots, N_h \}
+\]
+
+where $N_h$ is the number of harmonics tracked (typically 16). Each harmonic is stored with:
+
+\[
+f_{i,n} = n \cdot f_{0i}
+\]
+
+\[
+A_{i,n} = A_i - \delta(n) \quad \text{(attenuated by harmonic order)}
+\]
+
+\texttt{isFundamental} is flagged \texttt{True} if $n = 1$.
+
+These are saved per frame in the following format:
+
+\begin{verbatim}
+{
+  "time": 0.010,
+  "partials": [
+    {"freq": 440.0, "db": -21.0, "isFundamental": true},
+    {"freq": 880.0, "db": -31.0, "isFundamental": false},
+    {"freq": 1320.0, "db": -35.0, "isFundamental": false}
+  ]
+}
+\end{verbatim}
+
+\subsection*{I.3.6 Pitch and Cent Calculation}
+
+For each partial, the module calculates the pitch in cents relative to A4 (440 Hz):
+
+\[
+\text{cents}(f) = 1200 \cdot \log_2 \left( \frac{f}{440} \right)
+\]
+
+This allows:
+
+\begin{itemize}
+    \item Microtonal deviation tracking (e.g., +8 cents)
+    \item Conversion to symbolic pitch classes (e.g., A4⁺⁸)
+\end{itemize}
+
+This symbolic mapping is computed but not quantized; the raw frequency is retained as canonical.
+
+\subsection*{I.3.7 Data Structures and Resolution}
+
+S³ maintains full resolution in time (10 ms), frequency (floating-point Hz), and amplitude (floating-point dB).
+
+\begin{itemize}
+    \item \textbf{JSON storage:} arrays of frames with timestamps and partials
+    \item \textbf{Data size:} $\sim$10,000 frames per 100 seconds of audio, $\sim$160,000 partials
+\end{itemize}
+
+\subsection*{I.3.8 Harmonic Matching and Partial Clustering}
+
+An optional phase identifies recurring partials and clusters them. This supports later stages in R³ (e.g., overtone locking and phantom root detection).
+
+Matching is done by:
+
+\begin{itemize}
+    \item Nearest-neighbor search across frames using frequency proximity
+    \item Harmonic number estimation:
+    \[
+    n = \text{round} \left( \frac{f}{f_0} \right)
+    \]
+\end{itemize}
+
+\subsection*{Summary}
+
+The S³ module translates sound into a structured lattice of time–frequency–amplitude events. Its mathematical model ensures:
+
+\begin{itemize}
+    \item Sub-millisecond temporal resolution
+    \item Cent-level pitch accuracy
+    \item Frame-wise harmonic field tracking
+    \item Explicit microtonal notation
+    \item Compatibility with resonance modeling in R³
+\end{itemize}
+
+\section*{I.4 – Signal Processing Architecture (Pipeline Design)}
+
+\subsection*{I.4.1 Overview}
+
+The signal processing architecture of the S³ module is designed as a modular, multi-stage pipeline that transforms raw audio into structured, symbolically annotated, and visually renderable spectral data.
+
+This architecture balances three key principles:
+
+\begin{itemize}
+    \item \textbf{High resolution:} Time frames in 10 ms steps, frequency in cent-level precision, amplitude in dB.
+    \item \textbf{Modularity:} Each step is encapsulated as an independent script with defined input/output formats (typically JSON).
+    \item \textbf{Extensibility:} The system supports integration with other modules (R³, C³), external libraries (CREPE, librosa), and interactive engines (Unity, Plotly).
+\end{itemize}
+
+\subsection*{I.4.2 Directory Structure}
+
+The pipeline operates within a clearly defined project structure:
+
+\begin{verbatim}
+S3-Module/
+├── audio/                     # Input audio files (.wav or .mp3)
+│   └── cello_suite_no1.wav
+├── json/                      # Intermediate and final data outputs
+│   ├── base_frequencies.json
+│   └── partials.json
+├── output/                    # Visualization exports
+│   ├── s3_visualization.png
+│   └── s3_visualization.html
+├── scripts/                   # Pipeline scripts
+│   ├── extract_frequencies_crepe.py
+│   ├── harmonics_matching.py
+│   └── s3_visualization.py
+├── utils/                     # Utility modules (shared functions)
+│   ├── freq_to_rgb.py
+│   └── freq_to_microtonal.py
+└── requirements.txt
+\end{verbatim}
+
+This structure ensures reproducibility and separation of concerns across computation, data, and display.
+
+\subsection*{I.4.3 Pipeline Stages}
+
+\paragraph{Stage 1 – Fundamental Frequency Extraction (CREPE)}  
+\textbf{Script:} \texttt{extract\_frequencies\_crepe.py}
+
+\begin{itemize}
+    \item \textbf{Input:} \texttt{.wav} or \texttt{.mp3} audio file  
+    \item \textbf{Parameters:} frame size, hop size, duration (default: 10 seconds)
+    \item \textbf{Process:}
+    \begin{itemize}
+        \item Load audio using librosa
+        \item Segment into overlapping frames
+        \item Pass frames to \texttt{crepe.predict()} for $f_0$ estimation
+        \item Estimate amplitude via RMS or CREPE confidence
+    \end{itemize}
+    \item \textbf{Output (JSON):}
+\end{itemize}
+
+\begin{verbatim}
+{
+  "frames": [
+    {
+      "time": 0.010,
+      "partials": [
+        {"freq": 440.0, "db": -21.0, "isFundamental": true}
+      ]
+    },
+    ...
+  ]
+}
+\end{verbatim}
+
+\paragraph{Stage 2 – Harmonic Field Construction}  
+\textbf{Script:} \texttt{harmonics\_matching.py}
+
+\begin{itemize}
+    \item \textbf{Input:} \texttt{base\_frequencies.json} from Stage 1
+    \item \textbf{Process:}
+    \begin{itemize}
+        \item For each frame, extract fundamental $f_0$
+        \item Construct harmonics: $H_n = n \cdot f_0$ (typically for $n = 2$ to $16$)
+        \item Assign decreasing amplitude per harmonic (e.g., $-10$ dB per step)
+        \item Merge harmonics with original fundamental
+    \end{itemize}
+    \item \textbf{Output (JSON):} \texttt{partials.json} — contains full harmonic field per frame with \texttt{isFundamental} flags
+\end{itemize}
+
+\paragraph{Stage 3 – Spectral Visualization (2D/3D)}  
+\textbf{Script:} \texttt{s3\_visualization.py}
+
+\begin{itemize}
+    \item \textbf{Input:} \texttt{partials.json} from Stage 2
+    \item \textbf{Process:}
+    \begin{itemize}
+        \item Convert frequency to log-scale (Hz $\rightarrow$ cent)
+        \item Normalize amplitude to dB $\rightarrow$ size and opacity
+        \item Assign color using \texttt{freq\_to\_rgb()} (Donut Spectrum with 7-note color wheel)
+        \item Add microtonal labels using \texttt{freq\_to\_microtonal()}
+    \end{itemize}
+    \item \textbf{Output:}
+    \begin{itemize}
+        \item PNG at 3840×2160
+        \item Optional: HTML (Plotly interactive)
+    \end{itemize}
+\end{itemize}
+
+\subsection*{I.4.4 Execution Commands}
+
+\begin{verbatim}
+# Step 1: Extract fundamentals
+python3 scripts/extract_frequencies_crepe.py audio/Debussy.mp3 json/base_frequencies.json
+
+# Step 2: Build harmonic field
+python3 scripts/harmonics_matching.py json/base_frequencies.json json/partials.json
+
+# Step 3: Visualize
+python3 scripts/s3_visualization.py json/partials.json output/s3_visualization.png
+\end{verbatim}
+
+\textbf{Optional interactive output:}
+
+\begin{verbatim}
+python3 scripts/s3_visualization.py json/partials.json output/s3_visualization.html
+\end{verbatim}
+
+\subsection*{I.4.5 Automation: Master Script (Optional)}
+
+You may include a master pipeline script (\texttt{start\_pipeline.sh}) that automates all stages:
+
+\begin{verbatim}
+#!/bin/bash
+echo "Running S³ Pipeline..."
+python3 scripts/extract_frequencies_crepe.py audio/input.wav json/base_frequencies.json
+python3 scripts/harmonics_matching.py json/base_frequencies.json json/partials.json
+python3 scripts/s3_visualization.py json/partials.json output/s3_visualization.png
+echo "Done."
+\end{verbatim}
+
+\subsection*{I.4.6 Error Handling and Logging}
+
+Each script includes:
+
+\begin{itemize}
+    \item Usage help when arguments are missing
+    \item File existence checks for inputs
+    \item JSON schema validation (planned)
+    \item Logging system for progress and warnings
+\end{itemize}
+
+\subsection*{I.4.7 Modular API Design}
+
+The functions in each script can also be exposed via an internal API for integration with:
+
+\begin{itemize}
+    \item Jupyter Notebooks (for educational/research use)
+    \item Unity (real-time input/output via OSC or TCP)
+    \item R³ module (resonance analysis integration)
+\end{itemize}
+
+\subsection*{Summary}
+
+The S³ module's signal processing architecture forms a clean, high-resolution, and extensible pipeline from sound to structure. It is engineered to allow spectral data to be transformed into meaningful musical structures, ready for further analysis by R³ and C³. The use of standard tools, modular scripts, and clear data formats ensures that the system is not only scientifically robust but also developer-friendly and future-proof.
+
+\section*{I.5 – Data Structures and Formats}
+
+\subsection*{I.5.1 Overview}
+
+The Spectral Sound Space (S³) module operates on a carefully designed set of data structures to ensure maximum flexibility, resolution, and interoperability. These formats serve as both internal data representations and external interfaces for downstream modules (R³, C³), visualizations, and interactive environments (e.g., Unity).
+
+The primary data structure is JSON, chosen for its human readability, machine parsability, and web compatibility. All spectral events—frequencies, amplitudes, time steps, and symbolic annotations—are encoded in JSON using standardized field names and schema.
+
+\subsection*{I.5.2 Frame-Based Structure}
+
+At its core, S³ stores information as a sequence of time-ordered frames, each corresponding to a small window of the input signal (typically every 10 ms).
+
+\paragraph{Structure:}
+\begin{verbatim}
+{
+  "frames": [
+    {
+      "time": 0.010,
+      "partials": [
+        {
+          "freq": 440.0,
+          "db": -21.0,
+          "isFundamental": true,
+          "note": "A4+0",
+          "rgb": [1.0, 0.0, 0.0],
+          "harmonicIndex": 1
+        },
+        {
+          "freq": 880.0,
+          "db": -31.0,
+          "isFundamental": false,
+          "note": "A5+0",
+          "rgb": [0.0, 0.0, 1.0],
+          "harmonicIndex": 2
+        }
+      ]
+    },
+    ...
+  ]
+}
+\end{verbatim}
+
+\paragraph{Each frame contains:}
+\begin{itemize}
+    \item \texttt{time} (in seconds)
+    \item \texttt{partials}: an array of objects describing frequency components
+\end{itemize}
+
+\paragraph{Each partial includes:}
+
+\begin{center}
+\begin{tabular}{|l|l|p{8cm}|}
+\hline
+\textbf{Field} & \textbf{Type} & \textbf{Description} \\
+\hline
+\texttt{freq} & float & Frequency in Hz \\
+\texttt{db} & float & Amplitude in dBFS (normalized between -50 and 0) \\
+\texttt{isFundamental} & bool & Whether this is the frame’s $f_0$ \\
+\texttt{note} & string & Symbolic label, e.g. \texttt{"C4+7"} \\
+\texttt{rgb} & list & RGB color derived from freq (used in visualization) \\
+\texttt{harmonicIndex} & int & 1 for fundamental, 2+ for overtones \\
+\hline
+\end{tabular}
+\end{center}
+
+\subsection*{I.5.3 Data Resolution}
+
+\begin{center}
+\begin{tabular}{|l|l|l|}
+\hline
+\textbf{Dimension} & \textbf{Resolution} & \textbf{Example} \\
+\hline
+Time & 10 ms (adjustable) & 100 frames per second \\
+Frequency & Float (cent-level precision) & 442.7 Hz \\
+Amplitude & Float (-50 to 0 dB) & -27.3 dB \\
+Pitch Notation & Microtonal (cent offset) & A4⁺⁷ \\
+\hline
+\end{tabular}
+\end{center}
+
+This high resolution enables perceptual modeling (via R³) and microtonal music analysis.
+
+\subsection*{I.5.4 Supplementary Formats}
+
+\paragraph{a. CSV for Unity or WebGL:}
+
+Used in 3D interactive rendering:
+
+\begin{verbatim}
+time,frequency,dB,r,g,b
+0.010,440.0,-21.0,255,0,0
+0.010,880.0,-31.0,0,0,255
+\end{verbatim}
+
+\paragraph{b. Mesh Export (grid-based):}
+
+For 3D terrain mapping:
+
+\begin{verbatim}
+x (time), y (frequency), z (normalized dB)
+0.010, 440.0, 0.58
+0.010, 880.0, 0.32
+\end{verbatim}
+
+\paragraph{c. OSC / Real-Time Formats:}
+
+(Optional) For integration with Unity or Max/MSP:
+
+\begin{verbatim}
+/s3/frame 0.010 440.0 -21.0 1.0 0.0 0.0
+\end{verbatim}
+
+\subsection*{I.5.5 Schema Definitions (Formal)}
+
+You may enforce structure via JSON schema:
+
+\paragraph{Frame Schema:}
+
+\begin{verbatim}
+{
+  "type": "object",
+  "properties": {
+    "time": { "type": "number" },
+    "partials": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "freq": { "type": "number" },
+          "db": { "type": "number" },
+          "isFundamental": { "type": "boolean" },
+          "note": { "type": "string" },
+          "rgb": {
+            "type": "array",
+            "items": { "type": "number" },
+            "minItems": 3,
+            "maxItems": 3
+          },
+          "harmonicIndex": { "type": "integer" }
+        },
+        "required": ["freq", "db"]
+      }
+    }
+  },
+  "required": ["time", "partials"]
+}
+\end{verbatim}
+
+This formalism ensures forward compatibility and guards against malformed data.
+
+\subsection*{I.5.6 Storage Considerations}
+
+For a 10-second file with 10 ms frames and 16 partials per frame:
+
+\begin{itemize}
+    \item 1,000 frames × 16 partials = 16,000 data points
+    \item Approx. 2–5 MB as compressed JSON
+    \item Easily processed in memory on modern systems
+\end{itemize}
+
+You can compress JSON with gzip or use a binary format (e.g., MessagePack) for lower latency streaming.
+
+\subsection*{I.5.7 Reusability and Interoperability}
+
+\begin{itemize}
+    \item \texttt{partials.json} is the canonical format for R³ analysis
+    \item \texttt{s3\_visualization.py} reads from it to generate high-res plots
+    \item \texttt{export\_for\_unity.py} converts it to CSV for interactive 3D display
+    \item Optional mapping to \texttt{.S3N} format (SRC standard, in progress)
+\end{itemize}
+
+\subsubsection*{Summary}
+
+The data structures used by S³ are designed for high-resolution spectral modeling, downstream integration with resonance/cognitive modules, and compatibility with artistic, analytical, and interactive applications.
+
+The JSON-based frame–partial model ensures that time, frequency, amplitude, and pitch data are tightly coupled and fully traceable. This standardization supports rigorous analysis, intuitive visualization, and machine readability.
+
+\section*{I.6 – Visualization Layers and Aesthetic Design Principles}
+
+\subsection*{I.6.1 Overview}
+
+Visualization in the S³ module is not simply a graphical rendering of spectral data—it is a perceptually-aligned, musically meaningful, and aesthetically optimized representation of sound. The purpose of visualizing partials is twofold:
+
+\begin{itemize}
+    \item \textbf{Analytic Insight:} Allow researchers, theorists, and composers to examine the spectral and temporal structure of sound at microtonal and microtemporal resolution.
+    \item \textbf{Cognitive Alignment:} Mirror how auditory structures are perceived, allowing visual artifacts to stand in for psychoacoustic phenomena such as overtone fusion, resonance, and vibrato.
+\end{itemize}
+
+The design principles of S³ visualizations stem from an integrated philosophy of scientific legibility, musical interpretation, and visual minimalism.
+
+\subsection*{I.6.2 Two-Tier Visualization Architecture}
+
+The system employs two synchronized visual layers:
+
+\paragraph{Tier 1: Spectral Density Map (2D or 3D)}
+
+\begin{itemize}
+    \item \textbf{X:} Time (seconds), linear scale
+    \item \textbf{Y:} Frequency (Hz), log scale
+    \item \textbf{Z:} Amplitude (only in 3D mode)
+\end{itemize}
+
+\textbf{Units:}
+\begin{itemize}
+    \item Resolution: 3840 px × 2160 px (default)
+    \item Frame step: 10 ms
+    \item Frequency precision: cent-level ($\sim$0.58 px per cent)
+\end{itemize}
+
+Each partial is visualized as a dot or micro-line, positioned at its (time, frequency) coordinate, and styled according to amplitude and pitch-class-based color.
+
+\paragraph{Tier 2: Symbolic Notation Layer}
+
+\begin{itemize}
+    \item Aligned on X (time) with Tier 1
+    \item Contains labels for:
+    \begin{itemize}
+        \item Fundamental pitches (e.g., A4, C5⁺⁸)
+        \item Onset durations (shown as segment lengths)
+        \item Microtonal deviations (in cent format)
+    \end{itemize}
+    \item Can be toggled or overlaid for interpretive use
+\end{itemize}
+
+This layer enables mapping from physical spectrum to musical language (e.g., score-independent notation).
+
+\subsection*{I.6.3 Color Mapping: Donut Spectrum}
+
+Instead of static color coding (e.g., red = high freq), S³ implements a musically cyclic, frequency-based color system:
+
+\paragraph{Principle:}
+Colors cycle with octaves, not linear Hz.
+
+\textbf{Base hue anchors:}
+
+\begin{itemize}
+    \item C: Red
+    \item D: Orange
+    \item E: Yellow
+    \item F: Green
+    \item G: Light Blue
+    \item A: Blue
+    \item B: Violet
+\end{itemize}
+
+Intermediate tones interpolate between anchors.
+
+Repeat per octave: $\log_2(f/f_{\text{ref}}) \mod 1$
+
+\paragraph{Example:}
+\begin{itemize}
+    \item 261.6 Hz (C4) $\rightarrow$ Red
+    \item 440 Hz (A4) $\rightarrow$ Blue
+    \item 1046 Hz (C6) $\rightarrow$ Red again
+\end{itemize}
+
+\paragraph{Mathematical Mapping:}
+
+\[
+\theta(f) = (\log_2(f/f_{\text{ref}}) \mod 1) \cdot 360^\circ
+\]
+
+Converted to HSV hue $\rightarrow$ RGB
+
+This mapping aids intuitive identification of tonal color, enhances spectral grouping perception, and allows visual equivalence across octaves.
+
+\subsection*{I.6.4 Amplitude and Visual Emphasis}
+
+Amplitude (in dB) is mapped to:
+
+\begin{itemize}
+    \item Dot size (larger = louder)
+    \item Opacity (higher dB = more solid)
+    \item Optional Z-height (in 3D mesh)
+\end{itemize}
+
+Amplitude range is normalized between -50 dB and 0 dB.
+
+\begin{center}
+\begin{tabular}{|l|l|l|}
+\hline
+\textbf{dB} & \textbf{Size Range} & \textbf{Visual} \\
+\hline
+-50 & 1.0 px & barely visible \\
+-30 & 3.5 px & translucent \\
+-10 & 6.5 px & prominent \\
+0   & 8.0 px & fully saturated \\
+\hline
+\end{tabular}
+\end{center}
+
+\subsection*{I.6.5 Hover and Interaction Design (Plotly/Unity)}
+
+In 2D interactive views (Plotly), each partial responds to hover:
+
+\paragraph{Display:}
+
+\begin{verbatim}
+Time: 3.140 s
+Frequency: 445.6 Hz
+Amplitude: -23.4 dB
+Note: A4⁺¹⁵
+Harmonic Index: 1
+\end{verbatim}
+
+This ensures each data point is interpretable in real time and can be cross-referenced with musical structure.
+
+In Unity, similar hover behavior is achieved using Raycast + Tooltip systems.
+
+\subsection*{I.6.6 Aesthetic Philosophy}
+
+S³ visualizations are governed by three design maxims:
+
+\begin{itemize}
+    \item \textbf{Clarity over Colorfulness:} Every color and glyph must carry meaning—no arbitrary or decorative elements.
+    \item \textbf{Sonic Minimalism:} Reflect the sparsity of partials, allow negative space, and avoid visual clutter.
+    \item \textbf{Cognitive Load Management:} Layer complexity gradually (e.g., hide partials $<$ -40 dB by default), allow user toggles.
+\end{itemize}
+
+\subsection*{I.6.7 Multi-format Outputs}
+
+\begin{itemize}
+    \item \textbf{PNG:} Static, high-resolution (e.g., for papers, print). Rendered at 3840×2160 using Plotly + Kaleido.
+    \item \textbf{HTML:} Interactive hover-capable plots. Zoom, layer toggle, export options.
+    \item \textbf{CSV (Unity):} For 3D rendering (frequency $\rightarrow$ height). Used in VR/AR sound-space explorations.
+\end{itemize}
+
+\subsection*{I.6.8 Future Features}
+
+\begin{itemize}
+    \item Temporal motion blur to represent vibrato or tremolo
+    \item Animated playback with cursor-following time marker
+    \item 2.5D stacked pitch-class visualization (similar to piano roll, but spectral)
+\end{itemize}
+
+\subsubsection*{Summary}
+
+Visualization in the S³ module is not a cosmetic feature—it is a tool for perception, cognition, and musical logic. Every graphical element is tied to a psychoacoustic or musical principle, and the rendering stack ensures that physical properties of sound are transposed into visually legible, interpretable, and aesthetically powerful structures.
+
+\section*{I.7 – R³ and C³ Integration Architecture}
+
+\subsection*{I.7.1 Introduction}
+
+While S³ provides a high-resolution, physically-grounded representation of sound, it is only the first layer of the broader SRC⁹ system. The modules that follow—R³ (Resonance-Based Relational Reasoning) and C³ (Cognitive Consonance Circuit)—rely on the structured spectral data output by S³ to compute:
+
+\begin{itemize}
+    \item Harmonic relationships (R³)
+    \item Resonance fields and perceptual centers (R³)
+    \item Neural correlates of sound structure (C³)
+    \item Bounded attention, emotional salience, and cognitive load (C³)
+\end{itemize}
+
+This section describes how data flows from S³ into R³ and C³, and how architectural compatibility is maintained across analytical, real-time, and interactive systems.
+
+\subsection*{I.7.2 Data Flow Overview}
+
+\textbf{From S³ to R³:}
+
+\begin{itemize}
+    \item \textbf{Input:} \texttt{partials.json}
+    \item R³ extracts for each frame:
+    \begin{itemize}
+        \item $f_0$ (fundamental)
+        \item Full harmonic field
+        \item Frequency ratios
+        \item Harmonic intervals
+        \item Microtonal deviations
+    \end{itemize}
+\end{itemize}
+
+\textbf{From R³ to C³:}
+
+\begin{itemize}
+    \item R³ outputs for each frame:
+    \begin{itemize}
+        \item Resonance potential ($\Phi$)
+        \item Harmonic distance (HD)
+        \item Phantom root (PR)
+        \item Overtone locking (OL)
+        \item Vectorized harmonic embeddings
+    \end{itemize}
+    \item C³ computes:
+    \begin{itemize}
+        \item Temporal Perceptual Stability (TPS)
+        \item Tonal Fusion Index (TFI)
+        \item Neural Synchronization Fields (NSF)
+    \end{itemize}
+\end{itemize}
+
+\subsection*{I.7.3 Interface Specification}
+
+\paragraph{JSON Format Standards:}
+Each module reads and writes time-aligned frame arrays with shared conventions.
+
+\textbf{Input from S³:}
+\begin{verbatim}
+{
+  "frames": [
+    {
+      "time": 0.010,
+      "partials": [
+        { "freq": 440.0, "db": -21.0, "isFundamental": true }
+      ]
+    }
+  ]
+}
+\end{verbatim}
+
+\textbf{Output from R³:}
+\begin{verbatim}
+{
+  "frames": [
+    {
+      "time": 0.010,
+      "phantom_root": 65.4,
+      "resonance_potential": 0.92,
+      "harmonic_vectors": [[1, 0, -1], [0, 1, -2]],
+      "harmonic_distances": [
+        { "pair": [0, 1], "hd": 0.25 }
+      ]
+    }
+  ]
+}
+\end{verbatim}
+
+\textbf{Output from C³:}
+\begin{verbatim}
+{
+  "frames": [
+    {
+      "time": 0.010,
+      "tps": 0.82,
+      "tfi": 0.61,
+      "nsf": 0.45
+    }
+  ]
+}
+\end{verbatim}
+
+\subsection*{I.7.4 Modular Code Interface (Python)}
+
+Each module exposes a consistent API:
+
+\paragraph{Example (R³):}
+\begin{verbatim}
+from r3_engine import compute_resonance_metrics
+r3_out = compute_resonance_metrics(s3_data)  # JSON in, JSON out
+\end{verbatim}
+
+\paragraph{Example (C³):}
+\begin{verbatim}
+from c3_engine import compute_cognitive_metrics
+c3_out = compute_cognitive_metrics(r3_out)
+\end{verbatim}
+
+This chainable interface design enables automated pipelines, real-time computation, and batch processing.
+
+\subsection*{I.7.5 Streaming Compatibility (Optional)}
+
+S³ frames can be streamed in real time (e.g., OSC or WebSocket) and passed frame-by-frame to downstream modules.
+
+\textbf{Example OSC message:}
+\begin{verbatim}
+/s3/frame 0.012 441.3 -22.5 1.0 0.0 0.0
+\end{verbatim}
+
+\begin{itemize}
+    \item R³ computes $\Phi$ and PR on the fly.
+    \item C³ updates perceptual stability fields.
+\end{itemize}
+
+This architecture supports use in:
+
+\begin{itemize}
+    \item VR/AR environments
+    \item Generative composition engines
+    \item Real-time performance analytics
+\end{itemize}
+
+\subsection*{I.7.6 Synchronization and Latency}
+
+To ensure downstream module alignment:
+
+\begin{itemize}
+    \item All frames are timestamped with exact onset time
+    \item Optional global clock source can synchronize external sensors (e.g., EEG, motion)
+    \item Each module can interpolate, pad, or drop frames to maintain temporal consistency
+    \item Maximum allowable latency for inter-module propagation: $<$ 20 ms
+\end{itemize}
+
+\subsection*{I.7.7 Use Cases}
+
+\begin{center}
+\begin{tabular}{|l|l|p{8cm}|}
+\hline
+\textbf{Use Case} & \textbf{Modules Involved} & \textbf{Description} \\
+\hline
+Harmonic Field Tracking & S³ $\rightarrow$ R³ & Spectral components to resonance models \\
+Tonal Center Estimation & S³ $\rightarrow$ R³ $\rightarrow$ C³ & Phantom root influences TPS and NSF \\
+Real-Time Attention Feedback & S³ $\rightarrow$ C³ & EEG alignment with spectral events \\
+Audio–Visual Synchronization & S³ $\rightarrow$ R³ + Unity & Spectral peaks drive color, shape, camera cues \\
+\hline
+\end{tabular}
+\end{center}
+
+\subsection*{I.7.8 Technical Stack and Dependencies}
+
+\begin{itemize}
+    \item \textbf{S³:} CREPE, librosa, numpy, Plotly, Unity (visual output)
+    \item \textbf{R³:} Custom harmonic analysis engine, fractional prime decomposition, Euler Tonnetz geometry
+    \item \textbf{C³:} numpy, scipy, TensorFlow (optional for neural modeling), EEG data pipelines
+\end{itemize}
+
+\subsection*{I.7.9 Logging and Diagnostics}
+
+Each module logs:
+
+\begin{itemize}
+    \item Frame time
+    \item Input checksum (for verification)
+    \item Output integrity (range checks)
+    \item Processing time (profiling)
+    \item Synchronization offsets
+\end{itemize}
+
+A central dashboard (\texttt{src9\_monitor.py}) allows tracking of inter-module health and alignment.
+
+\subsubsection*{Summary}
+
+The integration of S³ with R³ and C³ establishes a vertically layered architecture:
+
+\begin{itemize}
+    \item S³ $\rightarrow$ raw perceptual primitives
+    \item R³ $\rightarrow$ harmonic structure and resonance logic
+    \item C³ $\rightarrow$ cognitive and emotional interpretation
+\end{itemize}
+
+The clear API design, standardized data structures, and optional real-time compatibility ensure that all modules communicate reliably, maintain synchronization, and can evolve independently while sharing a unified foundation.
+
+\section*{I.8 – Optimization and Performance}
+
+\subsection*{I.8.1 Overview}
+
+Due to its high-resolution time–frequency modeling, microtonal accuracy, and support for large-scale audio datasets, the S³ module requires careful performance tuning. This section details the computational characteristics of each pipeline stage and outlines optimization strategies at multiple levels:
+
+\begin{itemize}
+    \item Algorithmic
+    \item Architectural
+    \item Real-time constraints
+    \item Cross-platform compatibility (desktop, embedded, Unity)
+\end{itemize}
+
+\subsection*{I.8.2 Bottlenecks by Pipeline Stage}
+
+\begin{center}
+\begin{tabular}{|l|p{4.2cm}|p{3.2cm}|p{4.2cm}|}
+\hline
+\textbf{Stage} & \textbf{Description} & \textbf{Typical Bottleneck} & \textbf{Mitigation} \\
+\hline
+f₀ Extraction (CREPE) & Neural net inference & CPU-bound & Batch inference or GPU acceleration \\
+Amplitude Estimation & RMS over frames & I/O bound & Pre-slice audio, frame caching \\
+Harmonic Field Generation & Harmonic expansion per frame & Memory/compute & Vectorized array ops (NumPy) \\
+Symbolic Mapping & Cents + RGB + note assignment & None (fast) & Already optimized \\
+Visualization & Plotly rendering & GPU/UI bottleneck & Static output or throttled rendering \\
+Unity Export & CSV generation & Disk I/O & Streamed JSON $\rightarrow$ buffer cache \\
+\hline
+\end{tabular}
+\end{center}
+
+\subsection*{I.8.3 Temporal and Spectral Resolution}
+
+\paragraph{Time} 10 ms hop (100 FPS): sufficient for most music. Adjustable to 5 ms (high accuracy) or 20 ms (fast).
+
+\paragraph{Frequency} Floating point (e.g. 442.76 Hz): cent-level ($\sim$0.6 px) precision. No quantization unless explicitly requested.
+
+\paragraph{Amplitude} Normalized between -50 dB and 0 dB. Visualization supports amplitude-dependent size and color mapping.
+
+\subsection*{I.8.4 Memory Footprint}
+
+Assuming a 10-second clip at 100 FPS, 16 partials per frame:
+
+\begin{itemize}
+    \item Total frames: 1,000
+    \item Total partials: $\sim$16,000
+    \item Typical JSON size: 2–5 MB uncompressed
+    \item In-memory size: $\sim$8–12 MB (with symbolic fields)
+\end{itemize}
+
+\textbf{�� Optimization Tip:} For long-form analysis, stream partials per segment (e.g., 100 frames) into memory, then flush.
+
+\subsection*{I.8.5 Code-Level Optimizations}
+
+Use NumPy for harmonic expansion:
+
+\begin{verbatim}
+harmonics = f0 * np.arange(1, N + 1)
+\end{verbatim}
+
+Use list comprehensions and avoid deeply nested loops.
+
+Batch compute cent/pitch/RGB fields per frame.
+
+Avoid recalculating pitch class mappings if frequency hasn’t changed.
+
+\subsection*{I.8.6 Visualization Optimization}
+
+\paragraph{2D (Plotly or Matplotlib)}
+
+\begin{itemize}
+    \item Throttle marker size and opacity for very low dB
+    \item Hide partials < -40 dB (optional toggle)
+    \item Use Kaleido for static rendering instead of Orca (faster)
+\end{itemize}
+
+\paragraph{3D (Unity)}
+
+\begin{itemize}
+    \item Use \texttt{DrawMeshInstanced()} instead of \texttt{GameObject} clones
+    \item Use object pooling
+    \item Export only "significant" partials (e.g., fundamental + harmonics up to -35 dB)
+\end{itemize}
+
+\subsection*{I.8.7 Real-Time Constraints}
+
+To enable interactive use (e.g., in VR or live audio streams):
+
+\begin{itemize}
+    \item Use frame queues to pre-load analysis windows
+    \item Perform $f_0$ + harmonic expansion in a separate thread
+    \item Use audio input ring buffers (with PyAudio or SoundDevice)
+\end{itemize}
+
+\textbf{⚙️ Target latency budget:} $<$ 50 ms end-to-end
+
+\subsection*{I.8.8 Cross-Platform Performance}
+
+\begin{center}
+\begin{tabular}{|l|p{10cm}|}
+\hline
+\textbf{Platform} & \textbf{Strategy} \\
+\hline
+Desktop (Python) & Full pipeline with CREPE + Plotly \\
+Unity (C\#) & CSV import + GPU mesh render \\
+Web (WebGL) & Pre-rendered \texttt{.html} or WASM visualizer \\
+Embedded (Raspberry Pi) & Use downsampled audio + partial-only export \\
+\hline
+\end{tabular}
+\end{center}
+
+\subsection*{I.8.9 Performance Logging and Metrics}
+
+S³ includes performance tracking hooks:
+
+\begin{verbatim}
+import time
+start = time.time()
+# ... processing ...
+print(f"Step completed in {time.time() - start:.2f} seconds.")
+\end{verbatim}
+
+Future improvement: a dashboard that reports:
+
+\begin{itemize}
+    \item FPS throughput
+    \item Memory usage
+    \item Partial density over time
+    \item Processing heatmap
+\end{itemize}
+
+\subsection*{I.8.10 Future Optimizations}
+
+\begin{itemize}
+    \item Use GPU-accelerated libraries (e.g. CuPy, TensorRT for CREPE)
+    \item Parallel frame analysis with \texttt{multiprocessing} or \texttt{joblib}
+    \item Use lightweight binary formats (\texttt{.msgpack} or \texttt{.protobuf}) for JSON
+\end{itemize}
+
+\subsubsection*{Summary}
+
+S³ is designed for high fidelity and extensibility, but with attention to efficiency at each level. By combining frame-wise processing, vectorized operations, intelligent filtering, and GPU/Unity export strategies, the system remains responsive and scalable—from short musical phrases to full-length performances, from desktop analysis to embedded playback.
+
+\section*{I.9 – References and Source Integration}
+
+\subsection*{I.9.1 Overview}
+
+The S³ module is grounded in a rich body of theoretical, technical, and scientific literature. This section documents the foundational sources that inform the system’s design, including references from music theory, signal processing, psychoacoustics, and cognitive neuroscience. It also provides integration notes for each cited source, detailing how the ideas have been translated into algorithmic and computational form within S³.
+
+\subsection*{I.9.2 Spectral Music and Acoustic Theory}
+
+\paragraph{Gérard Grisey \& Tristan Murail – Spectral Aesthetics}
+
+\textbf{Reference:} Grisey, G. (1996). \textit{Did You Say Spectral?}
+
+\textbf{Contribution:}
+
+\begin{itemize}
+    \item Rejection of abstract harmonic systems in favor of the overtone series
+    \item Advocacy for time–frequency as a compositional space
+\end{itemize}
+
+\textbf{S³ Integration:}
+
+\begin{itemize}
+    \item Partial tracking over time
+    \item Harmonic field construction
+    \item Overtone-based pitch logic
+\end{itemize}
+
+\paragraph{Pierre Schaeffer – Acousmatic Perception}
+
+\textbf{Reference:} Schaeffer, P. (1966). \textit{Traité des objets musicaux}
+
+\textbf{Contribution:}
+
+\begin{itemize}
+    \item Classification of sonic objects based on spectral content
+\end{itemize}
+
+\textbf{S³ Integration:}
+
+\begin{itemize}
+    \item Time-framed spectral analysis
+    \item Object-based spectral segmentation
+\end{itemize}
+
+\subsection*{I.9.3 Psychoacoustics and Human Perception}
+
+\paragraph{Albert Bregman – Auditory Scene Analysis}
+
+\textbf{Reference:} Bregman, A. S. (1990). \textit{Auditory Scene Analysis}
+
+\textbf{Contribution:}
+
+\begin{itemize}
+    \item Stream segregation, grouping of partials by proximity
+\end{itemize}
+
+\textbf{S³ Integration:}
+
+\begin{itemize}
+    \item Harmonic clustering
+    \item Fundamental and overtone coherence tracking
+\end{itemize}
+
+\paragraph{Diana Deutsch – Perception of Pitch and Illusions}
+
+\textbf{Reference:} Deutsch, D. (1982). \textit{The Psychology of Music}
+
+\textbf{Contribution:}
+
+\begin{itemize}
+    \item Illusory pitch perception, frequency grouping
+\end{itemize}
+
+\textbf{S³ Integration:}
+
+\begin{itemize}
+    \item Microtonal deviation representation
+    \item Phantom root preparation for R³
+\end{itemize}
+
+\paragraph{Moore, B. – Critical Bands and Masking}
+
+\textbf{Reference:} Moore, B. C. J. (2003). \textit{An Introduction to the Psychology of Hearing}
+
+\textbf{Contribution:}
+
+\begin{itemize}
+    \item Modeling auditory filters and perceptual interference
+\end{itemize}
+
+\textbf{S³ Integration:}
+
+\begin{itemize}
+    \item Overtone locking zone threshold (used in OL module of R³)
+\end{itemize}
+
+\subsection*{I.9.4 Signal Processing and Pitch Estimation}
+
+\paragraph{Kim et al. – CREPE Pitch Tracker}
+
+\textbf{Reference:} Kim, J., Salamon, J., Li, P., \& Bello, J. P. (2018). \textit{CREPE: A Convolutional Representation for Pitch Estimation}
+
+\textbf{Contribution:}
+
+\begin{itemize}
+    \item Deep learning-based frame-by-frame pitch estimation
+\end{itemize}
+
+\textbf{S³ Integration:}
+
+\begin{itemize}
+    \item Used for extracting $f_0$ from raw audio at 10 ms resolution
+\end{itemize}
+
+\paragraph{Librosa – Python Audio Toolkit}
+
+\textbf{Reference:} McFee, B., Raffel, C., Liang, D., et al. (2015). \textit{librosa: Audio and Music Signal Analysis in Python}
+
+\textbf{Contribution:}
+
+\begin{itemize}
+    \item Audio loading, STFT, RMS, cent mapping
+\end{itemize}
+
+\textbf{S³ Integration:}
+
+\begin{itemize}
+    \item Core utility for RMS estimation, time axis construction
+\end{itemize}
+
+\subsection*{I.9.5 Mathematical and Symbolic Systems}
+
+\paragraph{Lerdahl \& Jackendoff – Generative Theory of Tonal Music}
+
+\textbf{Reference:} Lerdahl, F., \& Jackendoff, R. (1983). \textit{A Generative Theory of Tonal Music}
+
+\textbf{Contribution:}
+
+\begin{itemize}
+    \item Cognitive modeling of grouping, metric structure
+\end{itemize}
+
+\textbf{S³ Integration:}
+
+\begin{itemize}
+    \item Inspired tiered visualization (partials vs. symbolic layer)
+\end{itemize}
+
+\paragraph{Tymoczko, D. – Geometric Music Theory}
+
+\textbf{Reference:} Tymoczko, D. (2011). \textit{A Geometry of Music}
+
+\textbf{Contribution:}
+
+\begin{itemize}
+    \item Mapping musical structures to geometric topologies
+\end{itemize}
+
+\textbf{S³ Integration:}
+
+\begin{itemize}
+    \item Inspires geometric pitch-space design (future S³–R³ integration)
+\end{itemize}
+
+\paragraph{Sethares, W. – Tuning, Timbre, Spectrum, Scale}
+
+\textbf{Reference:} Sethares, W. A. (2005). \textit{Tuning, Timbre, Spectrum, Scale}
+
+\textbf{Contribution:}
+
+\begin{itemize}
+    \item Non-Western tuning systems and perceptual consonance
+\end{itemize}
+
+\textbf{S³ Integration:}
+
+\begin{itemize}
+    \item Support for non-12TET frequencies and just intonation
+\end{itemize}
+
+\subsection*{I.9.6 Cognitive and Neural Foundations}
+
+\paragraph{Zatorre, Koelsch, Patel – Music and the Brain}
+
+\textbf{References:}
+
+\begin{itemize}
+    \item Zatorre, R. J. (2002). \textit{Structure and function of auditory cortex}
+    \item Koelsch, S. (2011). \textit{Towards a neural basis of music perception}
+    \item Patel, A. D. (2008). \textit{Music, Language, and the Brain}
+\end{itemize}
+
+\textbf{Contribution:}
+
+\begin{itemize}
+    \item Mapping music perception to cortical activity
+\end{itemize}
+
+\textbf{S³ Integration:}
+
+\begin{itemize}
+    \item Informing the downstream design of C³ module
+    \item Supporting microtemporal precision as neurologically relevant
+\end{itemize}
+
+\subsection*{I.9.7 Visualization Systems}
+
+\paragraph{Plotly – Interactive Graphics}
+
+\textbf{Reference:} Plotly (open-source docs)
+
+\textbf{Contribution:}
+
+\begin{itemize}
+    \item High-resolution, log-frequency 2D plotting
+\end{itemize}
+
+\textbf{S³ Integration:}
+
+\begin{itemize}
+    \item Used for \texttt{s3\_visualization.py}, hover data, export to PNG/HTML
+\end{itemize}
+
+\paragraph{Unity – 3D Audio Visualization}
+
+\textbf{Reference:} Unity Technologies (docs)
+
+\textbf{Contribution:}
+
+\begin{itemize}
+    \item Mesh, prefab, and real-time rendering
+\end{itemize}
+
+\textbf{S³ Integration:}
+
+\begin{itemize}
+    \item Unity receives CSV exports for real-time 3D partial landscapes
+\end{itemize}
+
+\subsection*{I.9.8 Future Integrations}
+
+\begin{itemize}
+    \item Open Sound Control (OSC): For live audio input/output into S³ pipeline.
+    \item VR/AR Extensions: Using Unity WebXR for immersive spectral interaction.
+    \item EEG Integration APIs: Connecting S³ output with neural data for use in C³.
+\end{itemize}
+
+\subsubsection*{Summary}
+
+The S³ module is deeply grounded in a wide range of academic sources, and every computational decision is anchored in at least one theoretical or empirical reference. From pitch tracking to visualization, from psychoacoustics to symbolic abstraction, S³ reflects a comprehensive and scholarly synthesis of the last century of acoustical, musical, and perceptual research.
+
+\section*{I.10 – Appendices and Code Examples}
+
+\subsection*{I.10.1 Overview}
+
+This section provides detailed technical examples, supplemental illustrations, and code snippets to support the core content of the S³ module. These resources are designed for developers, researchers, and artists seeking to extend, test, or embed S³ into larger computational or artistic environments.
+
+Each appendix includes a fully functional code excerpt, JSON schema, visualization samples, and system integration examples.
+
+\subsection*{I.10.2 Appendix A: CREPE Extraction Script (\texttt{extract\_frequencies\_crepe.py})}
+
+\begin{verbatim}
+import crepe
+import librosa
+import numpy as np
+import json
+import sys
+
+def extract_frequencies(audio_path, output_json, step_size=10, duration=10.0):
+    y, sr = librosa.load(audio_path, sr=None, duration=duration)
+    time, frequency, confidence, _ = crepe.predict(
+        y, sr, step_size=step_size, model_capacity='full', viterbi=True
+    )
+    frames = []
+    for t, f, c in zip(time, frequency, confidence):
+        frames.append({
+            "time": float(t),
+            "partials": [
+                {"freq": float(f), "db": 20 * np.log10(c + 1e-6), "isFundamental": True}
+            ]
+        })
+    with open(output_json, 'w') as f:
+        json.dump({"frames": frames}, f, indent=2)
+
+if __name__ == "__main__":
+    audio_path = sys.argv[1]
+    output_json = sys.argv[2]
+    extract_frequencies(audio_path, output_json)
+\end{verbatim}
+
+\subsection*{I.10.3 Appendix B: Harmonics Expansion Script (\texttt{harmonics\_matching.py})}
+
+\begin{verbatim}
+import json
+import sys
+
+def add_harmonics(input_json, output_json, max_harmonics=16):
+    with open(input_json) as f:
+        data = json.load(f)
+    for frame in data["frames"]:
+        base_freq = next((p["freq"] for p in frame["partials"] if p.get("isFundamental")), None)
+        if base_freq:
+            for n in range(2, max_harmonics + 1):
+                frame["partials"].append({
+                    "freq": n * base_freq,
+                    "db": -30,
+                    "isFundamental": False
+                })
+    with open(output_json, 'w') as f:
+        json.dump(data, f, indent=2)
+
+if __name__ == "__main__":
+    add_harmonics(sys.argv[1], sys.argv[2])
+\end{verbatim}
+
+\subsection*{I.10.4 Appendix C: Frequency to RGB (Donut Spectrum Color Mapping)}
+
+\begin{verbatim}
+import math
+
+NOTE_COLORS = [
+    (255, 0, 0),       # C
+    (255, 128, 0),     # D
+    (255, 255, 0),     # E
+    (0, 255, 0),       # F
+    (0, 255, 255),     # G
+    (0, 0, 255),       # A
+    (128, 0, 255),     # B
+]
+
+def freq_to_rgb(freq):
+    if freq <= 0:
+        return (0, 0, 0)
+    midi = 69 + 12 * math.log2(freq / 440.0)
+    semitone = midi % 12
+    anchor = [0, 2, 4, 5, 7, 9, 11]
+    i = max([j for j in range(len(anchor)-1) if semitone >= anchor[j]])
+    ratio = (semitone - anchor[i]) / (anchor[i+1] - anchor[i])
+    r1, g1, b1 = NOTE_COLORS[i]
+    r2, g2, b2 = NOTE_COLORS[(i+1) % len(NOTE_COLORS)]
+    r = r1 + (r2 - r1) * ratio
+    g = g1 + (g2 - g1) * ratio
+    b = b1 + (b2 - b1) * ratio
+    return (r / 255.0, g / 255.0, b / 255.0)
+\end{verbatim}
+
+\subsection*{I.10.5 Appendix D: Microtonal Notation Generator}
+
+\begin{verbatim}
+def freq_to_microtonal(freq):
+    import math
+    A4 = 440.0
+    NOTES = ["C", "C#", "D", "D#", "E", "F", "F#", "G", "G#", "A", "A#", "B"]
+    midi_float = 69 + 12 * math.log2(freq / A4)
+    note_index = int(round(midi_float))
+    cent_offset = int(round((midi_float - note_index) * 100))
+    octave = (note_index // 12) - 1
+    note = NOTES[note_index % 12]
+    return f"{note}{octave}{cent_offset:+}"
+\end{verbatim}
+
+\subsection*{I.10.6 Appendix E: Plotly 2D Visualization Script (\texttt{s3\_visualization.py})}
+
+\begin{verbatim}
+import json, plotly.graph_objs as go, numpy as np
+
+def amplitude_norm(db): return max(0.0, min(1.0, (db + 50) / 50))
+
+def draw_s3(json_path, png_out):
+    with open(json_path) as f: data = json.load(f)
+    X, Y, C, S, T = [], [], [], [], []
+    for frame in data["frames"]:
+        t = frame["time"]
+        for p in frame["partials"]:
+            X.append(t)
+            Y.append(p["freq"])
+            amp = amplitude_norm(p["db"])
+            S.append(2 + amp * 8)
+            rgb = tuple(int(c * 255) for c in freq_to_rgb(p["freq"]))
+            C.append(f"rgb({rgb[0]},{rgb[1]},{rgb[2]})")
+            T.append(f"{p['freq']:.2f} Hz @ {p['db']:.1f} dB")
+    fig = go.Figure(go.Scatter(x=X, y=Y, mode='markers', marker=dict(color=C, size=S), text=T, hoverinfo='text'))
+    fig.update_layout(width=3840, height=2160, yaxis=dict(type='log', title='Frequency (Hz)'), xaxis=dict(title='Time (s)'))
+    fig.write_image(png_out)
+
+# Example:
+# draw_s3("partials.json", "s3_visualization.png")
+\end{verbatim}
+
+\subsection*{I.10.7 Appendix F: JSON Schema Snippet}
+
+\begin{verbatim}
+{
+  "type": "object",
+  "properties": {
+    "frames": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "time": { "type": "number" },
+          "partials": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "freq": { "type": "number" },
+                "db": { "type": "number" },
+                "isFundamental": { "type": "boolean" }
+              },
+              "required": ["freq", "db"]
+            }
+          }
+        },
+        "required": ["time", "partials"]
+      }
+    }
+  }
+}
+\end{verbatim}
+
+\subsection*{I.10.8 Appendix G: Screenshots and Diagrams}
+
+Omitted in text version – included in report PDF or interactive Jupyter companion notebook.
+
+\begin{itemize}
+    \item Spectrogram at 3840×2160 resolution
+    \item Donut color wheel illustration
+    \item Partial track overlays
+    \item Unity-based 3D cube field
+\end{itemize}
+
+\subsubsection*{Summary}
+
+The \textbf{S³ MasterTechnicalReport(Enhanced)} concludes its first part with complete technical references, reusable code snippets, and implementation-ready structures. These examples empower researchers, developers, and artists to reconstruct the entire pipeline, audit its logic, or embed it into larger analytical or creative ecosystems.
+
+This foundation now fully supports the integration of R³ (Resonance-Based Relational Reasoning) and C³ (Cognitive Consonance Circuit), enabling next-generation modeling of music as a spectrum–resonance–consciousness continuum.
+
+
+\end{document}

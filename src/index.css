@@ -1,0 +1,91 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-black text-white antialiased;
+  }
+
+  ::selection {
+    @apply bg-purple-500/30 text-white;
+  }
+}
+
+@layer components {
+  .gradient-text {
+    @apply bg-gradient-to-r from-purple-400 via-pink-500 to-red-500 bg-clip-text text-transparent;
+  }
+
+  .glass-card {
+    @apply bg-white/5 backdrop-blur-lg border border-white/10 rounded-2xl;
+  }
+
+  .hover-card {
+    @apply transition-all duration-300 hover:scale-105 hover:bg-white/10;
+  }
+
+  .nav-link {
+    @apply text-sm font-medium transition-colors duration-200 text-gray-300 hover:text-white;
+  }
+
+  .nav-link-active {
+    @apply text-purple-400;
+  }
+
+  .btn-primary {
+    @apply px-8 py-3 bg-gradient-to-r from-purple-500 to-pink-500 hover:from-purple-600 hover:to-pink-600 rounded-full text-white transition-all duration-300;
+  }
+
+  .btn-secondary {
+    @apply px-8 py-3 bg-white/10 hover:bg-white/20 backdrop-blur-lg rounded-full text-white transition-all duration-300;
+  }
+
+  .gradient-arch {
+    @apply bg-gradient-to-r from-purple-400 via-pink-500 to-red-500 bg-clip-text text-transparent;
+  }
+  .gradient-s {
+    @apply bg-gradient-to-r from-purple-500 to-blue-400 bg-clip-text text-transparent;
+  }
+  .gradient-r {
+    @apply bg-gradient-to-r from-orange-500 to-red-500 bg-clip-text text-transparent;
+  }
+  .gradient-c {
+    @apply bg-gradient-to-r from-yellow-400 to-green-500 bg-clip-text text-transparent;
+  }
+  .src-table {
+    @apply w-full rounded-xl overflow-hidden shadow-lg border border-gray-700 mb-8;
+  }
+  .src-table th {
+    @apply bg-gray-900 text-white font-bold px-4 py-2;
+  }
+  .src-table td {
+    @apply bg-gray-800 text-gray-200 px-4 py-2;
+  }
+}
+
+@layer utilities {
+  .perspective-[1000px] {
+    perspective: 1000px;
+  }
+  
+  .transform-style-3d {
+    transform-style: preserve-3d;
+  }
+  
+  .backface-hidden {
+    backface-visibility: hidden;
+  }
+}
+
+@keyframes fadein {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+.animate-fadein {
+  animation: fadein 0.7s ease;
+} 

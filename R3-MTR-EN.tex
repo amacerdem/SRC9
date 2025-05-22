@@ -1,0 +1,2420 @@
+\documentclass{article}
+\usepackage{graphicx} % Required for inserting images
+
+\title{R3-MasterTechnicalReport-Enhanced}
+\author{Amac Erdem}
+\date{May 2025}
+
+\begin{document}
+
+\maketitle
+
+\section{Introduction}
+\section*{I.1(1) – Motivation and Origins (Enhanced)}
+
+Music theory, for centuries, has been dominated by symbolic and categorical thinking. Chords are labeled; keys are named; progressions are prescribed. These abstractions, while elegant and effective in many stylistic contexts, fail to reflect the continuous, physical nature of acoustic phenomena and the non-discrete, probabilistic mechanisms of perception. This misalignment between how music is theorized and how it is actually heard is a foundational problem that motivates the creation of R³.
+
+In recent decades, both scientific and artistic movements have exposed the limits of traditional pitch-class and functional harmony systems:
+
+\begin{itemize}
+    \item \textbf{Spectral music}, led by composers such as Gérard Grisey and Tristan Murail, focused on the actual overtone content of sound rather than idealized chords.
+    \item \textbf{Psychoacoustic studies} (Terhardt, 1974; Plomp \& Levelt, 1965) demonstrated that perceived pitch and consonance are emergent properties of partial alignment, not of symbolic classification.
+    \item \textbf{Neuroscience findings}, including frequency-following response (FFR) and brainstem phase-locking studies (cf. Bidelman et al., 2011), showed that the brain tracks periodicity and overtone structures even without conscious musical attention.
+    \item \textbf{Just intonation and extended harmonic systems} (Doty, 2002; Sethares, 1998) provided mathematical models of tuning that highlight resonance, not abstraction, as the organizing principle of pitch space.
+\end{itemize}
+
+The convergence of these fields leads to a necessary shift in harmonic reasoning: from symbolic theory to resonance-based computation.
+
+\textbf{R³ (Resonance-Based Relational Reasoning)} is designed to model music not as a grammar of discrete signs, but as a flow of structured vibrational energy. It treats pitch as a function of spectral gravity, energy proximity, and temporal anchoring, rather than categorical labeling.
+
+At the core of R³ lie three principles:
+
+\begin{itemize}
+    \item \textbf{Tonal centers are emergent}\\
+    $\rightarrow$ They result from statistical convergence of overtones, not pre-defined labels.
+    
+    \item \textbf{Resonance is continuous}\\
+    $\rightarrow$ Harmonic coherence is not binary (consonant vs. dissonant), but a gradient, computable via $\Phi$.
+    
+    \item \textbf{Perception is relational}\\
+    $\rightarrow$ Tonal stability is derived from how partials interact — in time, in frequency, and in amplitude — not from isolated entities.
+\end{itemize}
+
+This paradigm is grounded not only in music but in broader systems theory, signal processing, and neuroacoustics. The resonance field becomes the new tonal map, where perception, meaning, and emotion are drawn not on a grid of pitches, but across a topology of dynamic acoustic pressure.
+
+As Zatorre and Salimpoor (2013) observed, musical reward correlates with prediction and violation in time-dependent structures — R³ provides the computational substrate for such dynamics. Through $\Phi$, PR, and RFM, it becomes possible to chart the internal logic of sound as it unfolds, not as a score, but as a fluid field of tonal potential.
+
+\subsubsection*{Summary}
+
+The motivation for R³ is not merely the refinement of harmony theory. It is the redefinition of what harmony is: no longer a symbolic artifact, but a topological, energetic, and cognitive resonance surface.
+
+\section*{I.2(1) – Integration within SRC⁹ Architecture (Enhanced)}
+
+SRC⁹ is designed as a modular, multi-domain cognitive-auditory system with three principal modules:
+
+\begin{itemize}
+    \item \textbf{S³:} Spectral Sound Space – acoustic extraction, microtonal analysis
+    \item \textbf{R³:} Resonance-Based Relational Reasoning – harmonic topology, field modeling
+    \item \textbf{C³:} Cognitive Consonance Circuit – perceptual synthesis, memory, valuation
+\end{itemize}
+
+R³ sits at the exact center of this architecture — mathematically, informationally, and conceptually.
+
+It functions as the Y-axis of the SRC⁹ lattice, where:
+
+\begin{itemize}
+    \item X = spectral frequency space (S³)
+    \item Y = resonant interaction space (R³)
+    \item Z = perceptual response dimension (C³)
+\end{itemize}
+
+This triaxial topology is not metaphorical — it is computationally enforced through data routing, inter-unit feedback, and shared time/frequency schemas.
+
+\paragraph{1. Input from S³}
+
+R³’s input is the fully expanded harmonic spectrum:
+
+\begin{verbatim}
+{
+  "time": 2.1,
+  "partials": [
+    {
+      "freq": 196.0,
+      "amplitude": 0.84,
+      "isFundamental": true,
+      "harmonic_index": 0,
+      "symbol": "G3⁰"
+    },
+    ...
+  ]
+}
+\end{verbatim}
+
+Sampling: 0.1s frames (200 per 20s session)
+
+Per Frame: 1 f₀ + 16 harmonics
+
+Extras: Microtonal symbol mapping, cent deviation flags
+
+Each R³ unit extracts features relevant to its function (e.g., PR focuses on $f_0$ trajectory; RFM on amplitude–frequency density).
+
+\paragraph{2. Internal Resonance Processing (R³)}
+
+Within R³, each unit runs in temporal and spectral parallel. However, their semantic roles are different:
+
+\begin{center}
+\begin{tabular}{|l|l|l|}
+\hline
+\textbf{Unit} & \textbf{Function} & \textbf{Outputs To} \\
+\hline
+PRU & Virtual root estimation & RP, RFM, CRV \\
+RPU & Framewise \& windowed $\Phi$ & CRV, RFM \\
+RFMU & Field topology (RFM, $\nabla$RFM) & CRV, visualization \\
+CRVU & Vector summary [TPS, TFI, NSF] & C³ – attention \& memory \\
+\hline
+\end{tabular}
+\end{center}
+
+Together, these units transmute the raw spectrum into a dynamic resonance surface — a structure rich in perceptual cues, mathematical relations, and cognitive triggers.
+
+\paragraph{3. Output to C³}
+
+R³’s final output — the CRV vector — is transmitted to C³ for use in:
+
+\begin{itemize}
+    \item Attention anchoring: TPS stability scores influence focus
+    \item Fusion response modeling: TFI reflects perceptual unity
+    \item Temporal expectation modeling: NSF controls time-weighted relevance
+\end{itemize}
+
+These values modulate cognitive consonance curves and neural resonance gating within higher-order evaluative modules.
+
+\paragraph{4. Bidirectional Modulation}
+
+Though R³ receives data from S³ and passes to C³, the flow is not strictly feedforward.
+
+R³ can also be:
+
+\begin{itemize}
+    \item Influenced by C³ feedback, adjusting $\Phi$ weighting or field granularity based on attention level
+    \item Trigger of S³ re-analysis, when PR or TFI instability passes a threshold
+\end{itemize}
+
+This recurrent loop allows SRC⁹ to behave like a resonant cognitive engine — not just analyzing, but reacting to musical content dynamically.
+
+\paragraph{5. Implementation Topology}
+
+The data flow between S³, R³, and C³ can be visualized as:
+
+\begin{verbatim}
+             [ S³ ]  →  Raw Spectrum (partials)
+               ↓
+         ┌─────────────┐
+         │     R³      │
+         │ PR → Φ → RFM│
+         └────┬────────┘
+              ↓
+           [ CRV ]
+              ↓
+            [ C³ ]
+       (Attention, Valuation, Memory)
+\end{verbatim}
+
+Each arrow represents a JSON/array structure or vector of numerical values, all time-aligned, standardized, and validated.
+
+\paragraph{6. Architectural Significance}
+
+R³ enables SRC⁹ to:
+
+\begin{itemize}
+    \item Move beyond symbolic analysis
+    \item Embrace probabilistic, topological, and energy-based models
+    \item Bridge physics (S³) with cognition (C³)
+    \item Operate in real-time or offline batch analysis
+    \item Output data suitable for visualization, sonification, or interactivity (Unity)
+\end{itemize}
+
+\section*{II.1(2) – Domain Definitions: Traditional vs. Resonance-Based Theory}
+
+In the architecture of SRC⁹, a domain is not merely a categorical label — it defines the epistemic framework by which musical structure is interpreted. Domains provide the foundational assumptions, theoretical orientation, and algorithmic style of all downstream unit processing.
+
+Two such domains are currently defined within the R³ module architecture:
+
+\subsection*{A. Traditional-Based Theory (Reserved Domain)}
+
+\textbf{Philosophical Basis:}
+\begin{itemize}
+    \item Music is a symbolic grammar of signs.
+    \item Tonality arises from hierarchical relations between named pitch classes.
+    \item Harmony is a sequence of discrete, functional progressions (e.g., tonic $\rightarrow$ dominant $\rightarrow$ subdominant).
+\end{itemize}
+
+\textbf{Historical Sources:}
+\begin{itemize}
+    \item Rameau’s fundamental bass theory
+    \item Roman numeral analysis
+    \item Common-practice tonality (1600–1900)
+    \item Schenkerian structuralism
+\end{itemize}
+
+\textbf{Computational Analogy:}
+\begin{itemize}
+    \item Rule-based systems
+    \item Symbol-to-symbol transitions
+    \item State machines over pitch-class sets
+\end{itemize}
+
+\textbf{Current Status in SRC⁹:}
+
+\begin{itemize}
+    \item Unpopulated. The domain is intentionally preserved for comparative or pedagogical use but no active units are assigned.
+\end{itemize}
+
+\textbf{Future Possibility:}
+
+\begin{itemize}
+    \item Incorporating classical root analysis
+    \item Mapping Roman numeral logic to PR output
+    \item Providing symbolic contrast to field-theoretic R³ outputs
+\end{itemize}
+
+\subsection*{B. R³ – Resonance-Based Theory (Active Domain)}
+
+\textbf{Philosophical Basis:}
+\begin{itemize}
+    \item Music is a flow of interacting energy fields.
+    \item Tonality emerges from the statistical convergence of partials.
+    \item Harmony is a dynamic topology shaped by amplitude, frequency, and time.
+\end{itemize}
+
+\textbf{Scientific Foundations:}
+\begin{itemize}
+    \item Psychoacoustics (Plomp \& Levelt, 1965; Terhardt, 1974)
+    \item Spectral composition (Grisey, Murail)
+    \item Just intonation and tuning theory (Doty, Sethares)
+    \item Auditory neuroscience (Zatorre, Bidelman, FFR)
+\end{itemize}
+
+\textbf{Computational Strategy:}
+\begin{itemize}
+    \item Vector calculus in spectral domains
+    \item Probabilistic detection of resonance attractors
+    \item Topographic field modeling (RFM)
+    \item Temporal variance and cognitive vector construction (CRV)
+\end{itemize}
+
+\subsection*{Comparison Table: Symbolic vs. Resonant Modeling}
+
+\begin{center}
+\begin{tabular}{|l|p{4.5cm}|p{5.5cm}|}
+\hline
+\textbf{Aspect} & \textbf{Traditional Theory} & \textbf{R³ – Resonance-Based Theory} \\
+\hline
+Pitch Type & Discrete pitch classes & Continuous frequency space \\
+Harmony Basis & Root progression (symbolic) & Spectral proximity \& convergence \\
+Time Treatment & Syntactic units (measures) & Framewise + windowed resonance maps \\
+Tonal Center Definition & Key, tonic function & Phantom root via overtone intersection \\
+Mathematical Form & Rule-based grammar & Scalar field + differential operators \\
+Cognitive Link & Abstract schema & Auditory energy alignment (FFR) \\
+Adaptivity & Static system & Real-time dynamic modeling \\
+\hline
+\end{tabular}
+\end{center}
+
+\subsection*{Why Dual Domains?}
+
+SRC⁹ includes both domains to support:
+
+\begin{itemize}
+    \item Comparative modeling
+    \item Pedagogical clarity
+    \item Theoretical transparency
+\end{itemize}
+
+Although the Traditional-Based Theory domain is empty, its presence allows users to compare symbolic models vs. resonance models, test different theoretical assumptions, and use R³ as both an analytical tool and a research platform.
+
+Eventually, units such as:
+
+\begin{itemize}
+    \item Tonic Function Classifier (TFC)
+    \item Symbolic Root Evaluator (SRE)
+    \item Key Probabilistic Mapper (KPM)
+\end{itemize}
+
+...may populate the Traditional domain for hybrid analysis.
+
+\subsection*{Domain Assignment Summary}
+
+\begin{center}
+\begin{tabular}{|l|l|}
+\hline
+\textbf{Unit} & \textbf{Domain} \\
+\hline
+PRU & R³ – Resonance-Based \\
+RPU & R³ – Resonance-Based \\
+RFMU & R³ – Resonance-Based \\
+CRVU & R³ – Resonance-Based \\
+OL (future) & R³ – Resonance-Based \\
+\hline
+\textbf{Traditional-Based Theory} & (empty) \\
+\hline
+\end{tabular}
+\end{center}
+
+\section*{II.2(1) – PRU: Phantom Root Unit (Enhanced)}
+
+The Phantom Root Unit (PRU) models one of the most perceptually paradoxical yet experientially central aspects of musical cognition: the ability to perceive a fundamental pitch even when it is not acoustically present. This unit formalizes and operationalizes the phenomenon of “virtual pitch” by detecting statistical convergence across harmonic spectra and time.
+
+\subsection*{1. Theoretical Background and Cognitive Justification}
+
+Since the 1970s, experimental psychoacoustics has demonstrated that listeners can identify the “missing fundamental” of a complex tone purely from overtone relationships (Terhardt, 1974; Houtsma \& Goldstein, 1972). These percepts are non-linear and emergent: they do not result from individual partials, but from their alignment in log-frequency space.
+
+Auditory scene analysis research (Bregman, 1990) shows that virtual pitch perception is guided by temporal stability, harmonic simplicity, and statistical regularity. PRU unifies these dimensions using an intersection-based harmonic model, a vector-space fusion score, and symbolic microtonal tagging.
+
+In neurophysiological terms, virtual pitch tracking is associated with brainstem-level phase locking (cf. Bidelman \& Krishnan, 2011), where neurons track periodicity of inferred tones even when the spectral content is incomplete. PRU aligns with this processing architecture.
+
+\subsection*{2. Input Requirements}
+
+\begin{itemize}
+    \item \textbf{Source:} \texttt{RawSpectrum-unit.json}
+    \item \textbf{Frame resolution:} 0.1s
+    \item \textbf{Each frame includes:} fundamental + 16 harmonics
+    \item \textbf{Symbolic labeling:} cent-deviation-based (e.g., G3⁺¹)
+\end{itemize}
+
+Partial data are first segmented into fundamental frequency sequences, grouped by $\pm49$ cent stability window, and then processed through pattern recognition templates.
+
+\subsection*{3. Core Algorithmic Stages}
+
+\paragraph{a. CentTracker}
+
+Tracks whether the current fundamental frequency remains within a $\pm49$ cent band. Once a deviation exceeds threshold, a note boundary is declared.
+
+Let $f_n$ be the current $f_0$ value:
+
+\[
+\text{if } \left| \text{cents}(f_n, f_{n-1}) \right| > 49 \Rightarrow \text{new note}
+\]
+
+This creates time-stable pitch clusters, e.g., G2 (1.4s–2.1s), D3 (2.2s–3.3s), G3 (3.4s–4.2s)
+
+\paragraph{b. GroupMatcher}
+
+Matches these sequential pitch groups to harmonic templates such as:
+
+\begin{itemize}
+    \item [1, 2, 3] $\rightarrow$ simple harmonic stack
+    \item [1, 2, 3, 4, 5] $\rightarrow$ extended overtone set
+    \item [1–11] $\rightarrow$ full resonance model (A4 group)
+\end{itemize}
+
+Given $N$ consecutive note frequencies $\{f_1, f_2, \ldots, f_N\}$, PRU seeks a scalar $r$ such that:
+
+\[
+f_i \approx r \cdot h_i \quad \text{for harmonic template } H = \{h_1, h_2, \ldots, h_N\}
+\]
+
+The best-fit $r$ becomes the phantom root candidate.
+
+\paragraph{c. Harmonic Intersection Scoring (HIS)}
+
+To evaluate whether partials align at a common origin, PRU computes:
+
+\[
+\text{HIS}(r) = \sum_{i<j} \#(H_i \cap_\epsilon H_j)
+\]
+
+Where:
+
+\begin{itemize}
+    \item $H_i = \{k \cdot f_i\}$: harmonic set of note $i$
+    \item $\cap_\epsilon$: fuzzy intersection under cent-tolerance $\epsilon$
+\end{itemize}
+
+This gives a resonance-weighted score of harmonic “compatibility.”
+
+\paragraph{d. Fusion Metric: Harmonic Information Score (HIM)}
+
+As an alternative or supplement, PRU may also compute the HIM:
+
+\[
+\text{HIM}\left(\frac{b}{a}\right) = \frac{a \cdot b}{a + b - 1}
+\]
+
+This models perceptual fusion likelihood (cf. Sethares, 1998) and allows comparing different PR candidates.
+
+\paragraph{e. Prime-Exponent Averaging (Optional)}
+
+For symbolic systems like Just Intonation or Prime-Limit modeling, PRU represents each note as a vector:
+
+\[
+\vec{v}_i = (x_2, x_3, x_5, x_7, \ldots), \quad \text{where } f_i = 2^{x_2} \cdot 3^{x_3} \cdot 5^{x_5} \cdots
+\]
+
+The mean vector:
+
+\[
+\vec{v}_{PR} = \frac{1}{N} \sum_i \vec{v}_i
+\]
+
+...is projected back into frequency space to suggest a symbolic root in prime-vector space.
+
+\paragraph{f. SymbolMapper}
+
+Final phantom root frequency is mapped into symbolic pitch notation:
+
+\begin{itemize}
+    \item Cent bins: $\pm$25 cent steps
+    \item Output: \texttt{C3⁺²}, \texttt{A\#2⁻¹}, etc.
+\end{itemize}
+
+\subsection*{4. Output Format}
+
+\begin{verbatim}
+{
+  "time_range": [2.1, 4.2],
+  "phantom_root": 130.81,
+  "symbol": "C3⁺¹",
+  "group": "A2",
+  "fusion_score": 0.431
+}
+\end{verbatim}
+
+Each record corresponds to a stable perceptual segment.
+
+\subsection*{5. Integration & Downstream Use}
+
+\begin{itemize}
+    \item \textbf{Feeds RPU:} defines resonance weighting center
+    \item \textbf{Feeds RFMU:} sets initial attractor in field
+    \item \textbf{Feeds CRVU:} primary input for TPS (temporal stability)
+\end{itemize}
+
+\section*{II.2(2) – RPU: Resonance Potential Unit (Φ)}
+
+The Resonance Potential Unit (RPU) provides a scalar measure of spectral coherence — quantifying how “tightly” the partials within a time window resonate with one another. The $\Phi$ metric is a mathematically continuous and perceptually grounded proxy for what listeners describe as "harmonic richness," "fusion," or "tonal gravity."
+
+\subsection*{1. Scientific Foundation and Perceptual Basis}
+
+Consonance perception is not binary but continuous. Listeners experience certain spectra as more stable or fused depending on how close and strong partials are in frequency and amplitude. This insight, originating from psychoacoustic studies by Plomp \& Levelt (1965), forms the perceptual core of $\Phi$.
+
+Further evidence from Bidelman et al. (2011) and Leman (2016) suggests that harmonic coherence triggers neural entrainment and reward systems. High $\Phi$ values are theorized to activate neural structures such as the nucleus accumbens (associated with musical pleasure) and generate higher predictive certainty in auditory processing streams.
+
+\subsection*{2. Input Model}
+
+\begin{itemize}
+    \item Input file: \texttt{RawSpectrum-unit.json}
+    \item Frame duration: 0.1 seconds
+    \item Each frame: list of partials (freq, amp)
+\end{itemize}
+
+All $\Phi$ computations are frame-aligned, amplitude-weighted, and cent-aware.
+
+\subsection*{3. Core Algorithmic Flow}
+
+\paragraph{a. Pairwise $\Phi$ Matrix}
+
+For every frame $t$, a full pairwise distance matrix is constructed across all partials:
+
+\[
+\Phi(t) = \sum_{i<j} \frac{A_i \cdot A_j}{|f_i - f_j| + \epsilon}
+\]
+
+Where:
+
+\begin{itemize}
+    \item $A_i$, $A_j$: amplitudes
+    \item $f_i$, $f_j$: frequencies
+    \item $\epsilon$: small constant (1e⁻⁶)
+\end{itemize}
+
+This formulation ensures:
+
+\begin{itemize}
+    \item Higher amplitude = higher resonance impact
+    \item Smaller frequency distance = stronger spectral fusion
+\end{itemize}
+
+Each $\Phi(t)$ is a scalar representing the spectral “density” or “pull” within that frame.
+
+\paragraph{b. Time-Windowed Integration ($\Phi_T$)}
+
+To capture longer-term coherence, sliding time windows (1s, 3s, 5s, 7s) are defined:
+
+\[
+\Phi_T = \sum_{t \in T} \Phi(t)
+\]
+
+This models harmonic pressure across time — analogous to field density in physics.
+
+\textbf{Used for:}
+\begin{itemize}
+    \item Detecting modulation
+    \item Smoothing over local instability
+    \item Feeding into NSF (memory-weighted) metrics in CRVU
+\end{itemize}
+
+\paragraph{c. Optional Field-Weighted $\Phi$}
+
+Future extensions may modulate $\Phi$ with field attractor weights (from RFM):
+
+\[
+\Phi_{RFM}(t) = \sum_{i<j} \frac{A_i \cdot A_j \cdot \gamma(f_i, f_j)}{|f_i - f_j| + \epsilon}
+\]
+
+Where $\gamma$ is a Gaussian function centered on current PR or spectral centroid.
+
+\subsection*{4. Fluctuation Modeling}
+
+Variance in $\Phi(t)$ over time is highly correlated with tonal anchoring. A stable tonal segment will show low variance; modulation or dissonance increases fluctuation.
+
+\[
+\sigma_\Phi(t) = \frac{1}{N} \sum_{i=1}^N \left( \Phi_i - \bar{\Phi} \right)^2
+\]
+
+This index feeds into CRVU's TPS node (Temporal Perceptual Stability).
+
+\subsection*{5. Output Formats}
+
+\paragraph{Framewise:}
+\begin{verbatim}
+{
+  "time": 4.1,
+  "phi": 3.142
+}
+\end{verbatim}
+
+\paragraph{Windowed:}
+\begin{verbatim}
+{
+  "window": "6.0–9.0",
+  "phi": 9.762,
+  "window_size": 3
+}
+\end{verbatim}
+
+Both forms are visually overlaid in multi-colored $\Phi$ curves (e.g., red = 1s, blue = 7s).
+
+\subsection*{6. Integration Points}
+
+\begin{itemize}
+    \item \textbf{Feeds CRVU:} TPS (std dev), NSF (sum)
+    \item \textbf{Feeds RFMU:} used as raw data for Gaussian smoothing
+    \item \textbf{Optional input from PRU:} PR can shift $\Phi$ weighting center
+\end{itemize}
+
+\subsection*{7. Theoretical Impact}
+
+$\Phi$ unifies the perceptual with the computational:
+
+\begin{itemize}
+    \item It approximates roughness, fusion, and tension metrics
+    \item It enables real-time scalar monitoring of harmonic convergence
+    \item It mathematically extends Plomp–Levelt’s roughness curve to high-resolution, amplitude-weighted spectral structures
+\end{itemize}
+
+\section*{II.2(3) – RFMU: Resonance Field Modeling Unit (Enhanced)}
+
+The Resonance Field Modeling Unit (RFMU) constructs a continuous, dynamic field over frequency space that represents the distribution of spectral energy and tonal gravity. It transforms discrete spectral events into a spatiotemporal topography, allowing resonance to be visualized, measured, and interpreted as a scalar field.
+
+\subsection*{1. Conceptual Foundation: Harmony as Field}
+
+Traditional models define harmony as sequences of pitch-class structures. RFMU redefines harmony as field energy: the shape, slope, and peaks of a continuously distributed amplitude-weighted spectral surface.
+
+This approach is inspired by:
+
+\begin{itemize}
+    \item Physical fields in electromagnetism and gravity
+    \item Topographic models of pitch space (e.g., Tymoczko, 2006)
+    \item Neural tonotopic maps (Moore, 2012)
+    \item Auditory Gestalt theory, where pitch centers attract auditory focus
+\end{itemize}
+
+In RFM, harmonic tension and resolution are not rules — they are gradients across a vibratory surface.
+
+\subsection*{2. Input Structure}
+
+\begin{itemize}
+    \item \textbf{Source:} \texttt{RawSpectrum-unit.json}
+    \item \textbf{Per frame:} list of partials (freq, amp)
+    \item \textbf{Each partial:} becomes a kernel on the field
+\end{itemize}
+
+\subsection*{3. Mathematical Core}
+
+\paragraph{a. Resonance Field Equation}
+
+\[
+\text{RFM}(f, t) = \sum_{i=1}^N A_i(t) \cdot e^{-\frac{(f - f_i(t))^2}{2\sigma^2}}
+\]
+
+Where:
+
+\begin{itemize}
+    \item $f$: target frequency grid point
+    \item $f_i(t)$: frequency of partial $i$ at time $t$
+    \item $A_i(t)$: amplitude of partial $i$
+    \item $\sigma$: resonance spread parameter (controls field smoothness)
+\end{itemize}
+
+This Gaussian convolution converts discrete partials into a smooth frequency-density curve.
+
+\paragraph{b. Grid Discretization}
+
+The frequency space (20–20000 Hz) is divided into $N$ points:
+
+\[
+f_j = \text{logspace}(20, 20000, N)
+\]
+
+$N$ is typically 512 or 1024, log-scaled to match auditory perception.
+
+\paragraph{c. Field Gradient Operator ($\nabla$RFM)}
+
+\[
+\nabla \text{RFM}(f, t) = \frac{\partial \text{RFM}(f, t)}{\partial f}
+\]
+
+Implemented numerically via finite differences.
+
+\begin{itemize}
+    \item Points toward direction of tonal pull
+    \item Magnitude of $\nabla$RFM is used in CRVU’s TFI node
+\end{itemize}
+
+\paragraph{d. Peak Tracking}
+
+At each time $t$, RFMU extracts local maxima (peaks) in the field:
+
+\begin{itemize}
+    \item These peaks = tonal centers
+    \item \textbf{Stability} = persistence of peak across frames
+    \item \textbf{Drift} = shift in peak position over time
+\end{itemize}
+
+\subsection*{4. Visualization Logic}
+
+\begin{itemize}
+    \item \textbf{2D heatmap:}
+    \begin{itemize}
+        \item x = time
+        \item y = frequency (log scale)
+        \item color = field intensity (e.g., inferno colormap)
+    \end{itemize}
+    \item \textbf{Optional overlays:}
+    \begin{itemize}
+        \item white lines = peak paths
+        \item vector arrows = $\nabla$RFM direction
+    \end{itemize}
+\end{itemize}
+
+\subsection*{5. Output Format}
+
+\begin{verbatim}
+{
+  "time": 3.5,
+  "grid": [20.0, 25.1, ..., 20000.0],
+  "field": [0.001, 0.0023, ..., 0.0],
+  "gradient": [0.004, 0.003, ..., -0.002]
+}
+\end{verbatim}
+
+\subsection*{6. Cognitive Function}
+
+RFMU makes it possible to:
+
+\begin{itemize}
+    \item Observe resonance motion as a flow
+    \item Detect zones of spectral convergence (tonal mass)
+    \item Model directional pull (gradient dynamics) of harmonic tension
+    \item Build resonance topographies for spatial cognition
+\end{itemize}
+
+\subsection*{7. Integration Pathways}
+
+\begin{itemize}
+    \item \textbf{To CRVU:}
+    \begin{itemize}
+        \item $\nabla$RFM $\rightarrow$ TFI
+        \item RFM stability $\rightarrow$ TPS supplement
+    \end{itemize}
+    \item \textbf{To PRU:} Peak history $\rightarrow$ implied root movement
+    \item \textbf{To C³:}
+    \begin{itemize}
+        \item Field visualization $\rightarrow$ VR/AR immersion
+        \item Resonance attractors $\rightarrow$ attention targets
+    \end{itemize}
+\end{itemize}
+
+\subsection*{8. Future Extensions}
+
+\begin{itemize}
+    \item \textbf{3D Field Volume:} Extend RFM to include time-depth (spectrovolume)
+    \item \textbf{Field Curvature Analysis:} Use $\nabla^2$RFM to detect dissonance basins
+    \item \textbf{Resonance Memory Maps:} Integrate $\nabla$RFM into NSF decay structures
+\end{itemize}
+
+\subsubsection*{Summary}
+
+RFMU is where harmony becomes spatial. It transforms the linear structures of tonal analysis into landscapes of spectral motion — surfaces that pull, release, and define perceptual musical form.
+
+\section*{II.2(4) – CRVU: Cognitive Resonance Vectoring Unit (Enhanced)}
+
+The Cognitive Resonance Vectoring Unit (CRVU) synthesizes the outputs of R³ into a compact, perceptually-relevant vector. It provides a quantitative bridge from spectral resonance data to cognitive interpretation, enabling SRC⁹ to assess how stable, fused, and memory-relevant a sound structure is over time.
+
+CRVU defines tonal cognition not as symbolic logic, but as a vector of resonance behaviors.
+
+\subsection*{1. Scientific \& Neurocognitive Motivation}
+
+Listeners do not passively receive spectral information — they process it in terms of:
+
+\begin{itemize}
+    \item \textbf{Stability:} Is the tonal center clear and persistent?
+    \item \textbf{Fusion:} Do the partials cohere into a unified sound?
+    \item \textbf{Memory anchoring:} Does the resonance persist cognitively over time?
+\end{itemize}
+
+These questions are reflected in core neural structures:
+
+\begin{itemize}
+    \item TPJ + ACC: involved in perceptual switching and ambiguity resolution
+    \item Auditory cortex: phase-locking and coherence detection
+    \item Hippocampus: short-term memory formation of tonal events
+    \item Nucleus accumbens: reward prediction via temporal regularity
+\end{itemize}
+
+CRVU mathematically simulates these perceptual axes through three metrics: TPS, TFI, and NSF.
+
+\subsection*{2. Input Requirements}
+
+CRVU consumes:
+
+\begin{itemize}
+    \item Framewise $\Phi$ (from RPU) $\rightarrow$ resonance magnitude over time
+    \item Gradient field $\nabla$RFM (from RFMU) $\rightarrow$ fusion and divergence flow
+\end{itemize}
+
+Each input is frame-aligned at 0.1s resolution, processed into single or windowed summary statistics.
+
+\subsection*{3. Metric Computation}
+
+\paragraph{a. Temporal Perceptual Stability (TPS)}
+
+\[
+\text{TPS} = \frac{1}{1 + \sigma_\Phi(t)}
+\]
+
+Computes standard deviation of $\Phi$ over entire (or local) window.
+
+\begin{itemize}
+    \item High TPS = consistent tonal field $\rightarrow$ strong perceptual anchoring
+\end{itemize}
+
+\paragraph{b. Tonal Fusion Index (TFI)}
+
+\[
+\text{TFI} = \frac{1}{1 + \langle |\nabla \text{RFM}(f, t)| \rangle}
+\]
+
+Measures average steepness of resonance field across time.
+
+\begin{itemize}
+    \item Flatter fields = stronger fusion
+    \item Steeper slopes = divergence, spectral instability
+\end{itemize}
+
+\paragraph{c. Neural Synchronization Field (NSF)}
+
+\[
+\text{NSF} = \sum_t \Phi(t) \cdot e^{-\alpha t}
+\]
+
+Applies exponential decay ($\alpha = 0.05$–$0.1$) to earlier $\Phi(t)$ values.
+
+\begin{itemize}
+    \item Models short-term auditory memory + attention decay
+    \item High NSF = early, strong, cohesive resonance = likely to be encoded
+\end{itemize}
+
+\subsection*{4. Node Architecture}
+
+\begin{center}
+\begin{tabular}{|l|l|l|}
+\hline
+\textbf{Node} & \textbf{Input} & \textbf{Output} \\
+\hline
+TPSNode & $\Phi(t)$ & Scalar $\in [0, 1]$ \\
+TFINode & $\nabla$RFM$(f, t)$ & Scalar $\in [0, 1]$ \\
+NSFNode & $\Phi(t)$, $\alpha$ & Scalar $\in [0, 1]$ \\
+\hline
+\end{tabular}
+\end{center}
+
+Each node is independent but computed over the same time base.
+
+\subsection*{5. Output Format}
+
+\begin{verbatim}
+{
+  "TPS": 0.812,
+  "TFI": 0.693,
+  "NSF": 0.0385
+}
+\end{verbatim}
+
+Vector = 3-tuple $\langle$stability, fusion, memory$\rangle$
+
+Normalized to $[0, 1]$ for visual and cognitive mapping.
+
+\subsection*{6. Visual Encoding}
+
+\begin{itemize}
+    \item Displayed as stacked horizontal bars (216px high)
+    \item Red = TPS, Green = TFI, Blue = NSF
+    \item Used as perceptual “signature” for a sound segment
+    \item Overlayable on waveform, RFM, or symbolic score
+\end{itemize}
+
+\subsection*{7. Integration with C³}
+
+CRVU directly feeds into C³'s interpretive layers:
+
+\begin{itemize}
+    \item \textbf{CTU – Cognitive Tension Unit:} TPS modulates expectedness
+    \item \textbf{NSU – Neural Sync Unit:} NSF correlates with phase-locking metrics
+    \item \textbf{PIU – Phenomenological Immersion Unit:} TFI relates to absorption metrics
+\end{itemize}
+
+CRVU is the only R³ unit whose output is designed to directly map onto affective and attentional models.
+
+\subsection*{8. Future Extensions}
+
+\begin{itemize}
+    \item Weighted CRV vectors across musical phrases
+    \item Real-time CRV streaming for interactive music engines
+    \item CRV-linked generation: use resonance signature to drive AI composition
+    \item Fusion + stability mapping across multichannel inputs (ensemble CRV)
+\end{itemize}
+
+\subsubsection*{Summary}
+
+CRVU is the cognitive mirror of R³ — a window into how sound, structured by physics and filtered by resonance, becomes psychologically meaningful.
+
+\section*{III.1 – Phantom Root Estimation (Enhanced)}
+
+The phenomenon of phantom root perception — the brain's ability to identify a "missing" fundamental from a group of overtones — is among the most counterintuitive findings in auditory science. Unlike direct pitch recognition, it requires a form of inferred periodicity, where the brain estimates the source of harmonic structure based solely on spectral relationships.
+
+The PRU formalizes this cognitive mechanism using harmonic intersection and vector matching models.
+
+\subsection*{1. Harmonic Intersection Formula}
+
+The core mathematical function is:
+
+\[
+\text{PR} = \arg\max_f \sum_{i<j} \#(H_i \cap_\epsilon H_j)
+\]
+
+Where:
+
+\begin{itemize}
+    \item $H_i = \{k \cdot f_i \mid k \in \mathbb{N} \}$
+    \item $\cap_\epsilon$: fuzzy intersection within a cent tolerance $\epsilon$ (typically $\pm49$ cents)
+    \item $\#$: counts the number of overlapping harmonics
+\end{itemize}
+
+\textbf{Interpretation:} This function seeks the base frequency $f$ whose harmonic series would generate the highest number of overtone alignments across a group of perceived pitches. Even if $f$ is not acoustically present, it may be implied by these intersections.
+
+\subsection*{2. Harmonic Template Matching}
+
+To operationalize this, PRU evaluates grouped sequences (e.g., G2–D3–G3) against canonical harmonic stacks:
+
+\begin{itemize}
+    \item Group A: [1,2,3]
+    \item Group A1: [1–5]
+    \item Group A2: [1–7]
+    \item Group A3: [1–9]
+    \item Group A4: [1–11]
+\end{itemize}
+
+Given note sequence $\vec{f} = [f_1, f_2, ..., f_n]$, we search for base frequency $r$ such that:
+
+\[
+f_i \approx r \cdot h_i \quad \forall i, h_i \in H
+\]
+
+Where $H$ is the harmonic template.
+
+A candidate is accepted if average error:
+
+\[
+\epsilon_{\text{avg}} = \frac{1}{n} \sum_i \left| \frac{f_i - r \cdot h_i}{r \cdot h_i} \right| < \delta
+\]
+
+(Default: $\delta = 0.03$, i.e., 3\% deviation)
+
+\subsection*{3. Harmonic Information Metric (HIM)}
+
+To further differentiate candidates, a perceptual fusion metric is computed:
+
+\[
+\text{HIM}\left(\frac{b}{a}\right) = \frac{a \cdot b}{a + b - 1}
+\]
+
+As introduced in Sethares (1998), this metric estimates how well a ratio $\frac{a}{b}$ supports tonal fusion. Lower denominators and lower sums produce higher HIM values — signaling simpler, more consonant ratios.
+
+\textbf{Example:}
+
+\begin{itemize}
+    \item 3:2 (perfect fifth): HIM = $4/6 = 0.667$
+    \item 7:4 (septimal minor 7th): HIM = $10/28 \approx 0.357$
+\end{itemize}
+
+\subsection*{4. Prime-Exponent Vector Averaging}
+
+For advanced systems supporting symbolic pitch spaces (e.g., Just Intonation), each pitch is expressed as a vector:
+
+\[
+\vec{v}_i = (x_2, x_3, x_5, x_7, \ldots) \quad \text{where } f_i = 2^{x_2} \cdot 3^{x_3} \cdot 5^{x_5} \cdots
+\]
+
+The mean vector:
+
+\[
+\vec{v}_{PR} = \frac{1}{N} \sum_{i=1}^N \vec{v}_i
+\]
+
+...is mapped back to a rational frequency. This method allows geometric averaging of complex harmonic ratios and facilitates field-aware root finding.
+
+\subsection*{5. Time-Aware PR Estimation}
+
+Crucially, PR is not computed frame-by-frame but across time-stable pitch sequences. This enables it to:
+
+\begin{itemize}
+    \item Capture phrasing-based tonal centers
+    \item Filter out transient modulations
+    \item Model tonality as a temporally weighted attractor
+\end{itemize}
+
+\textbf{Segments are defined using CentTracker:}
+
+New group starts when $f_0$ deviates $> \pm49$ cents from previous.
+
+\textbf{Result:} [G2] $\rightarrow$ [D3] $\rightarrow$ [G3] $\rightarrow$ matched to [1,2,3] = PR: G1
+
+\subsection*{6. Output Summary}
+
+Each PR record includes:
+
+\begin{itemize}
+    \item \texttt{time\_range:} [start, end] of stable group
+    \item \texttt{phantom\_root:} root frequency in Hz
+    \item \texttt{symbol:} user-defined microtonal pitch label (e.g., D3⁺²)
+    \item \texttt{group:} matching harmonic template label (e.g., A2)
+    \item \texttt{fusion\_score:} optional metric from HIM or harmonic count
+\end{itemize}
+
+\section*{III.2 – Resonance Potential Formalism (Φ)}
+
+The Resonance Potential ($\Phi$) is the fundamental scalar measure of harmonic coherence within the R³ framework. It captures how energetically close — and thus perceptually “fused” — a group of partials are at a given moment. Unlike symbolic harmonic functions (e.g., tonic, dominant), $\Phi$ offers a mathematically continuous, spectrally grounded, and amplitude-sensitive metric for tonal tightness.
+
+\subsection*{1. Core Equation}
+
+The main formulation of $\Phi$ is defined over all pairwise combinations of partials within a time slice:
+
+\[
+\Phi(t) = \sum_{i<j} \frac{A_i(t) \cdot A_j(t)}{|f_i(t) - f_j(t)| + \epsilon}
+\]
+
+Where:
+
+\begin{itemize}
+    \item $A_i(t), A_j(t)$: amplitudes of partials at time $t$
+    \item $f_i(t), f_j(t)$: their frequencies
+    \item $\epsilon$: a small regularization constant (e.g., $1e^{-6}$) to prevent division by zero
+\end{itemize}
+
+This equation models:
+
+\begin{itemize}
+    \item Higher amplitude $\Rightarrow$ greater resonance contribution
+    \item Closer frequencies $\Rightarrow$ stronger spectral fusion
+    \item Denser clusters $\Rightarrow$ higher perceptual cohesion
+\end{itemize}
+
+\subsection*{2. Perceptual Foundations}
+
+$\Phi$ generalizes earlier psychoacoustic roughness models (e.g., Plomp \& Levelt, 1965), replacing frequency ratios with physical frequencies and amplitude scaling.
+
+It corresponds to perceptual phenomena such as:
+
+\begin{itemize}
+    \item Tonal fusion
+    \item Consonance gradience
+    \item Spectral “weight” of a sound structure
+\end{itemize}
+
+EEG studies (Bidelman et al., 2011) suggest that high harmonic coherence triggers stronger FFR synchrony — supporting $\Phi$ as a proxy for perceived resonance strength.
+
+\subsection*{3. Time-Windowed Integration ($\Phi_T$)}
+
+To move from instantaneous coherence to temporal resonance modeling, $\Phi$ is accumulated across time windows:
+
+\[
+\Phi_T = \sum_{t=t_0}^{t_1} \Phi(t)
+\]
+
+Where:
+
+\begin{itemize}
+    \item $T$ = time window (e.g., 1s, 3s, 5s, 7s)
+    \item Frames sampled at 0.1s $\Rightarrow$ $\Phi_T$ includes 10–70 values
+\end{itemize}
+
+This windowed $\Phi_T$ models:
+
+\begin{itemize}
+    \item Tonal momentum (field pressure)
+    \item Stability regions (high and flat $\Phi_T$)
+    \item Modulation zones ($\Phi_T$ dips or spikes)
+\end{itemize}
+
+\subsection*{4. Information-Theoretic Interpretation}
+
+$\Phi$ can be viewed as an inverse spectral entropy measure.
+
+\begin{itemize}
+    \item A spectrum with many equally spaced partials $\Rightarrow$ lower $\Phi$
+    \item A tightly clustered, loud spectrum $\Rightarrow$ higher $\Phi$
+\end{itemize}
+
+$\Phi$ is therefore analogous to a negative KL divergence between energy distributions.
+
+This link allows R³ to potentially connect with probabilistic models of expectation and surprise (e.g., Huron’s \textit{Sweet Anticipation}, 2006).
+
+\subsection*{5. Spectral Weighting Options}
+
+\paragraph{a. Harmonic Rank Weighting}
+
+Later harmonics receive less weight:
+
+\[
+A_i^* = \frac{A_i}{1 + h_i}
+\]
+
+\paragraph{b. Gaussian Spectral Masking}
+
+Include field density around a pitch center (e.g., PR):
+
+\[
+\Phi_{\text{centered}}(t) = \sum_{i<j} \frac{A_i \cdot A_j \cdot e^{-\frac{(f_i - \mu)^2}{2\sigma^2}}}{|f_i - f_j| + \epsilon}
+\]
+
+Where $\mu$ is the perceptual center of gravity.
+
+\subsection*{6. Output Summary}
+
+\paragraph{Framewise Output:}
+
+\begin{verbatim}
+{ "time": 3.2, "phi": 2.831 }
+\end{verbatim}
+
+\paragraph{Windowed Output:}
+
+\begin{verbatim}
+{ "window": "5.0–8.0", "phi": 9.183, "window_size": 3 }
+\end{verbatim}
+
+Each frame or window can be directly plotted as a $\Phi(t)$ curve or used for comparative analysis.
+
+\subsection*{7. System Integration}
+
+\begin{itemize}
+    \item \textbf{Feeds CRVU:}
+    \begin{itemize}
+        \item TPS = $\sigma(\Phi)$
+        \item NSF = weighted $\Phi$ sum
+    \end{itemize}
+    \item \textbf{Feeds RFMU:} Used to generate field intensity
+    \item \textbf{Feeds C³:} As raw resonance potential data for affective modeling
+\end{itemize}
+
+\section*{III.3 – Resonance Field Mapping (RFM)}
+
+The RFM function generates a scalar field over the frequency domain at each time point, representing the density and distribution of harmonic energy. It transforms a list of discrete partials into a smooth, continuous resonance map — providing a foundation for spatially-aware tonal reasoning.
+
+Whereas $\Phi$ quantifies total harmonic coherence within a frame, RFM visualizes how that resonance is distributed across the pitch spectrum — forming a field of tonal gravity.
+
+\subsection*{1. Core Equation}
+
+The resonance field at time $t$, over frequency coordinate $f$, is computed as:
+
+\[
+\text{RFM}(f, t) = \sum_{i=1}^N A_i(t) \cdot e^{-\frac{(f - f_i(t))^2}{2\sigma^2}}
+\]
+
+Where:
+
+\begin{itemize}
+    \item $f$: continuous frequency grid point
+    \item $f_i(t)$: frequency of $i$-th partial at time $t$
+    \item $A_i(t)$: amplitude of $i$-th partial
+    \item $\sigma$: spread parameter (resonance width)
+\end{itemize}
+
+This is a Gaussian kernel density estimator, where each partial casts a resonance hill over frequency space.
+
+\subsection*{2. Grid Design}
+
+To build RFM numerically, a discrete frequency grid is defined:
+
+\[
+F = \{ f_1, f_2, ..., f_n \} = \text{logspace}(20, 20000, N)
+\]
+
+\begin{itemize}
+    \item $N = 512$ or $1024$ (typical values)
+    \item Logarithmic scaling reflects cochlear frequency mapping
+\end{itemize}
+
+Each grid point will hold one $\text{RFM}(f, t)$ value.\\
+Result: a 2D matrix where each row = time slice, each column = frequency bin.
+
+\subsection*{3. Perceptual Interpretation}
+
+RFM approximates the perceptual landscape of sound:
+
+\begin{itemize}
+    \item \textbf{Peaks} = tonal centers or attractors
+    \item \textbf{Valleys} = spectral gaps or anti-resonance zones
+    \item \textbf{Slope} = tonal pull
+    \item \textbf{Width} = harmonic spread
+\end{itemize}
+
+Musically, RFM enables analysis of:
+
+\begin{itemize}
+    \item Tonal convergence and divergence
+    \item Modulation zones (shifting attractors)
+    \item Multi-center textures (polytonality)
+    \item Voice-leading through field movement
+\end{itemize}
+
+\subsection*{4. Gradient Operator ($\nabla$RFM)}
+
+To extract perceptual “direction,” RFM computes its gradient:
+
+\[
+\nabla \text{RFM}(f, t) = \frac{\partial \text{RFM}(f, t)}{\partial f}
+\]
+
+\begin{itemize}
+    \item This is discretized via finite differences on the grid
+    \item High $\nabla$RFM $\rightarrow$ rapid spectral change $\rightarrow$ dissonance, instability
+    \item Low $\nabla$RFM $\rightarrow$ smooth flow $\rightarrow$ stability, fusion
+\end{itemize}
+
+Gradient magnitude is used in CRVU’s TFI metric.
+
+\subsection*{5. Peak Tracking \& Field Topology}
+
+Local maxima in RFM indicate momentary tonal centers.
+
+Let:
+
+\[
+f_p(t) \in F \quad \text{where } \nabla \text{RFM} = 0, \quad \text{curvature} < 0
+\]
+
+Tracking $f_p(t)$ over time forms a tonal trajectory or attractor path.
+
+\begin{itemize}
+    \item Field segmentation methods (e.g., watershed or ridge detection) can be applied for higher-level grouping
+\end{itemize}
+
+\subsection*{6. Visualization Mapping}
+
+\begin{itemize}
+    \item X-axis = time (0–20s)
+    \item Y-axis = log frequency (20–20kHz)
+    \item Color = field intensity (resonance strength)
+    \item Overlay = vector arrows from $\nabla$RFM or contour lines for attractors
+\end{itemize}
+
+This map becomes the visual body of tonal behavior over time.
+
+\subsection*{7. Output Format}
+
+\begin{verbatim}
+{
+  "time": 3.7,
+  "grid": [20.0, 24.3, ..., 20000.0],
+  "field": [0.001, 0.005, ..., 0.0],
+  "gradient": [0.002, -0.001, ..., -0.003]
+}
+\end{verbatim}
+
+Each frame produces a scalar field vector and optional gradient vector.
+
+\subsection*{8. Theoretical Parallels}
+
+RFM draws from:
+
+\begin{itemize}
+    \item Spectrogram theory: smoothed representation of energy over time/frequency
+    \item Field theory (physics): scalar potential fields
+    \item Tonnetz spaces: extended to real-valued, log-frequency domains
+    \item Auditory cortex modeling: tonotopic fields + lateral inhibition
+\end{itemize}
+
+\subsection*{9. Applications}
+
+\begin{itemize}
+    \item CRVU $\rightarrow$ TFI: average $\nabla$RFM magnitude
+    \item Modulation analysis: movement of peaks
+    \item Polycentricity: multi-peak stability across frames
+    \item VR/Unity visual grounding: resonance fields as terrain surfaces
+\end{itemize}
+
+\section*{III.4 – Cognitive Resonance Metrics (TPS, TFI, NSF)}
+
+Cognitive perception of harmony is not based on static symbols, but on dynamic acoustic behavior: how stable, unified, and memorable a sound feels over time. The CRVU summarizes this behavior through three scalar metrics: Temporal Perceptual Stability (TPS), Tonal Fusion Index (TFI), and Neural Synchronization Field (NSF).
+
+These metrics operate as projections of resonance into perceptual space — each compressing a dimension of resonance behavior into a scalar value $\in [0, 1]$.
+
+\subsection*{1. Temporal Perceptual Stability (TPS)}
+
+\textbf{Equation:}
+\[
+\text{TPS} = \frac{1}{1 + \sigma_\Phi(t)}
+\]
+
+Where:
+
+\begin{itemize}
+    \item $\Phi(t)$: framewise resonance potential
+    \item $\sigma_\Phi(t)$: standard deviation across full or local time window
+\end{itemize}
+
+\textbf{Interpretation:}
+
+\begin{itemize}
+    \item High TPS $\Rightarrow$ consistent $\Phi$ $\Rightarrow$ stable resonance center
+    \item Low TPS $\Rightarrow$ fluctuating $\Phi$ $\Rightarrow$ modulation, instability
+\end{itemize}
+
+\textbf{Perceptual Basis:} Temporal regularity correlates with attentional focus and pitch certainty (cf. Leman, 2016). TPS models tonal anchoring as experienced in both classical and non-tonal contexts.
+
+\subsection*{2. Tonal Fusion Index (TFI)}
+
+\textbf{Equation:}
+\[
+\text{TFI} = \frac{1}{1 + \langle |\nabla \text{RFM}(f, t)| \rangle}
+\]
+
+Where:
+
+\begin{itemize}
+    \item $\nabla \text{RFM}(f, t)$: gradient of the resonance field at time $t$
+    \item $\langle \cdot \rangle$: average over frequency domain and time frames
+\end{itemize}
+
+\textbf{Interpretation:}
+
+\begin{itemize}
+    \item High TFI $\Rightarrow$ smooth field $\Rightarrow$ tight spectral coherence
+    \item Low TFI $\Rightarrow$ jagged field $\Rightarrow$ spectral diffusion
+\end{itemize}
+
+\textbf{Neural Correlates:} Auditory cortex entrains more strongly to spectrally fused sounds. Fusion models correlate with gamma coherence, phase-locking, and sound object formation (cf. Bidelman et al., 2014).
+
+\subsection*{3. Neural Synchronization Field (NSF)}
+
+\textbf{Equation:}
+\[
+\text{NSF} = \sum_t \Phi(t) \cdot e^{-\alpha t}
+\]
+
+Where:
+
+\begin{itemize}
+    \item $\alpha$: decay coefficient (0.05–0.1 typical)
+\end{itemize}
+
+\textbf{Interpretation:}
+
+\begin{itemize}
+    \item High NSF $\Rightarrow$ strong early resonance $\Rightarrow$ likely encoding into short-term memory
+    \item Low NSF $\Rightarrow$ delayed or inconsistent resonance $\Rightarrow$ weaker impression
+\end{itemize}
+
+\textbf{Psychological Basis:} NSF captures the recency effect of musical perception — the brain’s tendency to weight earlier salient events more heavily in expectation and evaluation processes (cf. Zatorre \& Salimpoor, 2013).
+
+\subsection*{4. Combined Cognitive Vector}
+
+The full cognitive resonance signature is a vector:
+
+\[
+\vec{\text{CRV}} = [\text{TPS}, \text{TFI}, \text{NSF}]
+\]
+
+Each value is:
+
+\begin{itemize}
+    \item Normalized $\in [0, 1]$
+    \item Interpretable individually
+    \item Composable into weighted salience models
+\end{itemize}
+
+\subsection*{5. Applications}
+
+\begin{itemize}
+    \item \textbf{C³ input:} feeds attention allocation, memory modeling, immersion scores
+    \item \textbf{Real-time resonance diagnosis}
+    \item \textbf{Musical segmentation:} changes in CRV may mark structural transitions
+    \item \textbf{Generative AI:} use CRV to guide harmonic generation toward cognitive targets
+\end{itemize}
+
+\subsection*{6. Output Summary}
+
+\paragraph{JSON format:}
+\begin{verbatim}
+{
+  "TPS": 0.842,
+  "TFI": 0.713,
+  "NSF": 0.0362
+}
+\end{verbatim}
+
+Visualized as three stacked bars (R/G/B), overlaid on waveform or resonance map.
+
+\subsubsection*{Summary}
+
+CRV is the cognitive endpoint of R³: a compact, interpretable summary of how a given sound structure will likely be experienced, memorized, and evaluated by a human listener.
+
+\section*{IV – Data Structure and Output (Enhanced)}
+
+The structural integrity of R³ depends not only on its theoretical formulations, but also on the consistency, extensibility, and interpretability of its data output formats. All R³ units generate machine-readable, human-interpretable, and visualization-ready files. These files follow a strict temporal alignment and a modular format architecture.
+
+\subsection*{IV.1 – Frame Resolution and Time Structure}
+
+\begin{center}
+\begin{tabular}{|l|l|}
+\hline
+\textbf{Parameter} & \textbf{Value} \\
+\hline
+Total Duration & 20.0 seconds \\
+Frame Rate & 0.1 seconds \\
+Total Frames & 200 \\
+Fundamental + Harmonics & 1 + 16 \\
+\hline
+\end{tabular}
+\end{center}
+
+Each frame is timestamped and encapsulates a complete harmonic snapshot.
+
+\paragraph{Example: \texttt{RawSpectrum-unit.json}}
+
+\begin{verbatim}
+{
+  "time": 3.2,
+  "partials": [
+    {
+      "freq": 261.63,
+      "amplitude": 0.81,
+      "isFundamental": true,
+      "harmonic_index": 0,
+      "symbol": "C4⁰"
+    },
+    {
+      "freq": 523.25,
+      "amplitude": 0.42,
+      "harmonic_index": 1,
+      "isFundamental": false,
+      "symbol": "C5⁰"
+    }
+  ]
+}
+\end{verbatim}
+
+This format is unit-agnostic and powers all R³ modules.
+
+\subsection*{IV.2 – Unit-Specific JSON Output Formats}
+
+\paragraph{1. PRU – Phantom Root}
+\begin{verbatim}
+{
+  "time_range": [2.1, 4.3],
+  "phantom_root": 130.81,
+  "symbol": "C3⁺¹",
+  "group": "A2",
+  "fusion_score": 0.42
+}
+\end{verbatim}
+
+One record per detected PR segment, with group-matched harmonic stack label and symbolic pitch.
+
+\paragraph{2. RPU – Resonance Potential}
+
+Framewise:
+\begin{verbatim}
+{ "time": 5.2, "phi": 3.714 }
+\end{verbatim}
+
+Windowed:
+\begin{verbatim}
+{ "window": "5.0–8.0", "phi": 9.23, "window_size": 3 }
+\end{verbatim}
+
+Both datasets can be plotted as continuous $\Phi$ curves, with optional variance indicators.
+
+\paragraph{3. RFMU – Resonance Field}
+\begin{verbatim}
+{
+  "time": 7.1,
+  "grid": [20.0, 24.1, ..., 20000.0],
+  "field": [0.0012, 0.0044, ..., 0.0],
+  "gradient": [0.0004, -0.0003, ..., -0.0021]
+}
+\end{verbatim}
+
+\begin{itemize}
+    \item \texttt{field} = scalar intensity at each frequency point
+    \item \texttt{gradient} = $\nabla$RFM used for TFI
+\end{itemize}
+
+\paragraph{4. CRVU – Cognitive Resonance Vector}
+\begin{verbatim}
+{
+  "TPS": 0.843,
+  "TFI": 0.702,
+  "NSF": 0.0361
+}
+\end{verbatim}
+
+Single vector summarizing entire input segment’s resonance dynamics.
+
+\subsection*{IV.3 – Output File Naming Conventions}
+
+\begin{center}
+\begin{tabular}{|l|l|}
+\hline
+\textbf{Type} & \textbf{Pattern} \\
+\hline
+Raw input & \texttt{RawSpectrum-unit.json} \\
+PR segment & \texttt{PR-unit-temporal.json} \\
+RP framewise & \texttt{RP-framewise.json} \\
+RP windowed & \texttt{RP-windowed.json} \\
+Field maps & \texttt{RFM-unit.json} \\
+Cognitive & \texttt{CRV-unit.json} \\
+\hline
+\end{tabular}
+\end{center}
+
+All files are written to \texttt{../data/output/<unit>/} subdirectories, with script-driven generation.
+
+\subsection*{IV.4 – Visual Outputs}
+
+\begin{center}
+\begin{tabular}{|l|l|l|l|}
+\hline
+\textbf{Unit} & \textbf{File} & \textbf{Format} & \textbf{Dimensions} \\
+\hline
+PRU & \texttt{PR-unit.png} & PNG & 3840 × 216 \\
+RPU & \texttt{RP-unit.png} & PNG & 3840 × 216 \\
+RFMU & \texttt{RFM-unit.png} & PNG & 3840 × 216 \\
+CRVU & \texttt{CRV-unit.png} & PNG & 3840 × 216 \\
+Master & \texttt{R3-overlay.html} & HTML & 3840 × 2160 \\
+\hline
+\end{tabular}
+\end{center}
+
+Visuals use:
+
+\begin{itemize}
+    \item Plotly for HTML interactive
+    \item Matplotlib for static export
+    \item Log-scale y-axis for frequency mapping
+    \item Dark mode with frequency-hue colorization
+\end{itemize}
+
+\subsection*{IV.5 – Unity-Compatible CSV Format}
+
+\begin{verbatim}
+time,freq,amplitude,isFundamental,harmonic_index,symbol
+\end{verbatim}
+
+\textbf{Used in:}
+
+\begin{itemize}
+    \item \texttt{CSVLoader.cs} to populate \texttt{List<Partial>}
+    \item \texttt{SpectrumVisualizer.cs} to map x (time), y (log freq), size (amplitude)
+    \item Visualized in 3D scene using prefabs, color shaders, and optional PR overlays
+\end{itemize}
+
+\subsection*{IV.6 – Extension Paths}
+
+\begin{itemize}
+    \item OL-unit output (locking events)
+    \item Symbolic export to MusicXML (planned)
+    \item Annotated resonance flows for interactive learning
+\end{itemize}
+
+\section*{V — Pipeline Execution and Automation (Enhanced)}
+
+The R³ module is implemented as a fully modular, automatable pipeline. Its entire analytical process — from raw spectral input to visual output and Unity export — can be executed via a single orchestration script. This design ensures reproducibility, clarity, and efficient development.
+
+\subsection*{V.1 — Execution Logic}
+
+All scripts in R³ are written in Python and follow a unit-modular standard:
+
+\begin{itemize}
+    \item Each unit has:
+    \begin{itemize}
+        \item One analysis script $\rightarrow$ produces \texttt{.json}
+        \item One visualization script $\rightarrow$ produces \texttt{.png}
+    \end{itemize}
+    \item All units share a common input file: \texttt{RawSpectrum-unit.json}
+\end{itemize}
+
+This architecture supports both:
+
+\begin{itemize}
+    \item Independent execution (for testing/debugging)
+    \item Sequential batch runs (via automation script)
+\end{itemize}
+
+\subsection*{V.2 — Master Script: \texttt{run\_R3\_pipeline.py}}
+
+This script executes the full R³ pipeline in order:
+
+\paragraph{Order of Execution:}
+\begin{verbatim}
+[
+  "PR_unit_temporal.py",
+  "RP_unit_combined.py",
+  "RFM_unit_analysis.py",
+  "CRV_unit_analysis.py",
+  "visualize_PR_temporal.py",
+  "visualize_RP_unit.py",
+  "visualize_RFM_unit.py",
+  "visualize_CRV_unit.py",
+  "visualize_overlay_all.py"
+]
+\end{verbatim}
+
+Each entry is executed via:
+
+\begin{verbatim}
+subprocess.run(["python", script], check=True)
+\end{verbatim}
+
+If any step fails, the pipeline halts — ensuring fail-fast validation.
+
+\subsection*{V.3 — Execution Environment}
+
+\textbf{Recommended setup:}
+
+\begin{itemize}
+    \item Python 3.9+
+    \item Libraries: \texttt{numpy}, \texttt{matplotlib}, \texttt{plotly}, \texttt{json}, \texttt{csv}, \texttt{subprocess}, \texttt{os}
+    \item Virtual environment: \texttt{s3r3\_env}
+    \item Scripts are path-relative and designed for cross-platform compatibility (macOS, Linux, Windows)
+\end{itemize}
+
+\subsection*{V.4 — Unit Interdependencies}
+
+\begin{center}
+\begin{tabular}{|l|l|l|}
+\hline
+\textbf{Unit} & \textbf{Requires} & \textbf{Produces} \\
+\hline
+PRU & RawSpectrum & PR-unit-temporal.json \\
+RPU & RawSpectrum & RP-framewise, RP-window \\
+RFMU & RawSpectrum & RFM-unit.json \\
+CRVU & RPU + RFMU outputs & CRV-unit.json \\
+\hline
+\end{tabular}
+\end{center}
+
+All outputs are time-aligned (0.1s resolution) and normalized where needed.
+
+\subsection*{V.5 — Directory Layout}
+
+\paragraph{Scripts:}
+\begin{verbatim}
+/scripts/
+├── PR_unit_temporal.py
+├── RP_unit_combined.py
+├── RFM_unit_analysis.py
+├── CRV_unit_analysis.py
+├── visualize_*.py
+└── run_R3_pipeline.py
+\end{verbatim}
+
+\paragraph{Data:}
+\begin{verbatim}
+/data/
+└── output/
+    ├── PR/
+    ├── RP/
+    ├── RFM/
+    ├── CRV/
+    └── raw/RawSpectrum-unit.json
+\end{verbatim}
+
+\paragraph{Output:}
+\begin{verbatim}
+/output/
+├── *.png
+└── R3-overlay.html
+\end{verbatim}
+
+\subsection*{V.6 — Execution Time}
+
+\begin{center}
+\begin{tabular}{|l|l|l|}
+\hline
+\textbf{Unit} & \textbf{Avg Analysis Time (200 frames)} & \textbf{Visualization Time} \\
+\hline
+PRU & $\sim$2 seconds & $\sim$1.5 seconds \\
+RPU & $\sim$4 seconds & $\sim$2 seconds \\
+RFMU & $\sim$5 seconds & $\sim$3 seconds \\
+CRVU & $\sim$1 second & $\sim$1 second \\
+Overlay & — & $\sim$3–5 seconds \\
+\hline
+\end{tabular}
+\end{center}
+
+\textbf{Total pipeline runtime:} $<$ 20 seconds
+
+\subsection*{V.7 — Logging and Debugging}
+
+Each script includes:
+
+\begin{itemize}
+    \item \texttt{print("[UNIT] Starting...")}
+    \item \texttt{print("[UNIT] Finished. Output saved to: ...")}
+    \item \texttt{try/except} wrappers with error logging
+    \item Optional: logging to file (\texttt{log.txt}), runtime profiling, unit test suites (planned)
+\end{itemize}
+
+\subsection*{V.8 — Real-Time Pipeline (Future)}
+
+\textbf{Goals:}
+
+\begin{itemize}
+    \item Hook into live CREPE output stream
+    \item Frame-by-frame analysis and accumulation
+    \item Unity/VR feedback loop using CRV in real-time
+\end{itemize}
+
+This will require conversion of R³ modules to stream-safe, low-latency processes (e.g., via NumPy Live, C++, or Python async/generator pattern).
+
+\section*{VI — Visualization System (Enhanced)}
+
+Visualization is a core dimension of R³’s design philosophy. It is not merely a presentation layer, but a cognitive interface — converting dense spectral data into visually interpretable resonance structures. Each R³ unit contributes a semantically encoded visual layer aligned across a global time-frequency plane.
+
+The goal is to present harmony not as static notation, but as a dynamic topology of vibratory interaction.
+
+\subsection*{VI.1 — Design Principles}
+
+\paragraph{A. Shared Temporal Base}
+
+\begin{itemize}
+    \item All plots align to a common x-axis (0–20s)
+    \item Frame resolution = 0.1s
+    \item Windowed overlays align precisely with frame start times
+\end{itemize}
+
+\paragraph{B. Semantic Visual Encoding}
+
+\begin{center}
+\begin{tabular}{|l|l|}
+\hline
+\textbf{Parameter} & \textbf{Visual Mapping} \\
+\hline
+Frequency & Y-axis (log scale) \\
+Amplitude & Marker size / line thickness \\
+$\Phi$ & Y-axis (RPU layer) \\
+Partial role & Color (e.g., fundamental = red) \\
+Field strength & Color density (RFMU) \\
+CRV metrics & R/G/B bar mapping \\
+\hline
+\end{tabular}
+\end{center}
+
+\paragraph{C. Vertical Modularity}
+
+\begin{itemize}
+    \item Each unit occupies 216px vertical space
+    \item RawSpectrum layer = 1080px (reference base)
+    \item Total image = 3840 × 2160 (4K full overlay)
+\end{itemize}
+
+\subsection*{VI.2 — Unit Layer Visuals}
+
+\paragraph{1. RawSpectrum (S³)}
+
+\begin{itemize}
+    \item \textbf{Markers:} square or circle
+    \item \textbf{Color:} frequency class (HSV or pitch-mapped palette)
+    \item \textbf{Size:} amplitude
+    \item \textbf{Opacity:} harmonic index scaled
+    \item \textbf{Y-axis:} log(frequency)
+    \item \textbf{Z (optional):} time slice index for animation or Unity rendering
+    \item \textbf{Renderer:} Plotly’s \texttt{Scattergl()} for high-speed rendering
+\end{itemize}
+
+\paragraph{2. Phantom Root (PRU)}
+
+\begin{itemize}
+    \item \textbf{Form:} red horizontal bars
+    \item \textbf{Y-position:} PR frequency
+    \item \textbf{Label:} symbolic pitch (e.g., C3⁺²)
+    \item \textbf{Time span:} width of perceptual root duration
+    \item \textbf{Group code:} can be color-coded (A, A1, A2, …)
+\end{itemize}
+
+\paragraph{3. Resonance Potential (RPU)}
+
+\begin{itemize}
+    \item \textbf{Framewise $\Phi$:} thin gray line (baseline)
+    \item \textbf{Windowed $\Phi$:} colored overlays:
+    \begin{itemize}
+        \item 1s = red
+        \item 3s = orange
+        \item 5s = green
+        \item 7s = blue
+    \end{itemize}
+    \item \textbf{Y-axis:} $\Phi$ value (scalar resonance density)
+    \item \textbf{X-axis:} time
+\end{itemize}
+
+\paragraph{4. Resonance Field (RFMU)}
+
+\begin{itemize}
+    \item \textbf{Form:} 2D heatmap
+    \item \textbf{x =} time
+    \item \textbf{y =} frequency (log)
+    \item \textbf{color =} RFM$(f, t)$ field strength (e.g., inferno, magma)
+    \item \textbf{Optional overlays:}
+    \begin{itemize}
+        \item white peak paths
+        \item vector arrows ($\nabla$RFM)
+        \item field contour lines
+    \end{itemize}
+\end{itemize}
+
+\paragraph{5. Cognitive Vector (CRVU)}
+
+\begin{itemize}
+    \item \textbf{Form:} stacked bars
+    \item \textbf{Red =} TPS
+    \item \textbf{Green =} TFI
+    \item \textbf{Blue =} NSF
+    \item \textbf{Labels:} numeric values (0.000–1.000)
+    \item \textbf{Y-axis:} not used (bar only)
+\end{itemize}
+
+This layer acts as the summary strip, linking resonance data to perceptual metrics.
+
+\subsection*{VI.3 — Master Overlay Composition}
+
+Final full overlay is generated using \texttt{visualize\_overlay\_all.py}. It combines:
+
+\begin{itemize}
+    \item 5 unit layers (216 px each)
+    \item 1 RawSpectrum base layer (1080 px)
+    \item Common time axis
+    \item Global dark mode for color clarity
+    \item \textbf{HTML output:} interactive, 4K resolution
+\end{itemize}
+
+\subsection*{VI.4 — Static Exports}
+
+Each unit also produces a \texttt{.png} file:
+
+\begin{center}
+\begin{tabular}{|l|l|l|}
+\hline
+\textbf{Unit} & \textbf{File Name} & \textbf{Resolution} \\
+\hline
+PRU & PR-unit.png & 3840 × 216 px \\
+RPU & RP-unit.png & 3840 × 216 px \\
+RFMU & RFM-unit.png & 3840 × 216 px \\
+CRVU & CRV-unit.png & 3840 × 216 px \\
+Master & R3-overlay.html & 3840 × 2160 px \\
+\hline
+\end{tabular}
+\end{center}
+
+These exports allow both modular inspection and publication-level usage.
+
+\subsection*{VI.5 — Unity Integration}
+
+Visual layers are linked to Unity via:
+
+\begin{itemize}
+    \item Prefab scaling (amplitude)
+    \item Z-depth encoding (harmonic index)
+    \item Dynamic camera tracking of PRU or RFM peaks
+    \item CRV bar overlays as HUDs in 3D scenes
+\end{itemize}
+
+\textbf{Optional enhancements:}
+
+\begin{itemize}
+    \item PR trail = \texttt{LineRenderer} path
+    \item RFM = surface terrain with $\Phi$-based displacement
+    \item CRV = color modulation of environment
+\end{itemize}
+
+\subsection*{VI.6 — Aesthetic Philosophy}
+
+R³ visual outputs aim to:
+
+\begin{itemize}
+    \item Replace static notation with spectral cartography
+    \item Encode mathematical depth in intuitive visuals
+    \item Make resonance not only computable — but seeable
+\end{itemize}
+
+\section*{VII — Unity Integration (Enhanced)}
+
+The Unity integration of R³ transforms resonance data from abstract mathematical structures into a spatial, interactive, and visual environment. This enables researchers, musicians, and users to walk through, see, and interact with spectral and harmonic structures — making resonance literally visible.
+
+Unity is used not just as a renderer, but as a cognitive translation platform: it visualizes how frequencies resonate, how roots shift, how fields flow — in real time or through immersive playback.
+
+\subsection*{VII.1 — Export Path: JSON $\rightarrow$ CSV}
+
+Although R³ internally uses \texttt{.json} for maximum flexibility, Unity consumes data as \texttt{.csv} via its lightweight, line-based loading mechanisms.
+
+\textbf{Source:} \texttt{RawSpectrum-unit.json} $\rightarrow$ converted to:
+
+\textbf{CSV Format:} \texttt{RawSpectrum01.csv}
+
+\begin{verbatim}
+time,freq,amplitude,isFundamental,harmonic_index,symbol
+1.1,196.0,0.82,True,0,G3⁰
+1.1,392.0,0.42,False,1,G4⁰
+...
+\end{verbatim}
+
+Each line represents one partial (including harmonics), with symbolic encoding for microtonal interpretation.
+
+\subsection*{VII.2 — Unity C\# Class Structure}
+
+\paragraph{1. Partial.cs}
+
+\begin{verbatim}
+[System.Serializable]
+public class Partial {
+    public float time;
+    public float freq;
+    public float amplitude;
+    public bool isFundamental;
+    public int harmonic_index;
+    public string symbol;
+}
+\end{verbatim}
+
+\paragraph{2. CSVLoader.cs}
+
+\begin{verbatim}
+public List<Partial> partials;
+
+void LoadCSV(TextAsset file) {
+    string[] lines = file.text.Split('\n');
+    for (int i = 1; i < lines.Length; i++) {
+        string[] values = lines[i].Split(',');
+        Partial p = new Partial();
+        p.time = float.Parse(values[0]);
+        p.freq = float.Parse(values[1]);
+        p.amplitude = float.Parse(values[2]);
+        p.isFundamental = values[3] == "True";
+        p.harmonic_index = int.Parse(values[4]);
+        p.symbol = values[5];
+        partials.Add(p);
+    }
+}
+\end{verbatim}
+
+\subsection*{VII.3 — Scene Mapping}
+
+\begin{center}
+\begin{tabular}{|l|l|}
+\hline
+\textbf{Dimension} & \textbf{Mapped To} \\
+\hline
+X & time (horizontal progression) \\
+Y & log(freq) (vertical placement) \\
+Z & harmonic index (depth, optional) \\
+Size & amplitude (object scale) \\
+Color & frequency (HSV hue-based mapping) \\
+\hline
+\end{tabular}
+\end{center}
+
+Each partial = a colored glowing sphere.
+
+\begin{itemize}
+    \item Stronger harmonics = larger/brighter objects
+    \item Fundamental = red core; others vary by frequency
+\end{itemize}
+
+\subsection*{VII.4 — Object Structure and Prefabs}
+
+\textbf{Prefab:} \texttt{PointPrefab} (Sphere with Unlit Shader)
+
+\textbf{Renderer:}
+
+\begin{itemize}
+    \item Emission Color = mapped hue
+    \item Scale = amplitude × scalar
+    \item Tag = Fundamental / Harmonic
+\end{itemize}
+
+Optional shader features:
+
+\begin{itemize}
+    \item Pulse = temporal dynamics
+    \item Glow = amplitude modulation
+    \item Flicker = instability (if $\Phi$ is low)
+\end{itemize}
+
+\subsection*{VII.5 — Temporal Animation}
+
+\begin{itemize}
+    \item Unity’s \texttt{Time.time} aligns playback with partial spawning
+    \item Optional: timeline scrubber
+    \item Scene camera can track:
+    \begin{itemize}
+        \item PR path (via \texttt{LineRenderer})
+        \item Field peak in RFM (via surface mesh)
+    \end{itemize}
+\end{itemize}
+
+\subsection*{VII.6 — Extended Visualizations}
+
+\begin{center}
+\begin{tabular}{|l|l|l|}
+\hline
+\textbf{Data} & \textbf{Visual Form} & \textbf{Mechanism} \\
+\hline
+PRU & Red line sweep & LineRenderer along PR freq \\
+RPU & Height curve & Dynamic plot ($\Phi$ over time) \\
+RFMU & Mesh surface & Terrain object from \texttt{field[]} \\
+CRVU & HUD bar graph & UI Panel with TPS, TFI, NSF \\
+\hline
+\end{tabular}
+\end{center}
+
+Additional interaction options:
+
+\begin{itemize}
+    \item Filter by group (A2, A3, ...)
+    \item Highlight tonal drift zones
+    \item Switch between symbolic and spectral views
+\end{itemize}
+
+\subsection*{VII.7 — Sound Integration}
+
+\begin{itemize}
+    \item Link Unity’s \texttt{AudioSource.time} to visual spawning
+    \item Synchronize resonance events with real sound
+    \item Use amplitude thresholding to trim non-audible points
+    \item Optional: real-time $\Phi$ modulator $\rightarrow$ dynamically warp terrain or brightness
+\end{itemize}
+
+\subsection*{VII.8 — Performance Optimization}
+
+\begin{itemize}
+    \item Object pooling (for partials)
+    \item Async CSV loading (for large datasets)
+    \item GPU instancing for visual particles
+    \item Log-space Y-axis prevents vertical crowding
+\end{itemize}
+
+\subsection*{VII.9 — Cognitive Immersion Use Case}
+
+The Unity implementation allows users to:
+
+\begin{itemize}
+    \item Step through harmonic space
+    \item See tonality emerge and dissolve
+    \item Hear resonance while seeing its structure
+    \item Manipulate partials and watch CRV change live
+\end{itemize}
+
+Use cases include:
+
+\begin{itemize}
+    \item Education (teaching tonal centers)
+    \item VR concert staging
+    \item Interactive composition
+    \item Research on tonotopic attention in motion
+\end{itemize}
+
+\section*{VIII — Cursor Architecture Placement (Enhanced)}
+
+The Cursor AI platform serves as the interactive, explorable knowledge interface of the SRC⁹ system. All R³ content — scientific explanations, equations, visualizations, and output samples — are embedded within Cursor's domain–unit–node hierarchy, providing a seamless gateway between theory, data, and cognitive navigation.
+
+\subsection*{VIII.1 — Domain-Level Placement}
+
+R³ exists as a dedicated modular domain within the Cursor site structure:
+
+\begin{itemize}
+    \item \textbf{Path:} \texttt{/modules/r3}
+    \item \textbf{Title:} Resonance-Based Relational Reasoning
+    \item \textbf{Function:} Gateway page introducing the theory, architecture, and units of R³
+\end{itemize}
+
+\textbf{Domain Page Contents:}
+
+\begin{itemize}
+    \item Scientific overview
+    \item Mathematical core ($\Phi$, PR, RFM, CRV equations)
+    \item S³ $\rightarrow$ R³ $\rightarrow$ C³ flowchart
+    \item Unit summary table
+    \item Domain toggle menu (vs. Traditional-Based Theory)
+\end{itemize}
+
+Users can explore individual units by clicking cards linking to their respective pages.
+
+\subsection*{VIII.2 — Unit Page Design}
+
+Each R³ unit (PRU, RPU, RFMU, CRVU) has a standalone interactive document:
+
+\begin{center}
+\begin{tabular}{|l|l|l|}
+\hline
+\textbf{Unit Code} & \textbf{Path} & \textbf{Title} \\
+\hline
+PRU & \texttt{/modules/r3/pr} & Phantom Root Unit \\
+RPU & \texttt{/modules/r3/rp} & Resonance Potential Unit ($\Phi$) \\
+RFMU & \texttt{/modules/r3/rfm} & Resonance Field Modeling Unit \\
+CRVU & \texttt{/modules/r3/crv} & Cognitive Resonance Vectoring \\
+\hline
+\end{tabular}
+\end{center}
+
+Each unit page includes:
+
+\begin{itemize}
+    \item Scientific Function
+    \item Mathematical Foundation (LaTeX supported)
+    \item Node Architecture Table
+    \item Sample Output (JSON snippet)
+    \item Visualization Preview (216px PNG)
+    \item Integration pathways (to C³ or back to S³)
+\end{itemize}
+
+\subsection*{VIII.3 — Node-Level Embedding}
+
+Each unit page has expandable \texttt{<details>} components for its node definitions.
+
+\textbf{Example in PRU:}
+
+\begin{verbatim}
+<details><summary>GroupMatcher</summary>
+Matches sequences of stable f₀ segments to harmonic template stacks like [1,2,3] or [1–11].
+</details>
+\end{verbatim}
+
+This allows deep structure without visual clutter.
+
+Nodes are cross-linkable and potentially host their own \texttt{/nodes/<id>} pages in future iterations.
+
+\subsection*{VIII.4 — Visualization Integration}
+
+Every unit’s visualization is embedded via:
+
+\begin{itemize}
+    \item Inline PNG
+    \item Collapsible \texttt{<details>} blocks
+    \item Optional Plotly iframe (HTML interactive graphs)
+\end{itemize}
+
+\begin{center}
+\begin{tabular}{|l|l|l|}
+\hline
+\textbf{Layer} & \textbf{Visual Type} & \textbf{Location} \\
+\hline
+PRU & bar + label plot & \texttt{PR-unit.png} \\
+RPU & $\Phi$ overlay curves & \texttt{RP-unit.png} \\
+RFMU & Heatmap grid & \texttt{RFM-unit.png} \\
+CRVU & RGB bars & \texttt{CRV-unit.png} \\
+\hline
+\end{tabular}
+\end{center}
+
+The full overlay (\texttt{R3-overlay.html}) may be shown in a dedicated interactive gallery.
+
+\subsection*{VIII.5 — Intermodule Linking}
+
+Each unit page includes a reference sidebar linking:
+
+\begin{itemize}
+    \item \textbf{S³ input:} \texttt{RawSpectrum}
+    \item \textbf{R³ peers:} e.g., PRU links to RPU
+    \item \textbf{C³ outputs:} CRVU $\rightarrow$ CTU, NSU, PIU
+\end{itemize}
+
+Additionally, source references are hyperlinked inline (e.g., Zatorre et al., 2013).
+
+\subsection*{VIII.6 — Domain Switch Architecture}
+
+The dual-domain system is shown via a toggle interface:
+
+\begin{verbatim}
+[ �� R³ Resonance Theory ] [ ⚪ Traditional Theory ]
+\end{verbatim}
+
+Currently, Traditional Theory domain is empty — shown as inactive but present.
+
+Future units may populate this view for contrastive analysis.
+
+\subsection*{VIII.7 — Embedded Code + Output Previews}
+
+Each unit page includes:
+
+\begin{itemize}
+    \item JSON sample snippets
+    \item Direct download link (\texttt{.json})
+    \item Code preview block (e.g., Python \texttt{calculate\_phi()})
+\end{itemize}
+
+Cursor supports syntax-highlighted code and LaTeX-based equations in parallel.
+
+\subsection*{VIII.8 — Educational \& Research Utility}
+
+Cursor’s R³ structure enables:
+
+\begin{itemize}
+    \item Progressive disclosure (unit $\rightarrow$ node $\rightarrow$ formula)
+    \item Citation-based expansion
+    \item Interactive concept comparison
+    \item Cross-disciplinary accessibility
+\end{itemize}
+
+Users can enter from abstract, scroll into algorithm, and emerge with conceptual clarity.
+
+\section*{IX — Open Questions \& Future Work (Enhanced)}
+
+R³ presents a robust, fully functional resonance analysis framework. Yet, like any scientific system, it operates within a set of defined constraints and assumptions. As the system matures, both its epistemic foundation and computational scope invite further exploration.
+
+The following questions and proposed future extensions represent frontiers, not failures — theoretical edges where new forms of resonance reasoning, perceptual modeling, and interactivity may emerge.
+
+\subsection*{IX.1 — Symbolic–Resonant Integration}
+
+\textbf{Problem:}  
+There is currently no canonical mapping from symbolic harmony (e.g., “C major”, “G7”) to resonance field structures.
+
+\textbf{Open Question:}  
+Can classical chord symbols be translated into predictable RFM patterns or CRV signatures?
+
+\textbf{Research Path:}
+\begin{itemize}
+    \item Construct resonance fingerprints for chord classes
+    \item Reverse-map RFM peaks to symbolic root-inversion labels
+    \item Apply symbolic labeling to R³ field outputs for hybrid navigation
+\end{itemize}
+
+\textbf{Goal:}  
+Enable bidirectional harmony interpretation — symbolic $\leftrightarrow$ resonance
+
+\subsection*{IX.2 — Real-Time Processing Capabilities}
+
+\textbf{Problem:}  
+R³ is currently batch-processed from fixed input (offline mode)
+
+\textbf{Open Question:}  
+Can PRU, RPU, RFMU, and CRVU operate on live streamed data at frame-rate (0.1s or faster)?
+
+\textbf{Engineering Path:}
+\begin{itemize}
+    \item Use async generators or NumPy Live for buffer streaming
+    \item Convert \texttt{RawSpectrum-unit.json} generation into audio listener $\rightarrow$ CREPE $\rightarrow$ partial emitter $\rightarrow$ unit executor
+    \item Port core algorithms ($\Phi$, RFM) to C++/CUDA for low-latency computation
+\end{itemize}
+
+\textbf{Goal:}  
+Enable live visualization, performance-driven analysis, and generative harmony via real-time feedback loops.
+
+\subsection*{IX.3 — Polyphonic PR Detection}
+
+\textbf{Problem:}  
+Current PRU logic assumes monophonic fundamental tracking
+
+\textbf{Open Question:}  
+Can PRU extract multiple phantom roots simultaneously — modeling polycentric tonality?
+
+\textbf{Research Path:}
+\begin{itemize}
+    \item Implement time-overlapping root group tracking
+    \item Use spectral clustering to separate multiple root flows
+    \item Model each root’s gravitational zone in RFM separately
+\end{itemize}
+
+\textbf{Goal:}  
+Capture layered tonality and its interaction in complex textures.
+
+\subsection*{IX.4 — Multi-Listener Resonance Modeling}
+
+\textbf{Problem:}  
+R³ is designed for generalized perceptual inference — not individual neural profiles
+
+\textbf{Open Question:}  
+Can CRVU metrics be personalized based on neural data (e.g., EEG), musical background, or auditory profile?
+
+\textbf{Path:}
+\begin{itemize}
+    \item Collect listener-specific FFR or ERP responses to stimulus sets
+    \item Train models to predict TPS/TFI/NSF weightings per profile
+    \item Tune resonance field weighting dynamically in response to engagement metrics
+\end{itemize}
+
+\textbf{Goal:}  
+Model resonance-perception diversity, and adapt analysis per listener.
+
+\subsection*{IX.5 — Prime-Limit Resonance Navigation}
+
+\textbf{Problem:}  
+Field modeling currently operates in linear frequency space
+
+\textbf{Open Question:}  
+What happens when RFM is computed in prime-vector space (e.g., 5-limit, 11-limit)?
+
+\textbf{Mathematical Path:}
+\begin{itemize}
+    \item Encode partials as vectors $\vec{v} = (x_2, x_3, x_5, \ldots)$
+    \item Define RFM in log-geometry of prime-lattice
+    \item Extend $\nabla$RFM to multi-axis slope computation
+\end{itemize}
+
+\textbf{Goal:}  
+Enable symbolically grounded resonance maps with real-number continuity
+
+\subsection*{IX.6 — Resonance-Centric Composition Systems}
+
+\textbf{Problem:}  
+Current generative AI models are melody/chord/beat based
+
+\textbf{Open Question:}  
+Can an AI compose music guided purely by RFM field shape and CRV evolution?
+
+\textbf{Creative Path:}
+\begin{itemize}
+    \item Define target RFM $\rightarrow$ search partials to generate matching field
+    \item Use $\Phi$ targets to constrain harmonic grammar
+    \item Tune CRV vector toward affective intent (e.g., high TPS $\rightarrow$ stability)
+\end{itemize}
+
+\textbf{Goal:}  
+Create music from resonance, not just producing resonance from music.
+
+\subsection*{IX.7 — Philosophical \& Epistemological Frontiers}
+
+R³ challenges centuries-old assumptions about musical structure:
+
+\begin{itemize}
+    \item That tonality is symbolic
+    \item That function is rule-based
+    \item That perception is discrete
+\end{itemize}
+
+But if resonance is continuous, embodied, and cognitive, then:
+
+\begin{itemize}
+    \item What is a “note”?
+    \item Where is the boundary between sound and structure?
+    \item Can harmony exist without symbols — only through flow?
+\end{itemize}
+
+These are not technical questions — they are conceptual invitations.
+
+\section*{X — Appendix \& References (Enhanced)}
+
+This section consolidates all formal references, system definitions, microtonal encodings, data format standards, and mathematical mappings used throughout the R³ module. It serves as both a technical appendix and a citation-ready bibliography for researchers, developers, and composers.
+
+\subsection*{X.1 — Scientific References}
+
+\paragraph{A. Psychoacoustics \& Perception}
+\begin{itemize}
+    \item Terhardt, E. (1974). “Pitch, consonance, and harmony.” \textit{JASA}
+    \item Plomp, R. \& Levelt, W. (1965). “Tonal consonance and critical bandwidth.”
+    \item Bregman, A. (1990). \textit{Auditory Scene Analysis}
+    \item Bidelman, G.M. et al. (2011). “Brainstem pitch encoding.”
+    \item Zatorre, R. \& Salimpoor, V. (2013). “Prediction and reward in music.” \textit{Nat Rev Neurosci}
+    \item Moore, B. (2012). \textit{An Introduction to the Psychology of Hearing}
+\end{itemize}
+
+\paragraph{B. Harmony \& Spectral Theory}
+\begin{itemize}
+    \item Sethares, W. (1998). \textit{Tuning, Timbre, Spectrum, Scale}
+    \item Tymoczko, D. (2006). “The Geometry of Musical Chords.” \textit{Science}
+    \item Doty, D. (2002). \textit{The Just Intonation Primer}
+    \item Huron, D. (2006). \textit{Sweet Anticipation}
+    \item Parncutt, R. (1989). \textit{Harmony: A Psychoacoustical Approach}
+    \item Roederer, J.G. (2008). \textit{The Physics and Psychophysics of Music}
+\end{itemize}
+
+\paragraph{C. Mathematics \& Signal Processing}
+\begin{itemize}
+    \item Shannon, C.E. (1948). “A Mathematical Theory of Communication.”
+    \item Mallat, S. (2009). \textit{A Wavelet Tour of Signal Processing}
+    \item Sethares, W. (2005). “Spectral Convergence and Dissonance.” \textit{Computer Music Journal}
+\end{itemize}
+
+\subsection*{X.2 — Symbolic Pitch Encoding System}
+
+The R³ module uses a symbolic pitch notation system that encodes:
+
+\begin{itemize}
+    \item Pitch class
+    \item Octave number
+    \item Microtonal deviation in cents (rounded to $\pm$25c steps)
+\end{itemize}
+
+\paragraph{Format Example:}
+\begin{verbatim}
+G2⁺¹  →  Pitch: G, Octave: 2, +25 cents deviation
+C4⁻²  →  Pitch: C, Octave: 4, –50 cents deviation
+\end{verbatim}
+
+\textbf{Unicode Symbols:}
+\begin{itemize}
+    \item ⁰ = no deviation
+    \item ⁺¹, ⁺², ⁻¹, ⁻² = $\pm$25c, $\pm$50c, etc.
+\end{itemize}
+
+This system aligns with symbolic notation while reflecting real spectral deviations.
+
+\subsection*{X.3 — Data Format Reference}
+
+\begin{center}
+\begin{tabular}{|l|l|p{7.5cm}|}
+\hline
+\textbf{Unit} & \textbf{File Name} & \textbf{Description} \\
+\hline
+PRU & \texttt{PR-unit-temporal.json} & Phantom root estimations + groups \\
+RPU & \texttt{RP-framewise.json}, \texttt{RP-windowed.json} & $\Phi$ metrics per frame/window \\
+RFMU & \texttt{RFM-unit.json} & Resonance field grid ($f \times t$) \\
+CRVU & \texttt{CRV-unit.json} & Cognitive vector [TPS, TFI, NSF] \\
+\hline
+\end{tabular}
+\end{center}
+
+All files are time-aligned (0.1s resolution), normalized, and UTF-8 encoded.
+
+\subsection*{X.4 — CSV Export Format for Unity}
+
+\begin{verbatim}
+time,freq,amplitude,isFundamental,harmonic_index,symbol
+\end{verbatim}
+
+Used in \texttt{CSVLoader.cs}, \texttt{SpectrumVisualizer.cs} — mapped to Unity object parameters for real-time 3D rendering.
+
+\subsection*{X.5 — Coordinate Mapping Schema}
+
+\begin{center}
+\begin{tabular}{|l|l|l|}
+\hline
+\textbf{Parameter} & \textbf{Mapped Dimension} & \textbf{Usage} \\
+\hline
+time & X-axis & horizontal flow \\
+log(freq) & Y-axis & vertical tonal position \\
+amplitude & Scale & object size / brightness \\
+harmonic\_index & Z-axis (optional) & depth layering \\
+symbol & UI label & displayed on HUDs \\
+\hline
+\end{tabular}
+\end{center}
+
+\subsection*{X.6 — Node \& Element Glossary}
+
+\begin{center}
+\begin{tabular}{|l|l|p{7.5cm}|}
+\hline
+\textbf{Node} & \textbf{Unit} & \textbf{Function} \\
+\hline
+CentTracker & PRU & Segment $f_0$ sequences by cent deviation \\
+GroupMatcher & PRU & Match sequences to harmonic stacks \\
+PairwisePhi & RPU & Compute $\Phi$ across partials \\
+WindowIntegrator & RPU & Accumulate $\Phi$ in time windows \\
+FieldGenerator & RFMU & Create Gaussian resonance fields \\
+GradientScanner & RFMU & Compute $\nabla$RFM across frequency space \\
+TPSNode & CRVU & Variance tracker of $\Phi$ $\rightarrow$ perceptual stability \\
+TFINode & CRVU & Field slope magnitude $\rightarrow$ tonal fusion \\
+NSFNode & CRVU & Memory-weighted $\Phi$ integral $\rightarrow$ neural salience \\
+\hline
+\end{tabular}
+\end{center}
+
+\subsection*{X.7 — Terminology Standardization}
+
+\begin{itemize}
+    \item \textbf{Resonance Potential ($\Phi$):} scalar harmonic coherence
+    \item \textbf{Phantom Root:} inferred tonal anchor
+    \item \textbf{RFM Field:} resonance topography
+    \item \textbf{CRV Vector:} perceptual signature
+\end{itemize}
+
+\subsection*{X.8 — Licensing and Distribution}
+
+All R³ code and structure is:
+
+\begin{itemize}
+    \item Open source under MIT license (default)
+    \item Freely distributable for research, educational, and creative use
+    \item Citable with proper attribution: \textit{“R³ module of the SRC⁹ system (2025)”}
+\end{itemize}
+
+\subsubsection*{Final Statement}
+
+R³ unites mathematical rigor, perceptual truth, and computational clarity into a single resonance engine. This appendix stands as the foundation for collaborative development, academic referencing, and future expansion.
+
+
+
+\end{document}

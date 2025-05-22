@@ -1,0 +1,3025 @@
+\documentclass[10pt]{article}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{geometry}
+\usepackage{enumitem}
+\usepackage{hyperref}
+
+\geometry{margin=1in}
+
+\title{\textbf{�� C³ MASTER TECHNICAL REPORT (ENHANCED)}}
+\date{}
+\begin{document}
+
+\maketitle
+
+\section*{I. INTRODUCTION}
+
+\subsection*{I.1. Conceptual Framework}
+
+\begin{itemize}
+    \item What is C³? What is cognitive resonance?
+    \item The position of C³ within the music–mind–neurophysiology triad
+    \item The role of C³ in SRC⁹: S³–R³–C³ triple integration
+\end{itemize}
+
+\subsection*{I.2. History and Motivation}
+
+\begin{itemize}
+    \item Interdisciplinary disconnection: why was a system like C³ necessary?
+    \item Fragmented approaches across psychoacoustics, EEG/fMRI, and cognitive theory
+    \item The SRC⁹ vision: reconstructing the part–whole relationship
+\end{itemize}
+
+\section*{II. THEORETICAL FOUNDATION}
+
+\subsection*{II.1. Theory of Cognitive Resonance}
+
+\begin{itemize}
+    \item What is sensory–cognitive resonance?
+    \item Concepts of oscillation–synchronization–network integration
+    \item Temporal Perceptual Stability (TPS), Tonal Fusion Index (TFI), Neural Synchronization Fields (NSF)
+\end{itemize}
+
+\subsection*{II.2. Mathematical Modeling}
+
+\textbf{Primary Equation:}
+\[
+C^3(t) = \sum_{i=1}^{9} w_i \cdot \text{Unit}_i(t)
+\]
+
+\textbf{Layer Expansion:}
+\[
+\text{Unit}_i(t) = \sum_{j=1}^{N} w_{ij} \cdot \text{Node}_j(t)
+\]
+
+\begin{itemize}
+    \item Normalized resonance computations
+    \item Temporal resolution
+    \item Weight coefficients
+\end{itemize}
+
+\section*{III. MODULAR ARCHITECTURE (UNIT > NODE > ELEMENT)}
+
+\subsection*{III.1. UNIT Definitions}
+
+Each defined in a separate section:
+
+\begin{itemize}
+    \item  CTU
+    \item  AOU
+    \item  IEU
+    \item  SRU
+    \item  SAU
+    \item  PIU
+    \item  IRU
+    \item  NSU
+    \item  RSU
+\end{itemize}
+
+\subsection*{III.2. NODE–ELEMENT Structure}
+
+\begin{itemize}
+    \item Nodes = Cognitive functions
+    \item Elements = Measurable EEG/fMRI outputs
+\end{itemize}
+
+Each NODE includes:
+
+\begin{itemize}
+    \item Conceptual definition
+    \item Literature reference
+    \item GlassBrainMap coordinate
+\end{itemize}
+
+\section*{IV. GLASSBRAINMAP INTEGRATION}
+
+\subsection*{IV.1. Coordinate System}
+
+\begin{itemize}
+    \item Each NODE assigned a 3D spherical region in MNI space
+    \item Anatomical localization (e.g., ACC, SMA, HG)
+\end{itemize}
+
+\subsection*{IV.2. Mapping + Web Integration}
+
+\begin{itemize}
+    \item SVG layer
+    \item React/D3.js interface
+    \item Hover–click interaction
+    \item Tooltip + page linkage
+\end{itemize}
+
+\section*{V. SYSTEM DYNAMICS}
+
+\subsection*{V.1. Time-Based Activations}
+
+\begin{itemize}
+    \item How is the overall output of C³ computed over time?
+    \item Frame calculations via EEG resolution
+\end{itemize}
+
+\subsection*{V.2. Feedback Loop: C³ ↔ R³ ↔ S³}
+
+\begin{itemize}
+    \item Harmonic Distance and Φ values from R³
+    \item Spectral profile data from S³
+    \item Feedback from C³: attentional dispersion, valence mapping
+\end{itemize}
+
+\section*{VI. RESEARCH AND APPLICATION DOMAINS}
+
+\subsection*{VI.1. Music Therapy}
+
+\begin{itemize}
+    \item Effects of different UNITs in therapeutic settings
+    \item Trauma-informed listening through IRU and PIU
+\end{itemize}
+
+\subsection*{VI.2. Compositional Tools}
+
+\begin{itemize}
+    \item Sound selection guided by C³
+    \item Listener direction through CTU + AOU interaction
+\end{itemize}
+
+\subsection*{VI.3. Neuropedagogy}
+
+\begin{itemize}
+    \item Attention enhancement in children (IEU + SAU)
+    \item Resonance density in learning via RSU
+\end{itemize}
+
+\section*{VII. FUTURE ROADMAP}
+
+\subsection*{VII.1. Real-Time Integration}
+
+\begin{itemize}
+    \item Unity/WebGL + OSC/WebSocket connectivity
+\end{itemize}
+
+\subsection*{VII.2. VR/AR and Cinematic Systems}
+
+\begin{itemize}
+    \item GlassBrainVR
+    \item Resonance–narrative integration
+\end{itemize}
+
+\section*{VIII. CONCLUSION AND SCIENTIFIC CONTRIBUTIONS}
+
+\begin{itemize}
+    \item Gaps in existing systems
+    \item Innovative solutions offered by C³
+    \item The irreplaceable role of C³ within SRC⁹
+\end{itemize}
+
+\section*{I.1 Conceptual Framework}
+
+\subsection*{1.1.1 What is C³?}
+
+\textbf{C³ – Cognitive Consonance Circuit} is a neurophysiologically grounded, mathematically formulated cognitive modeling engine that analyzes the \textbf{emotional}, \textbf{cognitive}, \textbf{motor}, and \textbf{social resonance processes} evoked by music in the human brain as a time-dependent, multilayered system.
+
+The main goal of this system is to measure, classify, and represent the \textbf{temporal resonance responses} in a music listener's brain using data such as:
+
+\begin{itemize}
+    \item EEG (alpha, beta, gamma, MMN, P300),
+    \item MEG (oscillatory phase-locking),
+    \item fMRI (region-specific activations)
+\end{itemize}
+
+C³ operates through \textbf{9 independent yet integrated Units}. Each UNIT represents a specific cognitive function. Internally, these Units are composed of \textbf{NODEs} (functional mechanisms) and \textbf{ELEMENTs} (measurable neural outputs). In this way, the system creates a fully connected network between music and the brain.
+
+\subsection*{1.1.2 The Role of C³ Within SRC⁹}
+
+C³ is one of the three main modules of the \textbf{SRC⁹ system}:
+
+\begin{itemize}
+    \item \textbf{S³ – Spectral Sound Space}: Physical–acoustic analysis of sound
+    \item \textbf{R³ – Resonance-Based Relational Reasoning}: Mathematical modeling of tonal, microtonal, and harmonic structures
+    \item \textbf{C³ – Cognitive Consonance Circuit}: Representation of musical structures' impact on the brain through time-based neurocognitive models
+\end{itemize}
+
+There is \textbf{bidirectional data flow} between these modules. For example:
+
+\begin{itemize}
+    \item Spectral data from S³ (e.g., noise intensity, tonal center frequency) $\rightarrow$ enters R³ for computations of Φ (resonance potential) and HD (harmonic distance) $\rightarrow$ these values are then transmitted to C³ to generate cognitive load or emotional response in modules like CTU and AOU.
+\end{itemize}
+
+C³ also sends its results as \textbf{feedback} to R³ (harmonic resonance suggestions) and to S³ (perceptual spectrum map filtering). This structure defines the system’s \textbf{adaptive feedback} nature.
+
+\subsection*{1.1.3 Core System Principles}
+
+\subsubsection*{1.1.3.a Definition of Cognitive Resonance}
+
+In the C³ system, cognitive resonance is defined as the \textbf{simultaneous activation} of processes such as \textbf{frequency–time alignment}, \textbf{sensory–conceptual integration}, \textbf{motor synchronization}, and \textbf{emotional response} in the brain during music listening. This resonance is studied across the following layers:
+
+\begin{itemize}
+    \item \textbf{Electrophysiological:} EEG data (phase locking, oscillation power, ERP components)
+    \item \textbf{Functional Imaging:} fMRI BOLD increase, regional localization in MNI coordinates
+    \item \textbf{Time-Resolved Modeling:} Moment-to-moment alignment of music events with brain responses
+\end{itemize}
+
+\subsection*{1.1.4 Structure of C³: UNIT → NODE → ELEMENT}
+
+\begin{itemize}
+    \item \textbf{UNIT}: Conceptual framework (e.g., CTU – Cognitive Tension Unit)
+    \item \textbf{NODE}: Specific functional structure (e.g., Harmonic Dissonance Node)
+    \item \textbf{ELEMENT}: Measurable EEG/fMRI output (e.g., alpha–beta phase locking)
+\end{itemize}
+
+This structure ensures that each UNIT consists of layers that are \textbf{scientifically}, \textbf{experimentally}, and \textbf{theoretically connected}. Thus, each NODE becomes \textbf{conceptually defined}, \textbf{empirically measurable}, and \textbf{anatomically localizable}.
+
+\subsection*{1.1.5 Anatomical Mapping: GlassBrainMap Integration}
+
+Each NODE in C³ is assigned a brain region (ROI – Region of Interest). These regions are defined as spherical volumes using \textbf{MNI coordinates}.
+
+\begin{center}
+\begin{tabular}{|l|c|l|l|}
+\hline
+\textbf{Node} & \textbf{MNI Coordinates} & \textbf{Region} & \textbf{Reference} \\
+\hline
+AOU – HGAINT 01 & \texttt{[-60, -28, +6]} & Left posterior STG & Potes et al., 2012 \\
+IEU – HARMONIC 01 & \texttt{[0, +50, +20]} & Fronto-central EEG & Crespo-Bojorque et al., 2018 \\
+CTU – RESOLVED 05 & \texttt{[+64, –22, +4]} & Anterior HG & Norman-Haignere et al., 2013 \\
+\hline
+\end{tabular}
+\end{center}
+
+These coordinates are fully aligned with the data in \texttt{C\_\_BrainMap\_\_\_83\_Koordinatl\_k\_Tam\_Tablo} and \textbf{GlassBrainMap.pdf}.
+
+On the web platform, this information is connected to a visual map through the SVG + React component \texttt{GlassBrain.jsx}.
+
+\subsection*{1.1.6 Literature Foundation}
+
+As of now, a total of \textbf{61 scientific articles} have been integrated into the C³ system. Each NODE is supported by at least one experimental study. These include:
+
+\begin{itemize}
+    \item EEG/MEG-based ERP or mismatch studies
+    \item fMRI studies (valence, arousal, pitch, syntax, entrainment)
+    \item Multimodal meta-analyses (FFR, P300, dopamine release, MMN)
+    \item Theoretical models (predictive coding, Wundt curve, information content models)
+\end{itemize}
+
+\subsection*{Conclusion (for this section)}
+
+\textbf{C³} forms the \textbf{neurocognitive core} of the SRC⁹ system. It receives spectral and resonance data from modules like S³ and R³, interprets them through EEG/fMRI-supported models in the human brain, and outputs results that allow musical structures to be measured at the level of \textbf{meaning and impact}. It is the only system that achieves this function in a fully integrated form.
+
+
+\section*{I.1 Definitional Framework}
+
+\textit{What is C³? What does it do? How does it function within SRC⁹?}
+
+\subsection*{1.1.1 What Is the Cognitive Consonance Circuit (C³)?}
+
+The \textbf{Cognitive Consonance Circuit (C³)} is a multidimensional, time-sensitive neural modeling system designed to measure, classify, and structurally represent the cognitive, emotional, and motor impacts of music on the human brain. C³ integrates empirical neurophysiological data—specifically EEG (alpha, beta, gamma, MMN, P300), MEG, and fMRI—to track brain responses to musical stimuli in real-time across nine cognitive domains known as \textbf{Units}.
+
+Each Unit corresponds to a distinct cognitive subsystem (e.g., expectation, tension, memory, emotion), modeled as an independent but fully integrable node within the system. Internally, each Unit is hierarchically structured into \textbf{Nodes}, which denote abstract cognitive processes, and \textbf{Elements}, which refer to quantifiable neural signals. These signals include frequency-specific oscillatory phenomena, phase-locked responses, and region-specific BOLD activations.
+
+\subsection*{1.1.2 Role of C³ Within the SRC⁹ System}
+
+C³ is the cognitive core of the \textbf{SRC⁹ (Spectral–Resonance–Cognitive)} framework, which comprises three interdependent modules:
+
+\begin{itemize}
+    \item \textbf{S³ – Spectral Sound Space}: Performs advanced time–frequency analysis of musical signals.
+    \item \textbf{R³ – Resonance-Based Relational Reasoning}: Models harmonic and tonal structures through vector lattices, scalar spaces, and resonance metrics.
+    \item \textbf{C³ – Cognitive Consonance Circuit}: Converts these structural data into biologically realistic neural representations of how the brain interprets music.
+\end{itemize}
+
+These modules are not isolated silos; they form a \textbf{bidirectional data exchange pipeline}:
+
+\begin{itemize}
+    \item Spectral information from S³ (e.g., timbral flux, pitch entropy) is used by R³ to calculate harmonic metrics such as Φ (Resonance Potential) and HD (Harmonic Distance).
+    \item These R³ outputs then inform C³, which uses EEG and fMRI-informed functions to simulate attention, emotional valence, arousal, and tension.
+    \item C³, in turn, feeds back cognitive feedback into S³ and R³, enabling dynamic perceptual recalibration.
+\end{itemize}
+
+This feedback loop creates a closed analytical ecosystem that integrates perception, structure, and cognition.
+
+\subsection*{1.1.3 Theoretical Principles Underpinning C³}
+
+\subsubsection*{a. Definition of Cognitive Resonance}
+
+Cognitive resonance refers to the dynamic synchronization of neural, emotional, and motor processes elicited by musical stimuli. This phenomenon is understood not as localized brain activation, but as a distributed resonance field involving:
+
+\begin{itemize}
+    \item Oscillatory synchronization (e.g., beta/gamma coupling between SMA and auditory cortex)
+    \item Predictive mismatch mechanisms (e.g., MMN and P300 ERP responses)
+    \item Region-specific activation (e.g., DLPFC for tension, ACC for ambiguity, amygdala for affect)
+\end{itemize}
+
+These mechanisms interact through temporal coherence and multi-band entrainment, enabling a real-time neural “tracking” of musical structure.
+
+\subsubsection*{b. Mathematical Formalism}
+
+The system's top-level model is defined as:
+
+\[
+C^3(t) = \sum_{i=1}^{9} w_i \cdot \text{Unit}_i(t)
+\]
+
+Where:
+
+\begin{itemize}
+    \item $C^3(t)$: total cognitive resonance at time $t$
+    \item $\text{Unit}_i(t)$: normalized activity of the $i$-th cognitive unit
+    \item $w_i$: weight coefficient for each unit (empirically tunable)
+\end{itemize}
+
+Each Unit’s internal model is further decomposed as:
+
+\[
+\text{Unit}_i(t) = \sum_{j=1}^{N} w_{ij} \cdot \text{Node}_j(t)
+\]
+
+Each Node is derived from EEG or fMRI data—either continuous oscillatory amplitudes or discrete event-related potentials—and parameterized using real-time neuroimaging standards.
+
+\subsection*{1.1.4 Structural Design: UNIT → NODE → ELEMENT}
+
+The C³ system is hierarchically organized:
+
+\begin{itemize}
+    \item \textbf{UNIT}: Defines a domain of cognitive-musical processing (e.g., tension, memory, flow).
+    \item \textbf{NODE}: Represents a functional module within the Unit (e.g., Harmonic Dissonance).
+    \item \textbf{ELEMENT}: A neurophysiological observable (e.g., beta-band phase locking, BOLD activation).
+\end{itemize}
+
+Each Element is associated with:
+
+\begin{itemize}
+    \item A named brain region
+    \item A measurement method (EEG, fMRI, or both)
+    \item A validated reference from neuroscience literature
+    \item An anatomical coordinate (MNI system)
+\end{itemize}
+
+This allows C³ to link abstract musical cognition to empirical neurobiology in a deterministic way.
+
+\subsection*{1.1.5 Anatomical Mapping with GlassBrainMap}
+
+C³ integrates seamlessly with the \textbf{GlassBrainMap}, a visual representation system that places each Node/Element at anatomically and functionally relevant coordinates.
+
+\begin{center}
+\begin{tabular}{|l|c|l|l|}
+\hline
+\textbf{Node} & \textbf{MNI Coordinates} & \textbf{Region} & \textbf{Citation} \\
+\hline
+AOU – HGAINT 01 & \texttt{[-60, -28, +6]} & Left posterior STG & Potes et al., 2012 \\
+IEU – HARMONIC 01 & \texttt{[0, +50, +20]} & Fronto-central cortex & Crespo-Bojorque et al., 2018 \\
+CTU – RESOLVED 05 & \texttt{[+64, –22, +4]} & Right Anterior HG & Norman-Haignere et al., 2013 \\
+\hline
+\end{tabular}
+\end{center}
+
+These coordinates are verified against the \texttt{C\_\_BrainMap\_\_\_83\_Koordinatl\_k\_Tam\_Tablo} document, using MNI-space localization. In the web interface, they are rendered interactively via \texttt{GlassBrain.jsx} and SVG/D3.js overlays.
+
+\subsection*{1.1.6 Literature Foundation and Citation Model}
+
+The C³ system is constructed upon \textbf{61 primary peer-reviewed studies} in the fields of neuroscience, music cognition, EEG/fMRI research, and mathematical modeling. Each Node is grounded in direct empirical evidence. Key domains include:
+
+\begin{itemize}
+    \item MMN, P300, N2 ERP responses to pitch/syntax deviations
+    \item Beta/gamma-band entrainment in auditory–motor synchronization
+    \item Dopaminergic pathways during emotional peaks (Salimpoor et al., 2011)
+    \item Functional anatomy of musical memory (Janata, 2009; Zatorre \& Halpern, 2005)
+\end{itemize}
+
+All references are encoded into structured \texttt{.bib} and \texttt{.json} formats for API-level integration.
+
+\subsection*{Summary}
+
+\textbf{C³} is not a passive music analysis tool. It is an \textbf{active cognitive modeling system} that transforms symbolic or spectral musical structures into meaningful, neurologically validated resonance fields. Its position within the \textbf{SRC⁹} system ensures that structure, perception, and cognition are analyzed as a single unified continuum.
+
+\section*{I.2 Historical Context and Motivation}
+
+\textit{Why was C³ developed? What are the limitations of current methodologies that C³ addresses?}
+
+\subsection*{1.2.1 Fragmentation Across Disciplines}
+
+Despite significant progress in music theory, neuroscience, and artificial intelligence, the academic and technological landscape surrounding music cognition remains deeply fragmented. Most systems operate in isolation:
+
+\begin{itemize}
+    \item Spectral analysis platforms (e.g., Fourier-based spectrograms) offer detailed acoustic profiles but lack perceptual or cognitive grounding.
+    \item Harmonic and mathematical theories (e.g., Lewin’s GIS, Tonnetz models) focus on intervallic structure but often disregard empirical brain data.
+    \item Neuroscientific research (EEG, fMRI) reveals profound insights into perception and emotion but rarely interfaces with formal music theory or real-time systems.
+\end{itemize}
+
+This disjunction has created a theoretical bottleneck. Without a shared framework, advances in one domain fail to propagate meaningfully into others. As a result, most current tools lack cross-domain explanatory power, cognitive transparency, and compositional usability.
+
+\subsection*{1.2.2 Theoretical Models Lack Cognitive Validation}
+
+Traditional music-theoretical models such as Generalized Interval Systems (GIS), Harmonic Distance metrics, and Tonal Hierarchies (e.g., Krumhansl’s tonal profiles) are mathematically elegant, but often fail to predict real listener responses.
+
+Conversely, neuroscientific findings—such as:
+
+\begin{itemize}
+    \item the MMN response to unexpected harmonies,
+    \item the P300 component linked to rhythmic anomalies,
+    \item or reward-related dopamine release during musical peaks (Salimpoor et al., 2011),
+\end{itemize}
+
+have rarely been integrated into formal, computationally usable structures.
+
+There is no established mapping between music-theoretical constructs (e.g., cadence, modulation, dissonance) and neural metrics (e.g., BOLD, ERP, phase-locking). This absence of structural integration drastically reduces the predictive and pedagogical power of existing systems.
+
+\subsection*{1.2.3 Existing AI Models Are Black-Box and Aesthetic-Only}
+
+While AI tools such as OpenAI’s Jukebox, Google Magenta, or Amper Music have enabled impressive generative outputs, they typically operate without explanatory or cognitive modeling frameworks. They generate music without understanding what attention, memory, emotion, or structural coherence mean to a human listener.
+
+This black-box architecture:
+
+\begin{itemize}
+    \item Offers no feedback on listener state
+    \item Cannot simulate emotional or cognitive pathways
+    \item Provides no route for targeted composition or real-time feedback
+\end{itemize}
+
+C³ was conceived precisely to close this loop—not to replace such systems, but to make them cognitively explainable, analyzable, and affectively steerable.
+
+\subsection*{1.2.4 Neuroscience Models Remain Theoretically Isolated}
+
+Even the most sophisticated neuroscientific work on music (e.g., Janata, 2009; Zatorre \& Halpern, 2005) remains technically inaccessible to composers, theorists, or real-time music systems. The brain data is not structured in a way that can be operationalized.
+
+For example:
+
+\begin{itemize}
+    \item Neural entrainment in STG and SMA during rhythmic listening (Nozaradan, 2012)
+    \item Amygdala activation during tonal familiarity or melodic recall (Koelsch, 2008)
+    \item fMRI-detected dopaminergic release in ventral striatum (Blood \& Zatorre, 2001)
+\end{itemize}
+
+—all provide powerful evidence, but without an architectural scaffold to translate them into music-analytical or compositional insight.
+
+\subsection*{1.2.5 Motivation for C³: Unification Through Architecture}
+
+C³ was developed as an architectural answer to this methodological impasse.
+
+\textbf{Its core aims:}
+
+\begin{itemize}
+    \item To provide a layered system that explicitly links:
+    \begin{itemize}
+        \item Symbolic musical events (e.g., harmonic surprise, tempo shift)
+        \item Neural mechanisms (e.g., alpha desynchronization, ERP signatures)
+        \item Anatomical mappings (e.g., ACC, STG, dPMC)
+        \item Time-based resonance metrics
+    \end{itemize}
+    
+    \item To construct a modular model (9 Units) that mirrors actual neuroscientific categorizations:
+    
+    \begin{itemize}
+        \item Tension (CTU), Expectation (IEU), Emotion (AOU), Flow (PIU), Memory (SAU), etc.
+    \end{itemize}
+    
+    \item To ensure every part of the system is:
+    \begin{itemize}
+        \item Empirically grounded (with MNI coordinates, EEG/fMRI citations)
+        \item Mathematically formalized (via resonance models and time equations)
+        \item Interactively visualized (through the GlassBrainMap and unit dashboards)
+    \end{itemize}
+    
+    \item To allow integration with generative, educational, or therapeutic systems.
+\end{itemize}
+
+\subsection*{1.2.6 Theoretical Inspirations}
+
+C³ draws from and synthesizes:
+
+\begin{itemize}
+    \item David Lewin’s transformational music theory and the notion of “network transformations”
+    \item Julian Hook’s cross-type intervallic mappings
+    \item Jean-Jacques Nattiez’s tripartite semiotic model (poietic – neutral – esthesic)
+    \item Zatorre \& Halpern’s fMRI studies on musical imagery
+    \item Large \& Snyder’s work on neural resonance and attentional entrainment
+    \item Recent computational neuroscience models such as Temporal Perceptual Stability (TPS), Tonal Fusion Index (TFI), and Neural Synchronization Fields (NSF)
+\end{itemize}
+
+These form the philosophical, neurobiological, and mathematical pillars of the C³ system.
+
+\subsection*{Summary}
+
+C³ was not built to replace existing methods—it was built to unify them.
+
+It serves as a cognitive-mathematical bridge between acoustic data, symbolic musical structures, and neurological response patterns. Its modular design, mathematical backbone, and empirical grounding position it as a unique tool in both theoretical and practical domains.
+
+It is not merely a system. It is a new paradigm for understanding music.
+
+\section*{II.1 Theoretical Foundations: Cognitive Resonance Theory}
+
+\textit{What is cognitive resonance? What are its neural and mathematical correlates? How is it represented in the C³ framework?}
+
+\subsection*{2.1.1 Definition of Cognitive Resonance}
+
+Cognitive resonance refers to the simultaneous activation and phase-alignment of neural systems—cortical, subcortical, and limbic—elicited by musical structures perceived as meaningful, surprising, emotionally salient, or motorically engaging.
+
+It is not a static "response" but a dynamic system of oscillatory entrainment that unfolds over time in direct correlation with acoustic and symbolic musical events. In this sense, C³ does not model perception as a reaction, but rather as a temporally evolving resonance field shaped by attention, prediction, emotion, and embodied synchronization.
+
+\subsection*{2.1.2 Neurophysiological Basis}
+
+Cognitive resonance is anchored in three core mechanisms:
+
+\paragraph{a. Oscillatory Entrainment}
+
+Neural populations synchronize their firing phases with periodic or structured stimuli in music, especially rhythm and pulse. EEG reveals:
+
+\begin{itemize}
+    \item Beta-band phase-locking in motor regions (SMA, PMC) during pulse alignment
+    \item Gamma coherence between auditory and frontal regions for tonal/melodic fusion
+    \item Alpha synchrony in frontal–parietal regions indicating attentional top-down integration
+\end{itemize}
+
+\paragraph{b. Prediction and Mismatch Mechanisms}
+
+The brain actively predicts musical continuations. Violations of these predictions result in:
+
+\begin{itemize}
+    \item Mismatch Negativity (MMN) in STG and Fz (EEG), typically for harmonic or rhythmic deviations
+    \item P300 ERPs for consciously detected rhythmic or temporal anomalies
+\end{itemize}
+
+These responses form the backbone of the IEU unit in C³.
+
+\paragraph{c. Emotional–Limbic Activation}
+
+Music evokes emotion through dopaminergic reward pathways, primarily involving:
+
+\begin{itemize}
+    \item Ventral Striatum, Nucleus Accumbens (peak pleasure: Salimpoor et al., 2011)
+    \item Amygdala, Insula, and ACC (valence/arousal distinction: Koelsch, 2008; Zatorre \& Blood, 2001)
+\end{itemize}
+
+Together, these three systems create multiband, multisite synchronization patterns that constitute what we term \textbf{cognitive resonance}.
+
+\subsection*{2.1.3 Mathematical Representation}
+
+In C³, cognitive resonance is mathematically expressed as the time-evolving summation of weighted neural activity across multiple Units:
+
+\[
+C^3(t) = \sum_{i=1}^{9} w_i \cdot \text{Unit}_i(t)
+\]
+
+Where:
+
+\begin{itemize}
+    \item $\text{Unit}_i(t)$: Time-normalized resonance output of the $i$-th Unit (e.g., CTU, AOU)
+    \item $w_i$: Tunable weight coefficient based on experimental or functional prioritization
+    \item $t$: Time (sampled at EEG resolution, e.g., 100ms)
+\end{itemize}
+
+Each Unit is composed of Nodes and Elements:
+
+\[
+\text{Unit}_i(t) = \sum_{j=1}^{N} w_{ij} \cdot \text{Node}_j(t)
+\]
+
+Each Node is grounded in a real EEG/fMRI marker:
+
+\begin{itemize}
+    \item \textbf{Node}: conceptual function (e.g., "Harmonic Dissonance")
+    \item \textbf{Element}: observable signal (e.g., “$\alpha$–$\beta$ phase-locking in DLPFC”)
+\end{itemize}
+
+These form the structural hierarchy:
+
+\[
+\text{UNIT} \rightarrow \text{NODE} \rightarrow \text{ELEMENT} \rightarrow \{\text{Method, Region, Coordinates, Citation}\}
+\]
+
+\subsection*{2.1.4 Temporal Dynamics and Resolution}
+
+C³ operates in time-series frames, typically aligned to 0.1-second EEG windows. This enables high-resolution modeling of:
+
+\begin{itemize}
+    \item Fast transitions (e.g., rhythmic inflections, expectation violations)
+    \item Slow evolutions (e.g., emotional immersion, tonal unfolding)
+\end{itemize}
+
+Each Element generates a signal trace over time, which is then:
+
+\begin{itemize}
+    \item Normalized to a common scale [0, 1]
+    \item Weighted within its Node and Unit
+    \item Aggregated into the total resonance field $C^3(t)$
+\end{itemize}
+
+\textbf{Result}: a spatiotemporal map of musical cognition, updated per frame, and navigable across Units, Nodes, and regions.
+
+\subsection*{2.1.5 Topological Interpretation: Resonance Fields}
+
+The final output of C³ can be interpreted as a multidimensional field evolving in time:
+
+\begin{itemize}
+    \item Each axis corresponds to a Unit (9D space)
+    \item Each point $C^3(t)$ is a vector of dimension 9
+    \item Over time, the output forms a trajectory curve in this high-dimensional space
+\end{itemize}
+
+This allows:
+
+\begin{itemize}
+    \item Trajectory clustering for musical styles
+    \item Dynamical stability analysis (e.g., flow states vs. high-tension nodes)
+    \item Comparative signature modeling (e.g., comparing Bach vs. Radiohead vs. AI-generated pieces)
+\end{itemize}
+
+These analytical outputs feed into applications like music therapy profiling, personalized listening models, or composition-guidance systems.
+
+\subsection*{2.1.6 Link to Neuroanatomy: Mapping into GlassBrain}
+
+Each Element has a unique anatomical anchor:
+
+\begin{itemize}
+    \item Region name (e.g., Broca, SMA, NAcc)
+    \item MNI coordinates (from \texttt{brain\_coords.json})
+    \item Visualization via \texttt{GlassBrain.jsx} or Unity 2D/3D interfaces
+\end{itemize}
+
+This results in:
+
+\begin{itemize}
+    \item Real-time activation maps per frame
+    \item Tooltip-based summaries
+    \item Click-through access to associated Unit/Node pages
+\end{itemize}
+
+Each region is plotted as a sphere in anatomical space and linked to its resonance value over time.
+
+\subsection*{Summary}
+
+Cognitive resonance is not a metaphor. It is a quantifiable, observable, and mathematically modelable system of neural alignment elicited by music.
+
+C³ builds a bridge between:
+
+\begin{itemize}
+    \item \textbf{Structure} (from S³ and R³)
+    \item \textbf{Perception} (via neural synchronization)
+    \item \textbf{Emotion} (through limbic modeling)
+    \item \textbf{Cognition} (via predictive structures)
+\end{itemize}
+
+This fusion yields not only a deepened understanding of musical experience, but also a practical computational system that allows music to be measured, mapped, predicted, and creatively shaped.
+
+\section*{II.2 Mathematical Modeling of the C³ System}
+
+\textit{How is C³ formulated mathematically? What are its temporal and structural components? How does it compute cognition in music?}
+
+\subsection*{2.2.1 Layered Structure: From Signal to Cognition}
+
+The C³ system is constructed as a hierarchical neural modeling architecture operating on three levels:
+
+\[
+C^3(t) = \sum_i \text{Unit}_i(t), \quad \text{Unit}_i(t) = \sum_j \text{Node}_{ij}(t), \quad \text{Node}_{ij}(t) = \sum_k \text{Element}_{ijk}(t)
+\]
+
+Each Element represents a measurable neural signal, modeled mathematically. Nodes aggregate these signals into functional units (e.g., "Expectation Violation", "Tonal Familiarity"). Units represent full cognitive subsystems (e.g., IEU, SAU).
+
+This bottom-up structure enables us to compute macro-level phenomena (emotion, memory, flow) from micro-level EEG/fMRI signals.
+
+\subsection*{2.2.2 Primary Equation}
+
+At the system level:
+
+\[
+C^3(t) = \sum_{i=1}^{9} w_i \cdot \text{Unit}_i(t)
+\]
+
+Where:
+
+\begin{itemize}
+    \item $C^3(t)$: Total cognitive resonance at time $t$
+    \item $\text{Unit}_i(t)$: Activity of Unit $i$
+    \item $w_i \in \mathbb{R}$: Empirically tunable weight for each Unit (default: 1.0)
+\end{itemize}
+
+Each Unit has a local expansion:
+
+\[
+\text{Unit}_i(t) = \sum_{j=1}^{N_i} w_{ij} \cdot \text{Node}_{ij}(t)
+\]
+
+\begin{itemize}
+    \item $\text{Node}_{ij}(t)$: Activity of Node $j$ in Unit $i$
+    \item $w_{ij} \in [0,1]$: Functional contribution weight of Node $j$
+\end{itemize}
+
+Each Node is derived from its underlying Elements:
+
+\[
+\text{Node}_{ij}(t) = \sum_{k=1}^{M_{ij}} w_{ijk} \cdot \text{Element}_{ijk}(t)
+\]
+
+\subsection*{2.2.3 Element-Level Signal Modeling}
+
+An Element is a neural feature defined as:
+
+\[
+\text{Element}_{ijk}(t) = S_{ijk}(t) \in [0,1]
+\]
+
+Where $S_{ijk}(t)$ is the normalized neural signal derived from:
+
+\begin{itemize}
+    \item EEG band power (e.g., $\alpha$, $\beta$, $\gamma$)
+    \item ERP component (e.g., MMN, P300)
+    \item fMRI BOLD z-score in MNI-space
+    \item Phase coherence between regions
+\end{itemize}
+
+Each signal is transformed to the [0,1] scale using:
+
+\[
+S_{ijk}(t) = \frac{x(t) - \min(x)}{\max(x) - \min(x)}
+\]
+
+For oscillatory components:
+
+\[
+x(t) = \left| \mathcal{H}\{ \text{EEG}(t) \} \right|^2
+\]
+
+(Where $\mathcal{H}$ is the Hilbert Transform envelope)
+
+For ERP components:
+
+\[
+x(t) = \text{ERP amplitude}(t - \tau)
+\]
+
+For fMRI:
+
+\[
+x(t) = z(t) = \frac{\text{BOLD}(t) - \mu}{\sigma}
+\]
+
+All data is resampled to a common timeline resolution (typically 10 Hz, i.e., 100ms frames).
+
+\subsection*{2.2.4 Weight Normalization and Adaptivity}
+
+Weights $w_i$, $w_{ij}$, $w_{ijk}$ are initialized based on empirical studies:
+
+\begin{itemize}
+    \item $w_{ijk}$: based on effect size from literature (e.g., Cohen’s $d$)
+    \item $w_{ij}$: based on relative contribution within Unit (e.g., entropy vs. ERP)
+    \item $w_i$: application-specific (e.g., PIU emphasized in flow-based systems)
+\end{itemize}
+
+Over time, weights can be adapted dynamically based on:
+
+\begin{itemize}
+    \item Task relevance (e.g., in therapy, CTU may be downregulated)
+    \item User feedback (e.g., neurofeedback systems)
+    \item Generative models (e.g., AI uses the feedback to alter music in real time)
+\end{itemize}
+
+\subsection*{2.2.5 Matrix Representation}
+
+The entire C³ system can be formalized as a three-layer matrix multiplication:
+
+\[
+C^3(t) = \mathbf{W}^T \cdot \mathbf{U}(t)
+\]
+
+Where:
+
+\[
+\mathbf{U}(t) = [\text{Unit}_1(t), \ldots, \text{Unit}_9(t)]^T \in \mathbb{R}^{9 \times 1}
+\]
+
+Each $\text{Unit}_i(t)$ is:
+
+\[
+\text{Unit}_i(t) = \mathbf{w}_i^T \cdot \mathbf{N}_i(t)
+\]
+
+And each $\mathbf{N}_i(t)$ (Node vector) is:
+
+\[
+\mathbf{N}_i(t) = [\text{Node}_{i1}(t), \ldots, \text{Node}_{iN}(t)]^T
+\]
+
+This layered abstraction makes it possible to:
+
+\begin{itemize}
+    \item Implement efficient GPU-based computation
+    \item Track changes per unit or per frame
+    \item Enable real-time synchronization with audiovisual feedback
+\end{itemize}
+
+\subsection*{2.2.6 Implementation Schema}
+
+Each Element is linked to:
+
+\begin{itemize}
+    \item \texttt{unit\_id} (e.g., CTU)
+    \item \texttt{node\_id} (e.g., harmonic\_dissonance)
+    \item MNI coordinates
+    \item Measurement method (EEG, fMRI)
+    \item Source file path (for dynamic signal streaming)
+\end{itemize}
+
+All metadata is stored in \texttt{brain\_coords.json}, and signals are fed as \texttt{.edf}, \texttt{.csv}, or \texttt{.json} time series.
+
+Visual representation is done through:
+
+\begin{itemize}
+    \item \texttt{NodeView.jsx} for cognitive UI
+    \item \texttt{GlassBrain.jsx} for anatomical UI
+    \item \texttt{C3Engine.ts} (or Python backend) for signal computation
+\end{itemize}
+
+\subsection*{Summary}
+
+The C³ system is not merely a conceptual framework but a fully formalized, mathematically grounded computational model. It:
+
+\begin{itemize}
+    \item Integrates real neural signals into a unified cognitive resonance space
+    \item Adapts to multiple temporal and structural resolutions
+    \item Operates across Unit, Node, and Element layers
+    \item Is designed for interactive, real-time applications in analysis, composition, education, and therapy
+\end{itemize}
+
+This mathematical architecture makes it possible to represent the complexity of musical cognition as a dynamic, quantifiable, and deeply interpretable process.
+
+\section*{III.1 Unit Definitions and Functional Roles}
+
+\subsection*{3.1.1 CTU – Cognitive Tension Unit}
+
+\textbf{Models cognitive stress responses to musical dissonance, entropy, and tonal distance.}
+
+\subsubsection*{Overview}
+
+The Cognitive Tension Unit (CTU) is designed to capture and model the neural mechanisms of cognitive dissonance, ambiguity, and harmonic instability in response to complex musical stimuli. It measures the brain’s response to tonal unpredictability, spectral irregularity, and harmonic deviation by tracking electrophysiological indicators and hemodynamic signals primarily across the dorsolateral prefrontal cortex (DLPFC), anterior cingulate cortex (ACC), and inferior frontal gyrus (Broca area).
+
+This unit operates on the hypothesis that musical dissonance, entropy, and distance from tonal centers create a measurable increase in cognitive load. These effects are observable via:
+
+\begin{itemize}
+    \item Alpha and beta phase-locking in frontal regions (EEG)
+    \item Increased BOLD activity in cingulate cortex (fMRI)
+    \item Beta-band amplitude increases in Broca’s area during spectral irregularity
+\end{itemize}
+
+\subsubsection*{Mathematical Representation}
+
+The internal model of CTU is:
+
+\[
+\text{CTU}(t) = w_1 \cdot \text{Node}_{\text{Harmonic Dissonance}}(t) + w_2 \cdot \text{Node}_{\text{Spectral Entropy}}(t) + w_3 \cdot \text{Node}_{\text{Harmonic Distance}}(t)
+\]
+
+Where:
+
+\begin{itemize}
+    \item $w_1, w_2, w_3$: empirically tunable node weights
+\end{itemize}
+
+Each Node has one or more Elements grounded in EEG/fMRI markers.
+
+\subsubsection*{Nodes and Elements}
+
+\paragraph{�� Node: Harmonic Dissonance}
+
+\begin{itemize}
+    \item \textbf{Description}: Models increased cognitive stress when dissonant chords or pitch clusters appear in a tonal context
+    \item \textbf{Region}: DLPFC, ACC
+    \item \textbf{EEG Marker}: Alpha–beta phase locking
+    \item \textbf{Citation}: Fishman et al., 2001
+\end{itemize}
+
+\textbf{Element}:
+\begin{itemize}
+    \item �� EEG Phase Locking ($\alpha$–$\beta$)
+    \item EEG electrodes: F3, Fz
+    \item MNI Coordinate: [+32, +50, +20]
+    \item GlassBrainMap ID: \texttt{ctu\_harmonic\_dissonance\_01}
+\end{itemize}
+
+\paragraph{�� Node: Spectral Entropy}
+
+\begin{itemize}
+    \item \textbf{Description}: Quantifies the unpredictability and information density in the sound spectrum
+    \item \textbf{Region}: Broca’s area (left IFG), temporal cortex
+    \item \textbf{EEG Marker}: Beta amplitude increase
+    \item \textbf{Citation}: Norman-Haignere et al., 2013
+\end{itemize}
+
+\textbf{Element}:
+\begin{itemize}
+    \item �� Spectral Complexity Response
+    \item MNI Coordinate: [+64, –22, +4]
+    \item GlassBrainMap ID: \texttt{ctu\_entropy\_01}
+    \item EEG channel cluster: F7–T7
+    \item fMRI: Left IFG BOLD increase
+\end{itemize}
+
+\paragraph{�� Node: Harmonic Distance}
+
+\begin{itemize}
+    \item \textbf{Description}: Measures perceived tonal instability caused by deviations from local tonal center
+    \item \textbf{Region}: DLPFC, ACC
+    \item \textbf{EEG Marker}: Alpha amplitude increase
+    \item \textbf{Citation}: Hyde et al., 2008
+\end{itemize}
+
+\textbf{Element}:
+\begin{itemize}
+    \item �� EEG Alpha Power (ACC-centered)
+    \item MNI Coordinate: [+30, +36, +20]
+    \item GlassBrainMap ID: \texttt{ctu\_distance\_01}
+    \item Method: Power spectral density (EEG)
+\end{itemize}
+
+\subsubsection*{GlassBrainMap Integration}
+
+The CTU Nodes are spatially registered within the GlassBrain system. Their associated coordinates and regions are as follows:
+
+\begin{center}
+\begin{tabular}{|l|c|l|l|}
+\hline
+\textbf{Node ID} & \textbf{MNI Coordinates} & \textbf{Region} & \textbf{Tooltip} \\
+\hline
+\texttt{ctu\_harmonic\_dissonance\_01} & [+32, +50, +20] & DLPFC + ACC & EEG $\alpha$–$\beta$ phase-locking \\
+\texttt{ctu\_entropy\_01} & [+64, –22, +4] & Broca + Temporal Cortex & Beta increase in spectral complexity \\
+\texttt{ctu\_distance\_01} & [+30, +36, +20] & ACC + DLPFC & EEG Alpha increase for tonal ambiguity \\
+\hline
+\end{tabular}
+\end{center}
+
+These markers appear in the \texttt{GlassBrain.jsx} component and are directly linked to the \texttt{ctu.json} file in the system.
+
+\subsubsection*{Functional Summary}
+
+The CTU unit functions as a cognitive load detector, dynamically representing how musical instability translates into mental effort. It is especially responsive to:
+
+\begin{itemize}
+    \item Tonal deviations
+    \item Unexpected dissonances
+    \item High spectral entropy
+\end{itemize}
+
+These events are interpreted by the brain as uncertainty or cognitive conflict, which C³ measures in real time.
+
+CTU is often antagonistic to PIU (Phenomenological Immersion Unit): increased CTU activity often leads to decreased absorption or flow.
+
+\subsubsection*{Applications}
+
+\begin{itemize}
+    \item \textbf{Therapeutic Monitoring}: Cognitive overload indicators in neurorehabilitation
+    \item \textbf{Compositional Tools}: Dynamic tension mapping for film scoring or generative music
+    \item \textbf{EEG Feedback Systems}: Real-time CTU readout for adaptive sound environments
+\end{itemize}
+
+\subsection*{3.1.2 AOU – Affective Orientation Unit}
+
+\textbf{Models emotional resonance to music through valence and arousal dimensions.}
+
+\subsubsection*{Overview}
+
+The Affective Orientation Unit (AOU) quantifies the listener’s affective response to music by modeling two principal emotional axes:
+
+\begin{itemize}
+    \item \textbf{Valence}: The pleasantness or unpleasantness of the musical stimulus
+    \item \textbf{Arousal}: The intensity or physiological activation induced by the music
+\end{itemize}
+
+These dimensions are computed through EEG and fMRI indicators within limbic, prefrontal, and motor cortical areas—including the amygdala, ventral striatum, MPFC, SMA, and STG.
+
+AOU is particularly sensitive to:
+
+\begin{itemize}
+    \item Tonal stability (linked to positive valence)
+    \item Spectral balance and consonance (linked to emotional reward)
+    \item Tempo and rhythmic complexity (linked to arousal and motor drive)
+\end{itemize}
+
+\subsubsection*{Mathematical Representation}
+
+AOU is computed as a weighted combination of two core Nodes:
+
+\[
+\text{AOU}(t) = w_1 \cdot \text{Valence}(t) + w_2 \cdot \text{Arousal}(t)
+\]
+
+Each of which is decomposed into signal-bearing Elements:
+
+\textbf{Valence Axis}:
+
+\[
+\text{Valence}(t) = v_1 \cdot \text{TonalStability}(t) + v_2 \cdot \text{SpectralBalance}(t) + v_3 \cdot \text{HarmonicConsonance}(t)
+\]
+
+\textbf{Arousal Axis}:
+
+\[
+\text{Arousal}(t) = a_1 \cdot \text{Tempo}(t) + a_2 \cdot \text{SpectralFlux}(t) + a_3 \cdot \text{RhythmicComplexity}(t)
+\]
+
+All elements are normalized between 0–1, with weights derived from empirical affective neuroscience research.
+
+\subsubsection*{Nodes and Elements}
+
+\paragraph{�� Node: Valence}
+
+\begin{itemize}
+    \item \textbf{Function}: Detects emotional polarity of the musical input
+    \item EEG Alpha Asymmetry in MPFC correlates with valence level
+    \item Gamma and BOLD activation in amygdala and ventral striatum correlate with emotional reward
+\end{itemize}
+
+\textbf{�� Element: Tonal Stability}
+
+\begin{itemize}
+    \item Region: MPFC
+    \item EEG Marker: Alpha asymmetry
+    \item MNI: [+6, +52, +10]
+    \item Citation: Zatorre \& Halpern, 2005
+\end{itemize}
+
+\textbf{�� Element: Spectral Balance}
+
+\begin{itemize}
+    \item Region: Amygdala, Insula
+    \item Method: fMRI + EEG Gamma
+    \item MNI: [-20, 0, -12]
+    \item Citation: Koelsch, 2011
+\end{itemize}
+
+\textbf{�� Element: Harmonic Consonance}
+
+\begin{itemize}
+    \item Region: Ventral Striatum, NAcc
+    \item Method: fMRI
+    \item MNI: [+10, +8, -10]
+    \item Citation: Salimpoor et al., 2011
+\end{itemize}
+
+\paragraph{�� Node: Arousal}
+
+\begin{itemize}
+    \item \textbf{Function}: Captures intensity and activation driven by musical rhythm, tempo, and flux
+\end{itemize}
+
+\textbf{�� Element: Tempo Dynamics}
+
+\begin{itemize}
+    \item Region: Motor Cortex
+    \item EEG: Beta-band amplitude
+    \item MNI: [+40, -10, +60]
+    \item Citation: Janata et al., 2009
+\end{itemize}
+
+\textbf{�� Element: Spectral Flux}
+
+\begin{itemize}
+    \item Region: STG
+    \item EEG: Theta
+    \item MNI: [+50, +10, -6]
+    \item Citation: Alluri et al., 2012
+\end{itemize}
+
+\textbf{�� Element: Rhythmic Complexity}
+
+\begin{itemize}
+    \item Region: SMA
+    \item EEG/fMRI: Beta + BOLD
+    \item MNI: [+6, -6, +70]
+    \item Citation: Chen et al., 2008
+\end{itemize}
+
+\subsubsection*{GlassBrainMap Coordinates}
+
+\begin{center}
+\begin{tabular}{|l|c|l|l|}
+\hline
+\textbf{Node} & \textbf{MNI Coordinates} & \textbf{Region} & \textbf{Citation} \\
+\hline
+Tonal Stability & [+6, +52, +10] & MPFC & Zatorre \& Halpern (2005) \\
+Spectral Balance & [-20, 0, -12] & Amygdala, Insula & Koelsch (2011) \\
+Harmonic Conson. & [+10, +8, -10] & Ventral Striatum & Salimpoor et al. (2011) \\
+Tempo Dynamics & [+40, -10, +60] & Motor Cortex & Janata (2009) \\
+Spectral Flux & [+50, +10, -6] & STG & Alluri et al. (2012) \\
+Rhythmic Comp. & [+6, -6, +70] & SMA & Chen (2008) \\
+\hline
+\end{tabular}
+\end{center}
+
+These entries are directly mapped into the GlassBrain SVG and visualized in the \texttt{GlassBrain.jsx} component as colored resonance hotspots.
+
+\subsubsection*{Functional Summary}
+
+The AOU unit is the affective engine of the C³ system. It accounts for the emotional tone of musical events using neurobiologically validated metrics. It plays a key role in:
+
+\begin{itemize}
+    \item Differentiating emotionally positive/negative musical content
+    \item Identifying peaks of arousal or relaxation
+    \item Guiding adaptive audio systems (e.g., emotion-matching playlists, AI composition targeting affective impact)
+\end{itemize}
+
+It interacts heavily with:
+
+\begin{itemize}
+    \item CTU (tension)
+    \item PIU (flow state)
+    \item RSU (integrated resonance summary)
+\end{itemize}
+
+\subsubsection*{Applications}
+
+\begin{itemize}
+    \item Affective tagging in music libraries (real-time emotional metadata)
+    \item Neurofeedback therapy for emotional regulation
+    \item Real-time composition tools for mood shaping and expressive calibration
+\end{itemize}
+
+\subsection*{3.1.3 IEU – Intuitive Expectation Unit}
+
+\textbf{Models predictive listening and mismatch responses based on harmonic, rhythmic, and melodic entropy deviations.}
+
+\subsubsection*{Overview}
+
+The Intuitive Expectation Unit (IEU) simulates the listener’s internal predictive model during music listening. It monitors how the brain anticipates musical structure and reacts to violations of those expectations. This encompasses both pre-conscious responses (e.g., MMN) and attended violations (e.g., P300), as well as uncertainty metrics (e.g., melodic entropy).
+
+IEU reflects a foundational principle of musical cognition: expectation and surprise are primary drivers of attention, emotion, and memory. The system quantifies these dynamics through:
+
+\begin{itemize}
+    \item Early prediction-error signals (EEG MMN in STG)
+    \item P300 ERP responses in premotor regions
+    \item Neural tracking of melodic uncertainty (entropy measures in dACC and amygdala)
+\end{itemize}
+
+\subsubsection*{Mathematical Structure}
+
+IEU operates via three primary Nodes, weighted and combined over time:
+
+\[
+\text{IEU}(t) = w_1 \cdot \text{HarmonicViolation}(t) + w_2 \cdot \text{RhythmicViolation}(t) + w_3 \cdot \text{MelodicEntropy}(t)
+\]
+
+Each Node computes one functional aspect of expectation processing:
+
+\begin{itemize}
+    \item $w_1$: Surprise in harmony
+    \item $w_2$: Surprise in rhythm
+    \item $w_3$: Global uncertainty in melodic information
+\end{itemize}
+
+\subsubsection*{Nodes and Elements}
+
+\paragraph{�� Node: Harmonic Expectation Violation}
+
+\begin{itemize}
+    \item \textbf{Function}: Detects dissonant or out-of-key chords in a tonal context
+    \item \textbf{EEG Marker}: MMN ERP (mismatch negativity)
+    \item \textbf{Region}: STG, auditory cortex
+    \item \textbf{Citation}: Crespo-Bojorque et al., 2018
+\end{itemize}
+
+\textbf{�� Element: MMN Response (Fronto-central)}
+
+\begin{itemize}
+    \item EEG Sites: Fz, Cz
+    \item MNI: [0, +50, +20]
+    \item Type: ERP (automatic deviance detection)
+\end{itemize}
+
+\paragraph{�� Node: Rhythmic Expectation Violation}
+
+\begin{itemize}
+    \item \textbf{Function}: Identifies tempo/beat violations and rhythmic anomalies
+    \item \textbf{EEG Marker}: P300 ERP (conscious deviance)
+    \item \textbf{Region}: SMA, Motor Cortex
+    \item \textbf{Citation}: Schön et al., 2005
+\end{itemize}
+
+\textbf{�� Element: P300 Response (Motor ERP)}
+
+\begin{itemize}
+    \item MNI: [+10, -10, +60]
+    \item Type: ERP (attended violation detection)
+\end{itemize}
+
+\paragraph{�� Node: Melodic Entropy}
+
+\begin{itemize}
+    \item \textbf{Function}: Measures statistical uncertainty in melodic sequences
+    \item \textbf{EEG Marker}: Alpha/theta shift in medial regions
+    \item \textbf{fMRI}: dACC, amygdala
+    \item \textbf{Citation}: Koelsch, 2008
+\end{itemize}
+
+\textbf{�� Element: Information Content (Entropy)}
+
+\begin{itemize}
+    \item MNI: [+4, +18, +26]
+    \item Metric: Entropy of pitch sequences (Shannon index, Markov chain predictability)
+\end{itemize}
+
+\subsubsection*{GlassBrainMap Anchors}
+
+\begin{center}
+\begin{tabular}{|l|c|l|l|l|}
+\hline
+\textbf{Node} & \textbf{MNI Coordinates} & \textbf{Region} & \textbf{Method} & \textbf{Citation} \\
+\hline
+Harmonic Violation & [0, +50, +20] & STG, Fronto-central & EEG (MMN) & Crespo-Bojorque et al., 2018 \\
+Rhythmic Violation & [+10, -10, +60] & SMA, Motor Cortex & EEG (P300) & Schön et al., 2005 \\
+Melodic Entropy & [+4, +18, +26] & dACC, Amygdala & EEG ($\alpha$/$\theta$), fMRI & Koelsch, 2008 \\
+\hline
+\end{tabular}
+\end{center}
+
+These coordinates are rendered dynamically in the GlassBrain system and updated in real time as IEU activity changes.
+
+\subsubsection*{Functional Summary}
+
+IEU measures how expected a musical moment is and how the brain responds to the unexpected. When expectation is fulfilled, IEU output remains low. When it is violated, resonance spikes occur—often triggering cognitive reorientation or emotional reappraisal.
+
+IEU is crucial for:
+
+\begin{itemize}
+    \item Segmenting musical flow
+    \item Signaling novelty or structural change
+    \item Synchronizing listener attention to surprise events
+\end{itemize}
+
+It interacts strongly with:
+
+\begin{itemize}
+    \item CTU (tension under surprise)
+    \item SAU (memory under uncertainty)
+    \item AOU (emotional impact of surprise)
+\end{itemize}
+
+\subsubsection*{Applications}
+
+\begin{itemize}
+    \item Adaptive AI music systems: Dynamically vary predictability to hold listener attention
+    \item Neuroeducation: Track student surprise and engagement in music learning
+    \item Therapeutic design: Gradually increase predictability to rebuild trust in rhythm/melody recognition
+\end{itemize}
+
+\subsection*{3.1.4 SRU – Somatic Resonance Unit}
+
+\textbf{Models rhythmic motor entrainment and body-based synchronization to musical stimuli.}
+
+\subsubsection*{Overview}
+
+The Somatic Resonance Unit (SRU) models how the brain's motor and premotor systems synchronize with perceived musical rhythm. It captures entrainment phenomena in motor cortices, pulse clarity processing, and tempo stability detection, which form the physiological basis for movement, tapping, dancing, and temporal prediction during music listening.
+
+This Unit operates on the principle that rhythmic structures entrain cortical beta-band oscillations, and that clear pulse and metric structures elicit synchronized activity in:
+
+\begin{itemize}
+    \item Supplementary Motor Area (SMA)
+    \item Premotor Cortex (PMC)
+    \item Basal Ganglia (Putamen)
+    \item Cerebellum
+\end{itemize}
+
+SRU plays a crucial role in connecting auditory input to bodily response via motor entrainment and has direct applications in rehabilitation, rhythm training, and movement–based therapies.
+
+\subsubsection*{Mathematical Model}
+
+SRU is defined by a linear combination of three functional Nodes:
+
+\[
+\text{SRU}(t) = s_1 \cdot \text{PulseClarity}(t) + s_2 \cdot \text{MetricStability}(t) + s_3 \cdot \text{TempoStability}(t)
+\]
+
+Where:
+
+\begin{itemize}
+    \item $s_1, s_2, s_3$: weight coefficients derived from neural effect size or application-specific relevance
+\end{itemize}
+
+\subsubsection*{Nodes and Elements}
+
+\paragraph{�� Node: Pulse Clarity}
+
+\begin{itemize}
+    \item \textbf{Function}: Detects the salience of rhythmic beat and its effect on motor cortex
+    \item \textbf{EEG Marker}: Beta amplitude increase
+    \item \textbf{Regions}: Motor Cortex, Putamen, Cerebellum
+    \item \textbf{Citation}: Fujioka et al., 2012
+\end{itemize}
+
+\textbf{�� Element: Beat Salience}
+
+\begin{itemize}
+    \item MNI: [+20, -10, +60]
+    \item EEG: $\beta$-band power at C3/Cz
+    \item fMRI: BOLD in cerebellar vermis and PMC
+\end{itemize}
+
+\paragraph{�� Node: Metric Stability}
+
+\begin{itemize}
+    \item \textbf{Function}: Represents the regularity and predictability of rhythmic subdivisions
+    \item \textbf{EEG Marker}: Beta phase-locking
+    \item \textbf{Regions}: SMA, Premotor Cortex
+    \item \textbf{Citation}: Chen et al., 2008
+\end{itemize}
+
+\textbf{�� Element: Metric Regularity}
+
+\begin{itemize}
+    \item MNI: [+6, +4, +64]
+    \item EEG: $\beta$ phase coherence
+    \item fMRI: SMA BOLD activation
+\end{itemize}
+
+\paragraph{�� Node: Tempo Stability}
+
+\begin{itemize}
+    \item \textbf{Function}: Measures consistency in tempo; correlates with sensorimotor coupling strength
+    \item \textbf{EEG Marker}: Interregional beta coherence
+    \item \textbf{Regions}: Putamen, PMC
+    \item \textbf{Citation}: Thaut et al., 2015
+\end{itemize}
+
+\textbf{�� Element: Temporal Consistency}
+
+\begin{itemize}
+    \item MNI: [+28, -12, +60]
+    \item EEG: $\beta$ coherence (PMC $\leftrightarrow$ Basal Ganglia)
+\end{itemize}
+
+\subsubsection*{GlassBrainMap Anchors}
+
+\begin{center}
+\begin{tabular}{|l|c|l|l|l|}
+\hline
+\textbf{Node} & \textbf{MNI Coordinates} & \textbf{Region} & \textbf{Method} & \textbf{Citation} \\
+\hline
+Pulse Clarity & [+20, -10, +60] & Motor Cortex, Putamen & EEG ($\beta$), fMRI & Fujioka et al., 2012 \\
+Metric Stability & [+6, +4, +64] & SMA, Premotor Cortex & EEG phase-locking & Chen et al., 2008 \\
+Tempo Stability & [+28, -12, +60] & PMC, Basal Ganglia & EEG coherence & Thaut et al., 2015 \\
+\hline
+\end{tabular}
+\end{center}
+
+These coordinates are used in the interactive GlassBrainMap, providing anatomical precision for motor–rhythmic coupling during music listening.
+
+\subsubsection*{Functional Summary}
+
+SRU tracks real-time neural entrainment of the motor system to rhythmic music. It reflects how the body prepares to move, taps to the beat, and predicts upcoming rhythmic events. Its signal rises with:
+
+\begin{itemize}
+    \item Stable and predictable beats
+    \item High beat salience and metric clarity
+    \item Entraining pulse structures (e.g., groove, swing, syncopation)
+\end{itemize}
+
+It often correlates positively with:
+
+\begin{itemize}
+    \item PIU (immersion through movement)
+    \item AOU (arousal from rhythm)
+    \item NSU (neural synchronization)
+\end{itemize}
+
+\subsubsection*{Applications}
+
+\begin{itemize}
+    \item Motor rehabilitation and rhythm therapy
+    \item Groove detection algorithms in music information retrieval
+    \item Neurophysiological metrics of musical engagement
+\end{itemize}
+
+SRU is particularly relevant for dance research, tempo training, and interactive AI music generation that responds to bodily input or encourages physical engagement.
+
+\subsection*{3.1.5 SAU – Semantic–Autobiographical Unit}
+
+\textbf{Models music-evoked autobiographical memory and semantic association.}
+
+\subsubsection*{Overview}
+
+The Semantic–Autobiographical Unit (SAU) captures the interaction between musical structure and episodic/semantic memory systems in the brain. It quantifies how music activates autobiographical recall and semantic meaning through hippocampal–prefrontal–limbic networks.
+
+This Unit models three core processes:
+
+\begin{itemize}
+    \item Melodic repetition and its role in memory cueing
+    \item Tonal familiarity and its effect on semantic access
+    \item Timbre recognition and affective memory tagging
+\end{itemize}
+
+SAU is essential for explaining why certain music evokes specific personal memories, how musical familiarity shapes identity, and how past experiences influence present perception.
+
+\subsubsection*{Mathematical Model}
+
+SAU is calculated as:
+
+\[
+\text{SAU}(t) = s_1 \cdot \text{MotifRecurrence}(t) + s_2 \cdot \text{TonalityRecall}(t) + s_3 \cdot \text{TimbreFamiliarity}(t)
+\]
+
+Each Node maps to a neuroanatomically distinct memory-processing mechanism and contributes to the system’s representation of semantic–episodic resonance.
+
+\subsubsection*{Nodes and Elements}
+
+\paragraph{�� Node: Motif Recurrence}
+
+\begin{itemize}
+    \item \textbf{Function}: Detects melodic repetitions as episodic memory cues
+    \item \textbf{EEG Marker}: Theta increase
+    \item \textbf{Regions}: Hippocampus, Parahippocampal Gyrus
+    \item \textbf{Citation}: Foss et al., 2007
+\end{itemize}
+
+\textbf{�� Element: Melodic Repetition}
+
+\begin{itemize}
+    \item MNI: [–24, –40, –8]
+    \item Method: EEG $\theta$; fMRI hippocampal BOLD
+    \item Description: Increased theta in temporal–limbic regions during reoccurring phrases
+\end{itemize}
+
+\paragraph{�� Node: Tonality Recall}
+
+\begin{itemize}
+    \item \textbf{Function}: Activates stored tonal patterns and schemas
+    \item \textbf{EEG Marker}: Alpha increase
+    \item \textbf{Regions}: MPFC, ACC
+    \item \textbf{Citation}: Foss et al., 2007
+\end{itemize}
+
+\textbf{�� Element: Tonal Familiarity}
+
+\begin{itemize}
+    \item MNI: [+6, +48, +8]
+    \item Method: EEG $\alpha$; MPFC BOLD
+    \item Description: Retrieval of culturally learned tonality (major/minor schemas)
+\end{itemize}
+
+\paragraph{�� Node: Timbre Familiarity}
+
+\begin{itemize}
+    \item \textbf{Function}: Associates sound qualities with emotional memory
+    \item \textbf{EEG Marker}: Gamma increase
+    \item \textbf{Regions}: Amygdala, STG
+    \item \textbf{Citation}: Chen et al., 2008
+\end{itemize}
+
+\textbf{�� Element: Timbre-based Memory}
+
+\begin{itemize}
+    \item MNI: [+22, +0, –20]
+    \item Method: EEG $\gamma$; STG BOLD
+    \item Description: Recognition of familiar instrument types triggers affective memory
+\end{itemize}
+
+\subsubsection*{GlassBrainMap Anchors}
+
+\begin{center}
+\begin{tabular}{|l|c|l|l|l|}
+\hline
+\textbf{Node} & \textbf{MNI Coordinates} & \textbf{Region} & \textbf{Method} & \textbf{Citation} \\
+\hline
+Melodic Repetition & [–24, –40, –8] & Hippocampus, ParaHC & EEG $\theta$, fMRI & Foss et al., 2007 \\
+Tonal Familiarity & [+6, +48, +8] & MPFC, ACC & EEG $\alpha$, fMRI & Foss et al., 2007 \\
+Timbre-based Memory & [+22, +0, –20] & Amygdala, STG & EEG $\gamma$, fMRI & Chen et al., 2008 \\
+\hline
+\end{tabular}
+\end{center}
+
+These brain regions are anatomically mapped and visualized within the GlassBrain system in real time.
+
+\subsubsection*{Functional Summary}
+
+SAU is the mnemonic layer of the C³ system. It provides a biologically grounded mechanism for modeling:
+
+\begin{itemize}
+    \item Musical nostalgia
+    \item Identity-based music perception
+    \item Semantic resonance of culturally or personally meaningful sounds
+\end{itemize}
+
+Its resonance increases with:
+
+\begin{itemize}
+    \item Repetition of previously heard motifs
+    \item Use of familiar tonal centers
+    \item Recognition of personally associated timbres (e.g., piano from childhood)
+\end{itemize}
+
+SAU often co-activates with:
+
+\begin{itemize}
+    \item AOU (affective salience)
+    \item IEU (surprise + recall)
+    \item IRU (interpersonal resonance and memory convergence)
+\end{itemize}
+
+\subsubsection*{Applications}
+
+\begin{itemize}
+    \item Music therapy for trauma, memory loss, and dementia
+    \item AI playlist personalization based on listener history
+    \item Autobiographical score composition using musical memories as structure
+\end{itemize}
+
+SAU also supports cultural modeling—how exposure to tonal systems and timbral norms shapes perceptual identity and long-term memory.
+
+\subsection*{3.1.6 PIU – Phenomenological Immersion Unit}
+
+\textbf{Models musical flow, absorption, and deep attention states through frontal, parietal, and default mode network dynamics.}
+
+\subsubsection*{Overview}
+
+The Phenomenological Immersion Unit (PIU) models non-analytical, affectively immersive listening states where attention, cognition, and motor inhibition converge to produce a sense of musical flow. These states often coincide with:
+
+\begin{itemize}
+    \item Temporal suspension (loss of time awareness)
+    \item Suppression of cognitive self-monitoring (reduced DMN activity)
+    \item Heightened sensory and affective clarity
+\end{itemize}
+
+PIU tracks the transition from conscious processing to immersive resonance, particularly during:
+
+\begin{itemize}
+    \item Slowly evolving harmonic textures
+    \item Minimalistic repetition
+    \item Ambient or timbrally complex soundscapes
+    \item Trance, ritual, or meditative musics
+\end{itemize}
+
+It is one of the most non-linear and affective Units in the system.
+
+\subsubsection*{Mathematical Structure}
+
+PIU is computed as a blend of three neurodynamic constructs:
+
+\[
+\text{PIU}(t) = p_1 \cdot \text{AttentionalSalience}(t) + p_2 \cdot \text{FlowState}(t) + p_3 \cdot \text{TransientClarity}(t)
+\]
+
+Each Node corresponds to a specific neural configuration observed during immersive listening or musical flow:
+
+\begin{itemize}
+    \item $p_1$: attention gain
+    \item $p_2$: default-mode suppression
+    \item $p_3$: temporal resolution and transition anchoring
+\end{itemize}
+
+\subsubsection*{Nodes and Elements}
+
+\paragraph{�� Node: Attentional Salience}
+
+\begin{itemize}
+    \item \textbf{Function}: Measures the emergence of sustained, high-focus listening
+    \item \textbf{EEG Marker}: Gamma-band elevation
+    \item \textbf{Regions}: ACC, Frontal-Parietal Network
+    \item \textbf{Citation}: Santoyo et al., 2023
+\end{itemize}
+
+\textbf{�� Element: EEG Gamma Activation}
+
+\begin{itemize}
+    \item MNI: [+4, +32, +24]
+    \item Description: Increased $\gamma$ during perceptual focusing (timbre-based or harmonic absorption)
+\end{itemize}
+
+\paragraph{�� Node: Flow State Index}
+
+\begin{itemize}
+    \item \textbf{Function}: Tracks mental state transitions into immersive flow
+    \item \textbf{EEG Marker}: Alpha suppression; BOLD reduction in DMN
+    \item \textbf{Regions}: DMN hubs (mPFC, PCC); pre-SMA
+    \item \textbf{Citation}: Patterson et al., 2002
+\end{itemize}
+
+\textbf{�� Element: Default Mode Network Suppression}
+
+\begin{itemize}
+    \item MNI: [+2, +50, +6]
+    \item Description: Drop in self-referential processing associated with absorption
+\end{itemize}
+
+\paragraph{�� Node: Transient Clarity}
+
+\begin{itemize}
+    \item \textbf{Function}: Anchors transitions (e.g., chord change, pulse entrance)
+    \item \textbf{EEG Marker}: Beta phase-locking
+    \item \textbf{Regions}: Frontal–Parietal Network
+    \item \textbf{Citation}: Nozaradan et al., 2012
+\end{itemize}
+
+\textbf{�� Element: Beta Phase Locking}
+
+\begin{itemize}
+    \item MNI: [+20, +10, +64]
+    \item Description: Transition clarity in EEG $\beta$-phase alignment
+\end{itemize}
+
+\subsubsection*{GlassBrainMap Anchors}
+
+\begin{center}
+\begin{tabular}{|l|c|l|l|l|}
+\hline
+\textbf{Node} & \textbf{MNI Coordinates} & \textbf{Region} & \textbf{EEG/fMRI Marker} & \textbf{Citation} \\
+\hline
+Attentional Salience & [+4, +32, +24] & ACC, FP Network & EEG $\gamma$ & Santoyo et al., 2023 \\
+Flow State & [+2, +50, +6] & mPFC, DMN & EEG $\alpha \downarrow$, fMRI DMN BOLD $\downarrow$ & Patterson et al., 2002 \\
+Transient Clarity & [+20, +10, +64] & FP Network & EEG $\beta$ phase-lock & Nozaradan et al., 2012 \\
+\hline
+\end{tabular}
+\end{center}
+
+These entries are integrated into GlassBrain SVG and shown in immersive resonance clusters.
+
+\subsubsection*{Functional Summary}
+
+PIU is the immersive dimension of C³. It increases during:
+
+\begin{itemize}
+    \item Deep listening
+    \item Meditative or minimalistic music
+    \item Non-verbal sound attention
+    \item Flow-inducing music (e.g., ambient, trance, sacred chants)
+\end{itemize}
+
+PIU typically correlates with:
+
+\begin{itemize}
+    \item $\downarrow$ CTU (reduced tension)
+    \item $\uparrow$ AOU (emotional absorption)
+    \item $\uparrow$ SAU (memory/identity resonance)
+    \item $\uparrow$ IRU (shared flow in group listening)
+\end{itemize}
+
+The PIU trace reflects how long a listener is “lost in the music.”
+
+\subsubsection*{Applications}
+
+\begin{itemize}
+    \item Therapeutic music for anxiety, depression, PTSD
+    \item Flow design in composition and sound installations
+    \item Biometric scoring of listener engagement and trance induction
+\end{itemize}
+
+In real-time systems, PIU can be used as a threshold trigger to adjust musical pacing, harmonic density, or lyrical clarity, enhancing sustained immersion.
+
+\subsection*{3.1.7 IRU – Interpersonal Resonance Unit}
+
+\textbf{Models neural synchrony, emotional convergence, and inter-brain coherence during shared musical experiences.}
+
+\subsubsection*{Overview}
+
+The Interpersonal Resonance Unit (IRU) measures the shared neural and affective dynamics that arise when music is experienced collectively. This Unit is founded on the principles of:
+
+\begin{itemize}
+    \item Inter-brain coherence (neural synchrony across listeners)
+    \item Emotional contagion via acoustic affect cues
+    \item Social synchronization of motor and affective circuits during group musical experiences
+\end{itemize}
+
+IRU is based on emerging research from hyperscanning EEG, dual-fMRI, and social-cognitive neuroscience, which shows that synchronous music listening, especially in emotionally charged contexts, causes measurable co-activation of limbic, temporal, and frontal regions across brains.
+
+\subsubsection*{Mathematical Structure}
+
+IRU is computed as a weighted average of three social-cognitive resonance Nodes:
+
+\[
+\text{IRU}(t) = r_1 \cdot \text{InterBrainCoherence}(t) + r_2 \cdot \text{SocialSynchrony}(t) + r_3 \cdot \text{EmotionalResonance}(t)
+\]
+
+Each Node represents a distinct interpersonal neural mechanism triggered by collective music engagement.
+
+\subsubsection*{Nodes and Elements}
+
+\paragraph{�� Node: Inter-Brain Coherence}
+
+\begin{itemize}
+    \item \textbf{Function}: Measures synchronized alpha/theta rhythms between participants
+    \item \textbf{EEG Marker}: Cross-brain phase-locking
+    \item \textbf{Regions}: Frontal Cortex, Superior Temporal Gyrus (STG)
+    \item \textbf{Citation}: Wallmark et al., 2018
+\end{itemize}
+
+\textbf{�� Element: EEG Hyperscanning Coherence}
+
+\begin{itemize}
+    \item MNI: [0, +52, +14]
+    \item Metric: Phase coherence across listener dyads ($\alpha$/$\theta$ bands)
+    \item Description: Increased alignment in neural oscillations during co-listening
+\end{itemize}
+
+\paragraph{�� Node: Social Synchrony}
+
+\begin{itemize}
+    \item \textbf{Function}: Captures joint activation in movement and attention networks
+    \item \textbf{EEG Marker}: Gamma amplitude increases during joint attention
+    \item \textbf{Regions}: Frontal Cortex, STG
+    \item \textbf{Citation}: Wallmark et al., 2018
+\end{itemize}
+
+\textbf{�� Element: Frontal-Temporal Activation}
+
+\begin{itemize}
+    \item MNI: [+12, +42, +14]
+    \item EEG: $\gamma$ power co-fluctuations in listeners
+    \item Description: Mirrors shared attention and gesture during music
+\end{itemize}
+
+\paragraph{�� Node: Emotional Resonance}
+
+\begin{itemize}
+    \item \textbf{Function}: Models shared emotional responses via limbic system coupling
+    \item \textbf{EEG/fMRI Marker}: Alpha asymmetry; amygdala BOLD
+    \item \textbf{Regions}: Amygdala, ACC
+    \item \textbf{Citation}: Yang et al., 2025
+\end{itemize}
+
+\textbf{�� Element: Limbic Activation}
+
+\begin{itemize}
+    \item MNI: [+8, +6, -10]
+    \item Description: Shared peaks in arousal/valence across participants
+\end{itemize}
+
+\subsubsection*{GlassBrainMap Anchors}
+
+\begin{center}
+\begin{tabular}{|l|c|l|l|l|}
+\hline
+\textbf{Node} & \textbf{MNI Coordinates} & \textbf{Region} & \textbf{Method} & \textbf{Citation} \\
+\hline
+Inter-Brain Coherence & [0, +52, +14] & Frontal + STG & EEG $\alpha$/$\theta$ Sync & Wallmark et al., 2018 \\
+Social Synchrony & [+12, +42, +14] & Frontal + STG & EEG $\gamma$ & Wallmark et al., 2018 \\
+Emotional Resonance & [+8, +6, -10] & Amygdala + ACC & fMRI + EEG $\alpha$ & Yang et al., 2025 \\
+\hline
+\end{tabular}
+\end{center}
+
+These elements are rendered together in a special Group-Level GlassBrain Overlay, enabling visualization of multi-brain synchrony fields.
+
+\subsubsection*{Functional Summary}
+
+IRU allows C³ to model music not just as an internal experience, but as a shared cognitive–emotional field. IRU increases when:
+
+\begin{itemize}
+    \item Music is heard in a social context
+    \item Listeners share a history or cultural framework
+    \item Body-based synchronization (e.g., group clapping, dancing) is present
+    \item Emotional peaks align across individuals
+\end{itemize}
+
+IRU is the bridge between:
+
+\begin{itemize}
+    \item AOU (individual affect)
+    \item PIU (flow)
+    \item RSU (integrated group resonance)
+\end{itemize}
+
+\subsubsection*{Applications}
+
+\begin{itemize}
+    \item Social music therapy (e.g., group rhythm interventions, trauma re-integration)
+    \item AI-driven shared music experiences (co-listening apps, social playlist engines)
+    \item Group neuroscience and emotion regulation training
+\end{itemize}
+
+IRU enables the modeling of shared emotional spaces and neural entrainment ecosystems, placing music at the center of group cognition.
+
+\subsection*{3.1.8 NSU – Neural Synchronization Unit}
+
+\textbf{Models neural entrainment, phase-locking, and large-scale temporal coherence in auditory–motor–cognitive systems.}
+
+\subsubsection*{Overview}
+
+The Neural Synchronization Unit (NSU) captures how music organizes and synchronizes brain activity through rhythmic and spectral structure. It operates on the principle that musical events—especially rhythmic periodicities, spectral regularities, and melodic contours—can entrain large-scale cortical networks via:
+
+\begin{itemize}
+    \item Phase-locking to external rhythms
+    \item Cross-regional coherence in gamma, beta, and alpha bands
+    \item Temporal anticipation and predictive resonance
+\end{itemize}
+
+NSU integrates empirical findings from EEG, MEG, and frequency–following response (FFR) studies that show how temporal structure in sound becomes mirrored in neural timing.
+
+It is particularly relevant in contexts of:
+
+\begin{itemize}
+    \item Rhythm perception and pulse tracking
+    \item Sensory–motor coupling
+    \item Beat-based learning and coordination
+    \item Tonal phase tracking and attentional alignment
+\end{itemize}
+
+\subsubsection*{Mathematical Model}
+
+NSU is computed as:
+
+\[
+\text{NSU}(t) = n_1 \cdot \text{GammaCoherence}(t) + n_2 \cdot \text{BetaPhaseLocking}(t) + n_3 \cdot \text{AlphaSynchrony}(t)
+\]
+
+Each Node aggregates multiple regional signals reflecting cross-frequency and cross-site temporal alignment.
+
+\subsubsection*{Nodes and Elements}
+
+\paragraph{�� Node: Gamma Coherence}
+
+\begin{itemize}
+    \item \textbf{Function}: Tracks gamma-band synchrony between auditory and motor cortices
+    \item \textbf{EEG Marker}: $\gamma$ coherence (STG $\leftrightarrow$ Motor Cortex)
+    \item \textbf{Regions}: STG, Motor Cortex
+    \item \textbf{Citation}: Bidelman \& Heinz, 2011
+\end{itemize}
+
+\textbf{�� Element: Gamma-band Synchrony}
+
+\begin{itemize}
+    \item MNI: [+38, -10, +52]
+    \item EEG: $\gamma$-band inter-site phase clustering
+    \item Metric: Phase-locking value (PLV)
+\end{itemize}
+
+\paragraph{�� Node: Beta Phase Locking}
+
+\begin{itemize}
+    \item \textbf{Function}: Models cortical beta-band entrainment in motor sequencing and prediction
+    \item \textbf{EEG Marker}: $\beta$ phase locking (SMA $\leftrightarrow$ Basal Ganglia)
+    \item \textbf{Regions}: SMA, PMC, Basal Ganglia, STG
+    \item \textbf{Citation}: Bidelman \& Krishnan, 2009
+\end{itemize}
+
+\textbf{�� Element: Motor-Auditory Integration}
+
+\begin{itemize}
+    \item MNI: [+8, -6, +60]
+    \item EEG: Inter-site $\beta$ PLV across frontal–motor nodes
+\end{itemize}
+
+\paragraph{�� Node: Alpha Synchrony}
+
+\begin{itemize}
+    \item \textbf{Function}: Measures large-scale attentional coherence in alpha network
+    \item \textbf{EEG Marker}: $\alpha$ interhemispheric synchrony
+    \item \textbf{Regions}: Frontal Cortex, Parietal Cortex
+    \item \textbf{Citation}: Strait et al., 2012
+\end{itemize}
+
+\textbf{�� Element: Frontal–Parietal Alpha Synchrony}
+
+\begin{itemize}
+    \item MNI: [+4, +52, +10]
+    \item EEG: $\alpha$ band coherence (fronto-parietal loop)
+    \item Description: Indicator of global attention tuning to musical flow
+\end{itemize}
+
+\subsubsection*{GlassBrainMap Anchors}
+
+\begin{center}
+\begin{tabular}{|l|c|l|l|l|}
+\hline
+\textbf{Node} & \textbf{MNI Coordinates} & \textbf{Region} & \textbf{Method} & \textbf{Citation} \\
+\hline
+Gamma Coherence & [+38, -10, +52] & STG, Motor Cortex & EEG $\gamma$ PLV & Bidelman \& Heinz, 2011 \\
+Beta Phase Locking & [+8, -6, +60] & SMA, Basal Ganglia & EEG $\beta$ PLV & Bidelman \& Krishnan, 2009 \\
+Alpha Synchrony & [+4, +52, +10] & Frontal–Parietal Cortex & EEG $\alpha$ Coherence & Strait et al., 2012 \\
+\hline
+\end{tabular}
+\end{center}
+
+These nodes are rendered in the GlassBrain overlay, showing synchronization fields in time-resolved layers.
+
+\subsubsection*{Functional Summary}
+
+NSU tracks how temporally structured sound creates temporally structured brain activity.
+
+It reflects:
+
+\begin{itemize}
+    \item High-frequency ($\gamma$) micro-entrainment for precise timing
+    \item Mid-frequency ($\beta$) entrainment for motor planning
+    \item Low-frequency ($\alpha$) coherence for attentional binding
+\end{itemize}
+
+NSU is crucial for:
+
+\begin{itemize}
+    \item Coordinated movement to music
+    \item Pulse perception
+    \item Learning of rhythmic and metrical structure
+    \item Sustained attention
+\end{itemize}
+
+It interacts strongly with:
+
+\begin{itemize}
+    \item SRU (somatic resonance)
+    \item IEU (predictive modeling)
+    \item RSU (resonance integration)
+\end{itemize}
+
+\subsubsection*{Applications}
+
+\begin{itemize}
+    \item Neuroeducation for rhythm training, beat perception, language timing
+    \item Therapeutic rhythm protocols (e.g., Parkinson’s interventions)
+    \item Real-time music–brain feedback in composition and AI systems
+\end{itemize}
+
+NSU gives C³ the neural infrastructure to temporally align listener state with musical structure—turning sound into synchronization.
+
+\subsection*{3.1.9 RSU – Resonance Synthesis Unit}
+
+\textbf{Integrates all Unit-level outputs into a unified cognitive–emotional–motor resonance profile.}
+
+\subsubsection*{Overview}
+
+The Resonance Synthesis Unit (RSU) is the final computational layer in the C³ system. Unlike the other eight Units, which represent specific cognitive functions (e.g., tension, emotion, memory), RSU performs a global integration of all underlying Units, Nodes, and Elements to compute:
+
+\begin{itemize}
+    \item Total moment-to-moment cognitive resonance
+    \item System-wide synchrony and coherence
+    \item Weighted convergence of multi-dimensional neural states
+\end{itemize}
+
+RSU does not introduce new raw data. Rather, it serves as a nonlinear summarization node—a temporal and structural resonance integrator—combining emotion, memory, expectation, attention, motor entrainment, and inter-brain synchrony into a single multidimensional vector.
+
+\subsubsection*{Mathematical Formulation}
+
+RSU operates across two primary mathematical layers:
+
+\paragraph{a. Unified Coherence Score (UCS)}
+
+\[
+\text{UCS}(t) = \frac{1}{9} \sum_{i=1}^{9} C^3_i(t)
+\]
+
+Where:
+
+\begin{itemize}
+    \item $C^3_i(t)$: The computed resonance from each Unit at time $t$
+\end{itemize}
+
+\textbf{Output:} Scalar between $[0,1]$ representing total network activation.\\
+This value can be interpreted as a resonance index—how "fully activated" the cognitive-musical system is.
+
+\paragraph{b. Weighted Network Fusion (WNF)}
+
+\[
+\text{RSU}(t) = \mathbf{W} \cdot \mathbf{C}^3(t)
+\]
+
+Where:
+
+\[
+\mathbf{C}^3(t) = [\text{CTU}(t), \text{AOU}(t), \ldots, \text{NSU}(t)]^T \quad \mathbf{W} \in \mathbb{R}^{1 \times 9}
+\]
+
+$\mathbf{W}$: Application-specific or data-derived weights (e.g., in therapy, PIU and SAU may be up-weighted)
+
+This produces a 1D or N-dimensional fusion vector depending on context (e.g., therapy, composition, neuroscience modeling).
+
+\subsubsection*{Nodes and Elements}
+
+RSU consists of three conceptual Nodes, each acting as a functional lens on the total C³ state.
+
+\paragraph{�� Node: Unified Coherence}
+
+\begin{itemize}
+    \item \textbf{Function}: Measures cross-Unit synchrony at each time slice
+    \item \textbf{Metric}: Multi-band EEG synchrony
+    \item \textbf{Regions}: ACC, PCC, STG, Frontal Cortex
+    \item \textbf{Citation}: Yang et al., 2025
+\end{itemize}
+
+\textbf{�� Element: Network-Wide EEG Coherence}
+
+\begin{itemize}
+    \item MNI: [+8, +44, +12]
+    \item Signal: PLV across Unit-critical regions
+    \item Description: Degree to which separate Units exhibit synchronous resonance
+\end{itemize}
+
+\paragraph{�� Node: Consonance Clarity}
+
+\begin{itemize}
+    \item \textbf{Function}: Aggregates emotional, tonal, and spectral harmony into a single perceptual clarity index
+    \item \textbf{Metric}: Consonance fusion index
+    \item \textbf{Regions}: NAcc, Amygdala, Broca, PMC
+    \item \textbf{Citation}: Salimpoor et al., 2011
+\end{itemize}
+
+\textbf{�� Element: Resonant Fusion Metric}
+
+\begin{itemize}
+    \item MNI: [+12, +10, -10]
+    \item Description: Integrated emotional–harmonic salience field
+    \item Method: Entropy-weighted BOLD + EEG synchrony sum
+\end{itemize}
+
+\paragraph{�� Node: Network Fusion}
+
+\begin{itemize}
+    \item \textbf{Function}: Computes total resonance field from all C³ Units
+    \item \textbf{Metric}: Cross-unit vector field
+    \item \textbf{Regions}: DMN, Sensorimotor Network, Limbic System
+    \item \textbf{Citation}: SRC⁹ Master Report
+\end{itemize}
+
+\textbf{�� Element: Cross-Unit Weighted Synthesis}
+
+\begin{itemize}
+    \item MNI: N/A (meta-region spanning all prior Units)
+    \item Description: Final vector representation of listener state
+    \item Output: Dynamic resonance map
+\end{itemize}
+
+\subsubsection*{GlassBrainMap Anchors}
+
+\begin{center}
+\begin{tabular}{|l|c|l|l|l|}
+\hline
+\textbf{Node} & \textbf{MNI Coordinates} & \textbf{Region} & \textbf{Method} & \textbf{Citation} \\
+\hline
+Unified Coherence & [+8, +44, +12] & ACC, STG, PCC, Frontal & EEG Multi-Band Coherence & Yang et al., 2025 \\
+Consonance Clarity & [+12, +10, -10] & NAcc, Broca, Amygdala, PMC & fMRI + EEG Fusion & Salimpoor et al., 2011 \\
+Network Fusion & — & Multi-unit Meta Layer & All prior Unit inputs & SRC⁹ Report (2025) \\
+\hline
+\end{tabular}
+\end{center}
+
+These form the top-level projection in the Resonance Map, a composite data structure exported per listener or per musical piece.
+
+\subsubsection*{Functional Summary}
+
+RSU enables system-wide monitoring and integrated decision-making:
+
+\begin{itemize}
+    \item Real-time tracking of full cognitive-emotional resonance
+    \item Personalized resonance profile calculation
+    \item Macro-temporal analysis (e.g., identifying resonance arcs over time)
+\end{itemize}
+
+It often acts as a target state:
+
+\begin{itemize}
+    \item For adaptive AI generation
+    \item For guided composition
+    \item For neurofeedback therapy
+\end{itemize}
+
+\subsubsection*{Applications}
+
+\begin{itemize}
+    \item Therapeutic optimization: Detect optimal convergence of memory, attention, and emotion
+    \item Neuro-symbolic composition: Use RSU trajectory to sculpt musical form
+    \item Resonance fingerprinting: Build listener resonance signatures for adaptive playlists
+\end{itemize}
+
+RSU is the endpoint and also the summary interface of the C³ system. It translates complex internal dynamics into usable, visible, and actionable outputs.
+
+\section*{III.2 Node and Element Architecture}
+
+\textit{How are Nodes and Elements structured, connected, and activated in C³?}
+
+\subsection*{3.2.1 Hierarchical Composition: UNIT $\rightarrow$ NODE $\rightarrow$ ELEMENT}
+
+C³ operates on a three-tiered architecture, in which each UNIT is subdivided into Nodes, and each Node consists of one or more Elements.
+
+This design allows C³ to represent cognition at multiple resolutions:
+
+\begin{center}
+\begin{tabular}{|c|l|c|}
+\hline
+\textbf{Level} & \textbf{Function} & \textbf{Quantity} \\
+\hline
+UNIT & Macro cognitive subsystem (e.g., Emotion, Memory) & 9 \\
+NODE & Functional construct (e.g., Flow, Expectation) & 3–4/unit \\
+ELEMENT & Measurable neural signal (EEG, fMRI, MEG) & 2–5/node \\
+\hline
+\end{tabular}
+\end{center}
+
+Each Element is traceable to:
+
+\begin{itemize}
+    \item A neurophysiological method (e.g., EEG phase coherence, ERP, fMRI BOLD)
+    \item A brain region (MNI coordinates)
+    \item A citation (peer-reviewed neuroscientific literature)
+\end{itemize}
+
+\subsection*{3.2.2 Node Definition}
+
+A Node in C³ represents a mid-level computational module with a singular cognitive or affective function.
+
+Mathematically:
+
+\[
+\text{Node}_{ij}(t) = \sum_{k=1}^{M_{ij}} w_{ijk} \cdot \text{Element}_{ijk}(t)
+\]
+
+Where:
+
+\begin{itemize}
+    \item $\text{Node}_{ij}(t)$: The $j$-th Node in the $i$-th Unit at time $t$
+    \item $w_{ijk}$: Element weight within the Node (typically 0.25–0.50 normalized)
+    \item $\text{Element}_{ijk}(t)$: The $k$-th Element in that Node
+\end{itemize}
+
+Each Node acts as a resonance transformer, mapping local signals into cognitive-scale responses (e.g., surprise, salience, tension, familiarity, arousal).
+
+\subsection*{3.2.3 Element Definition}
+
+An Element is the atomic analytical unit of C³. It consists of:
+
+\begin{center}
+\begin{tabular}{|l|l|p{8cm}|}
+\hline
+\textbf{Field} & \textbf{Type} & \textbf{Description} \\
+\hline
+\texttt{label} & string & e.g., ``EEG Gamma Activation'' \\
+\texttt{method} & enum & ``EEG'', ``fMRI'', ``MEG'', or hybrid \\
+\texttt{regions} & list[string] & Anatomical targets (e.g., ACC, STG) \\
+\texttt{mni} & list[int] & MNI coordinates for GlassBrainMap \\
+\texttt{signal} & time series & Raw or preprocessed signal (external input) \\
+\texttt{value(t)} & float & Normalized resonance value at time $t$ \\
+\texttt{citation} & string & Reference to literature \\
+\hline
+\end{tabular}
+\end{center}
+
+Each Element is initialized by parsing its signal from a time series and rescaling it:
+
+\[
+\text{value}(t) = \frac{x(t) - \min(x)}{\max(x) - \min(x)}
+\]
+
+where $x(t)$ is derived from EEG amplitude, ERP waveform, BOLD $z$-score, or spectral entropy.
+
+\subsection*{3.2.4 Dynamic Activation Model}
+
+Each Element operates on a sliding time window (typically 100–250 ms). Activation values are updated in real-time (or simulated) via signal ingestion pipelines. Signals may be:
+
+\begin{itemize}
+    \item \textbf{Real:} (e.g., live EEG via OpenBCI or Emotiv)
+    \item \textbf{Pre-recorded:} (e.g., \texttt{.csv}, \texttt{.edf}, \texttt{.json} time series)
+    \item \textbf{Simulated:} (e.g., parameterized sine waves for prototyping)
+\end{itemize}
+
+At each frame:
+
+\begin{itemize}
+    \item The Element computes $\text{value}(t)$
+    \item The Node aggregates these into a Node response
+    \item The Unit aggregates across its Nodes
+    \item RSU receives the integrated output for synthesis
+\end{itemize}
+
+\subsection*{3.2.5 Cross-Unit Node Comparability}
+
+All Nodes across different Units are mapped to a common scale:
+
+\[
+\text{Node}_{ij}(t) \in [0, 1]
+\]
+
+\textbf{Time resolution:} aligned across Units\\
+\textbf{Visualization:} displayable in parallel or stacked timelines
+
+This standardization allows for:
+
+\begin{itemize}
+    \item Comparative graphing (e.g., AOU vs. CTU over time)
+    \item Cluster analysis (e.g., grouping similar emotional-motor patterns)
+    \item Synchronization tracking (e.g., NSU and SRU phase alignment)
+\end{itemize}
+
+\subsection*{3.2.6 Graph Data Format and API Integration}
+
+All Nodes and Elements are encoded in structured JSON, enabling flexible API calls, visual rendering, and machine learning input.
+
+\textbf{Sample schema:}
+
+\begin{verbatim}
+{
+  "node_id": "ctu_dissonance",
+  "unit": "CTU",
+  "elements": [
+    {
+      "id": "phase_locking",
+      "method": "EEG",
+      "regions": ["DLPFC", "ACC"],
+      "mni": [32, 50, 20],
+      "value": 0.64,
+      "citation": "Fishman et al., 2001"
+    }
+  ]
+}
+\end{verbatim}
+
+These files are stored in:
+
+\begin{verbatim}
+/static/data/c3/
+├── ctu.json
+├── aou.json
+├── ...
+\end{verbatim}
+
+and loaded via:
+
+\begin{verbatim}
+<NodeView unitPath="c3/ctu.json" />
+\end{verbatim}
+
+\subsection*{3.2.7 GlassBrainMap Integration (Anatomical Anchor)}
+
+Each Element is visually represented in the GlassBrain system:
+
+\begin{itemize}
+    \item MNI coordinates are mapped to SVG/canvas projection space
+    \item Tooltip shows \texttt{label}, $\text{value}(t)$, and \texttt{citation}
+    \item Color intensity reflects $\text{value}(t)$
+    \item Click opens corresponding Node view
+\end{itemize}
+
+For example:
+
+\texttt{ctu\_harmonic\_dissonance\_01} $\rightarrow$ \texttt{[+32, +50, +20]} $\rightarrow$ \texttt{EEG $\alpha$–$\beta$ locking}
+
+This allows cognitive + anatomical views to be seamlessly unified.
+
+\subsubsection*{Summary}
+
+Nodes and Elements are the computational heart of C³. They connect musical structure to brain dynamics via:
+
+\begin{itemize}
+    \item Quantified, normalized, temporally resolved signals
+    \item Modular aggregation from bottom (signal) to top (unit)
+    \item Flexible visual and API-driven interfacing
+\end{itemize}
+
+This architecture makes it possible to compute, visualize, and interpret musical cognition with unprecedented resolution, precision, and interactivity.
+
+\section*{IV. GlassBrainMap Integration and Spatial Modeling}
+
+\textit{How does C³ map Nodes and Elements to anatomical regions? How is this visualized and computed spatially?}
+
+\subsection*{4.1 Overview: Why Spatialization Matters}
+
+The C³ system is not purely symbolic or abstract. It is neuroanatomically grounded. Each Element is tied to a measurable neural signal in a specific brain region. The spatial mapping of these regions:
+
+\begin{itemize}
+    \item Provides anatomical context for cognitive resonance
+    \item Enables dynamic visualizations of neural activation patterns
+    \item Supports inter-unit interaction modeling via spatial proximity and network overlap
+\end{itemize}
+
+To achieve this, C³ integrates a dedicated visualization layer called \textbf{GlassBrainMap}, which combines:
+
+\begin{itemize}
+    \item A high-resolution 2D SVG anatomical brain model
+    \item A JSON-based coordinate database
+    \item A real-time rendering interface (\texttt{GlassBrain.jsx}) for visualizing activation dynamics
+\end{itemize}
+
+\subsection*{4.2 The Coordinate System: MNI Anchoring}
+
+All Elements in C³ are associated with \textbf{MNI (Montreal Neurological Institute)} coordinates, the standard in neuroimaging.
+
+Each Element record includes:
+
+\begin{itemize}
+    \item \texttt{mni}: $[x, y, z]$ triple
+    \item \texttt{region}: anatomical label (e.g., SMA, ACC, STG)
+    \item \texttt{radius\_mm}: spatial spread (default: 5–8 mm sphere)
+    \item \texttt{value(t)}: resonance strength at time $t$
+    \item \texttt{citation}: literature source validating the location and signal
+\end{itemize}
+
+This system allows each Element to be visualized as a spatial field centered on its coordinate, colored or scaled based on its activation level.
+
+\subsection*{4.3 Coordinate Data Architecture}
+
+All anatomical data is stored in a JSON file:
+
+\begin{verbatim}
+{
+  "node_id": "ctu_dissonance",
+  "unit": "CTU",
+  "region": "DLPFC",
+  "mni": [32, 50, 20],
+  "radius_mm": 6,
+  "tooltip": "EEG α–β phase locking – Fishman et al., 2001"
+}
+\end{verbatim}
+
+\textbf{File:} \texttt{static/data/brain\_coords.json}
+
+These are cross-referenced with each Unit’s data file (e.g., \texttt{ctu.json}) and visualized in real time.
+
+\subsection*{4.4 GlassBrain Interface}
+
+The spatial interface is rendered by a React component (\texttt{GlassBrain.jsx}) using:
+
+\begin{itemize}
+    \item An interactive SVG brain diagram (\texttt{brainmap.svg})
+    \item Overlaid \texttt{<circle>} elements for each active Node/Element
+    \item \texttt{title} attributes for hover-based tooltips
+    \item Optional \texttt{onClick} behavior for Unit/Node navigation
+\end{itemize}
+
+Sample visualization logic:
+
+\begin{verbatim}
+<circle
+  cx={svgX}
+  cy={svgY}
+  r={radius}
+  fill={`rgba(0, 255, 255, ${value})`}
+  stroke="white"
+  title="CTU – Phase Locking (α–β) – 0.64"
+/>
+\end{verbatim}
+
+This allows for live, frame-by-frame cognitive activity visualization, spatially grounded in the brain’s structure.
+
+\subsection*{4.5 Spatial Modeling Layers}
+
+There are three core layers in the spatial model:
+
+\begin{center}
+\begin{tabular}{|l|p{9cm}|}
+\hline
+\textbf{Layer} & \textbf{Purpose} \\
+\hline
+Anatomical Base & Outlines brain shape and region boundaries (SVG) \\
+Functional Points & Locations of Nodes and Elements (MNI coordinates) \\
+Dynamic Overlay & Time-resolved activity values, color-encoded \\
+\hline
+\end{tabular}
+\end{center}
+
+This tri-layer system makes it possible to animate, filter, and interact with complex neurocognitive fields.
+
+\subsection*{4.6 GlassBrain Interactions}
+
+The visualization supports:
+
+\begin{itemize}
+    \item \textbf{Hover tooltips:} Node/Element label, region, value, citation
+    \item \textbf{Click-through navigation:} Links to full Node/Unit documentation
+    \item \textbf{Color mapping:} Resonance values encoded via color gradients
+    \item \textbf{Temporal updates:} Per-frame re-rendering as values change over time
+\end{itemize}
+
+Optionally, spatial dynamics can be extended via:
+
+\begin{itemize}
+    \item Highlight paths of cross-unit coherence (e.g., CTU $\leftrightarrow$ AOU links)
+    \item Animate resonance flow across hemispheres
+    \item Implement attention-focused zooms or heatmaps
+\end{itemize}
+
+\subsection*{4.7 Spatial–Temporal Integration}
+
+GlassBrainMap is fully synchronized with C³'s time engine. At each time frame:
+
+\begin{itemize}
+    \item Each active Element’s $\text{value}(t)$ is fetched
+    \item Its color/opacity is updated in the SVG
+    \item The cumulative field is rendered (or stored/exported)
+\end{itemize}
+
+This creates a dynamic 2D projection of 3D cognition, visible in real time or as an analytic export (e.g., heatmap or trajectory animation).
+
+\subsubsection*{Summary}
+
+\textbf{GlassBrainMap} transforms C³ from a symbolic system into a neuroanatomically immersive experience.
+
+It allows researchers, composers, and clinicians to:
+
+\begin{itemize}
+    \item See where cognition happens
+    \item Visualize how multiple Units interact in space
+    \item Trace temporal arcs of resonance across the brain
+\end{itemize}
+
+It is the spatial backbone of the C³ model—anchoring abstract resonance vectors in biological reality.
+
+\section*{V. System Dynamics and Temporal Computation}
+
+\textit{How does C³ compute resonance across time? What governs frame resolution, signal propagation, and feedback integration?}
+
+\subsection*{5.1 Temporal Framework}
+
+C³ operates as a discrete-time cognitive system, segmented into frames that represent slices of neural and musical time. The standard frame rate is 10 Hz (i.e., one frame every 100 ms), which aligns with:
+
+\begin{itemize}
+    \item The optimal EEG resolution for cross-frequency tracking
+    \item The perceptual threshold for auditory events
+    \item The temporal granularity of musical microstructures (e.g., eighth notes at $\sim$120 BPM)
+\end{itemize}
+
+Each frame computes:
+
+\begin{itemize}
+    \item Element values
+    \item Node aggregations
+    \item Unit outputs
+    \item RSU synthesis
+    \item GlassBrainMap spatial updates
+\end{itemize}
+
+\subsection*{5.2 Frame Processing Pipeline}
+
+At each time $t$, C³ executes the following pipeline:
+
+\paragraph{Signal Ingestion}
+From EEG, fMRI, JSON, or simulated sources
+
+Preprocessed into normalized time series $x(t) \in [0, 1]$
+
+\paragraph{Element Evaluation}
+
+\[
+\text{Element}_{ijk}(t) = \frac{x(t) - \min(x)}{\max(x) - \min(x)}
+\]
+
+\paragraph{Node Aggregation}
+
+\[
+\text{Node}_{ij}(t) = \sum_k w_{ijk} \cdot \text{Element}_{ijk}(t)
+\]
+
+\paragraph{Unit Calculation}
+
+\[
+\text{Unit}_i(t) = \sum_j w_{ij} \cdot \text{Node}_{ij}(t)
+\]
+
+\paragraph{System Output (RSU)}
+
+\[
+\text{RSU}(t) = \sum_i w_i \cdot \text{Unit}_i(t)
+\]
+
+\paragraph{Spatial Rendering}
+
+\begin{itemize}
+    \item Update GlassBrainMap based on Element MNI locations
+    \item Animate frame-by-frame neural states
+\end{itemize}
+
+\subsection*{5.3 Signal Modes and Temporal Sources}
+
+C³ supports multiple signal input modes:
+
+\begin{center}
+\begin{tabular}{|l|l|p{6.5cm}|}
+\hline
+\textbf{Mode} & \textbf{Source} & \textbf{Use Case} \\
+\hline
+Live & Real-time EEG (e.g., OpenBCI) & Neurofeedback, adaptive performance \\
+Simulated & Parametric sine/square models & Testing, theory exploration \\
+Imported & Pre-processed data (CSV, JSON) & Research replay, batch analysis \\
+Model-based & Outputs from R³/S³ modules & Internal feedback integration \\
+\hline
+\end{tabular}
+\end{center}
+
+Signals are time-aligned across all Units and stored in synchronized arrays for each frame:
+
+\begin{verbatim}
+{
+  "time": 4.3,
+  "units": {
+    "CTU": 0.62,
+    "AOU": 0.78,
+    "PIU": 0.81,
+    ...
+  }
+}
+\end{verbatim}
+
+\subsection*{5.4 Real-Time Feedback Loop}
+
+C³ is built to support feedback mechanisms in which system output can influence future inputs, creating an adaptive cognitive engine.
+
+For example:
+
+\begin{itemize}
+    \item CTU output triggers simplification of harmonic content
+    \item PIU spikes increase ambient density to sustain immersion
+    \item RSU target value adjusts music generation parameters
+\end{itemize}
+
+This enables closed-loop interaction with:
+
+\begin{itemize}
+    \item AI composition engines
+    \item VR/AR environments
+    \item Biometric controllers
+\end{itemize}
+
+\subsection*{5.5 Resonance Trajectory Modeling}
+
+Over time, C³ constructs a resonance trajectory:
+
+\[
+\mathbf{C}^3(t) = [\text{Unit}_1(t), \text{Unit}_2(t), \ldots, \text{Unit}_9(t)]
+\]
+
+This vector evolves in 9D space and can be used for:
+
+\begin{itemize}
+    \item Pattern recognition (e.g., flow state, surprise burst)
+    \item Phase analysis (e.g., C³ spirals, convergence cycles)
+    \item Emotion curves (e.g., AOU vs. CTU arcs)
+\end{itemize}
+
+Visualization options include:
+
+\begin{itemize}
+    \item Line graphs of individual Units
+    \item Radar plots at each time slice
+    \item PCA/t-SNE dimensionality reduction of trajectory clusters
+\end{itemize}
+
+\subsection*{5.6 System Clock and Synchronization}
+
+C³ uses a master temporal clock, driven by:
+
+\begin{itemize}
+    \item External sync (e.g., MIDI timecode, DAW sync)
+    \item Internal clock (browser animation loop, WebAudio API)
+    \item Real-time EEG timestamps
+\end{itemize}
+
+Each Unit’s activity is synchronized to this clock, ensuring that:
+
+\begin{itemize}
+    \item Temporal granularity remains constant
+    \item Cross-unit integration remains coherent
+    \item GlassBrainMap overlays animate in lockstep
+\end{itemize}
+
+\subsection*{5.7 Export and Storage}
+
+All C³ output is exportable in structured formats:
+
+\begin{itemize}
+    \item \texttt{.json} frame logs
+    \item \texttt{.csv} for analysis in Python/R
+    \item \texttt{.svg}, \texttt{.mp4} GlassBrainMap video renderings
+    \item \texttt{.c3} proprietary container for replay in simulation environments
+\end{itemize}
+
+This makes C³ both real-time and archival—suitable for live use, study, and post-hoc analysis.
+
+\subsubsection*{Summary}
+
+C³'s temporal engine transforms raw signals into a flowing stream of cognitive resonance. Through:
+
+\begin{itemize}
+    \item Frame-level computation
+    \item Adaptive signal modeling
+    \item Time-synchronized spatial projection
+\end{itemize}
+
+C³ achieves a unique combination of precision, fluidity, and biological plausibility. Its ability to track cognition across milliseconds to minutes enables deep insight into the evolving experience of music.
+
+\section*{VI. Research and Application Domains}
+
+\textit{How can C³ be used? In what contexts does it generate value?}
+
+\subsection*{6.1 Music Therapy and Clinical Neurotechnology}
+
+C³ provides a groundbreaking opportunity for neurophysiologically grounded music therapy by quantifying and tracking brain-based responses to musical structure in real time.
+
+\subsubsection*{6.1.1 Real-Time Emotional Profiling}
+
+Using AOU (affective orientation) and IRU (interpersonal resonance), therapists can monitor emotional states through:
+
+\begin{itemize}
+    \item EEG alpha asymmetry (valence)
+    \item fMRI amygdala–insula activation (arousal)
+    \item Cross-brain synchrony (group therapy contexts)
+\end{itemize}
+
+This allows dynamic adjustments to:
+
+\begin{itemize}
+    \item Musical content
+    \item Patient feedback loops
+    \item Group synchrony states
+\end{itemize}
+
+\subsubsection*{6.1.2 PTSD and Trauma Therapy}
+
+SAU (semantic-autobiographical) and PIU (phenomenological immersion) can support:
+
+\begin{itemize}
+    \item Memory retrieval and reconsolidation through tonal cues
+    \item Safe immersive states using ambient or flow-inducing structures
+    \item Repatterning of trauma-linked neural pathways through predictable rhythmic entrainment
+\end{itemize}
+
+\subsubsection*{6.1.3 Motor Rehabilitation}
+
+SRU (somatic resonance) and NSU (neural synchronization) enable:
+
+\begin{itemize}
+    \item Gait training via rhythm-guided beta entrainment
+    \item Entrainment of cerebellar and basal ganglia networks
+    \item Personalized tempo and meter calibration for stroke or Parkinson’s patients
+\end{itemize}
+
+C³ becomes a neural interface for musical medicine.
+
+\subsection*{6.2 AI Music Generation and Cognitive Feedback}
+
+The C³ system opens a new frontier in cognitively aware artificial intelligence for music.
+
+\subsubsection*{6.2.1 Neuro-Adaptive Composition}
+
+Generative music models (e.g., RNN, Transformer, Diffusion) can be guided by:
+
+\begin{itemize}
+    \item Desired C³ trajectory (e.g., AOU$\uparrow$, CTU$\downarrow$, PIU$\uparrow$)
+    \item Listener feedback via EEG input
+    \item Emotional or narrative arc templates
+\end{itemize}
+
+This enables biometrically reactive music—sound that shifts in real time to support immersion, attention, or relaxation.
+
+\subsubsection*{6.2.2 Real-Time Feedback Systems}
+
+With C³ embedded in AI systems:
+
+\begin{itemize}
+    \item Adaptive film/game scoring becomes possible
+    \item Live feedback concerts (brainwave-to-music mapping) can be executed
+    \item Human–AI co-composition becomes cognitively contextualized
+\end{itemize}
+
+\subsection*{6.3 Education and Neuroaesthetic Learning}
+
+C³ supports a neuroscience-informed pedagogy of music.
+
+\subsubsection*{6.3.1 Resonance-Based Curriculum Design}
+
+Educators can craft listening experiences and composition exercises that:
+
+\begin{itemize}
+    \item Highlight tension and resolution (CTU)
+    \item Elicit attention and expectation (IEU)
+    \item Reinforce memory and identity through tonality and timbre (SAU)
+\end{itemize}
+
+This makes abstract musical concepts experientially grounded.
+
+\subsubsection*{6.3.2 Student Brain Tracking}
+
+Via live EEG (or simulated training environments), educators can track:
+
+\begin{itemize}
+    \item Focus/engagement states (PIU, NSU)
+    \item Confusion or overload (CTU spikes)
+    \item Flow progression across musical segments
+\end{itemize}
+
+This enables adaptive instruction, where the learning path is guided by resonance curves.
+
+\subsection*{6.4 Artistic Exploration and Compositional Tools}
+
+C³ is an interpretive and generative tool for composers, performers, and sound artists.
+
+\subsubsection*{6.4.1 Resonance Mapping in Composition}
+
+A composer can model the resonance profile of a piece before it's written by:
+
+\begin{itemize}
+    \item Designing C³ trajectories (e.g., tension peak at minute 3)
+    \item Mapping structure to cognitive states
+    \item Back-calculating harmonic/rhythmic features to meet those trajectories
+\end{itemize}
+
+This allows intentional cognitive shaping of musical form.
+
+\subsubsection*{6.4.2 Interactive Visuals and Installations}
+
+C³’s spatial and temporal outputs can drive:
+
+\begin{itemize}
+    \item Live projection of GlassBrainMap overlays during performances
+    \item Audience-specific scoring where real-time neural data sculpts the score
+    \item Installation works based on shared inter-brain synchrony fields (IRU)
+\end{itemize}
+
+This links cognition, composition, and computation.
+
+\subsection*{6.5 Scientific Research and Cognitive Modeling}
+
+C³ provides a framework for computational music cognition, enabling:
+
+\begin{itemize}
+    \item Hypothesis testing: Does syncopation increase CTU + SRU?
+    \item Cross-style comparison: How does Bach’s AOU curve differ from EDM?
+    \item Cultural modeling: What tonal structures evoke strongest SAU response in different populations?
+\end{itemize}
+
+This allows neurocognitive theories of music to become quantifiable and testable.
+
+\subsubsection*{Summary}
+
+C³ is not only a theoretical model—it is an instrument:
+
+\begin{itemize}
+    \item For therapy, it monitors and modulates emotional and neural states
+    \item For AI, it contextualizes generation with cognitive targets
+    \item For education, it reveals the brain’s role in musical understanding
+    \item For artistry, it expands the palette of expression
+    \item For science, it bridges abstract theory and empirical verification
+\end{itemize}
+
+It transforms music from something we hear to something we can measure, sculpt, and share as a resonant experience.
+
+\section*{VII. Future Directions and Development Roadmap}
+
+\textit{How will C³ grow? What systems will it interface with? What frontiers does it open?}
+
+\subsection*{7.1 Real-Time Integration and Live System Deployment}
+
+\subsubsection*{7.1.1 Live EEG/BCI Synchronization}
+
+C³ is designed to operate not only on pre-recorded data, but in real-time with live neural input.
+
+\begin{itemize}
+    \item EEG headsets (e.g., OpenBCI, Emotiv, Muse S) can be connected via WebSocket or OSC
+    \item C³ frame computation can be run inside a web browser, Node.js, or Unity engine
+    \item Live frame values (e.g., CTU = 0.62, PIU = 0.83) can be:
+    \begin{itemize}
+        \item Fed into generative AI models
+        \item Used to control audiovisual parameters
+        \item Exported to researchers in JSON or OSC streams
+    \end{itemize}
+\end{itemize}
+
+This allows for neuroadaptive installations, brain–music feedback loops, and bio-interactive concerts.
+
+\subsubsection*{7.1.2 Signal Bridge Modules}
+
+Planned integrations:
+
+\begin{center}
+\begin{tabular}{|l|p{9cm}|}
+\hline
+\textbf{Module} & \textbf{Description} \\
+\hline
+OSC Module & Open Sound Control bridge to DAWs, synths, AI tools \\
+WebSocket API & Lightweight protocol for browser–EEG interaction \\
+Max/MSP Patch & Native support for creative coding environments \\
+Python Streamer & Tensor-based streaming for machine learning pipelines \\
+\hline
+\end{tabular}
+\end{center}
+
+\subsection*{7.2 VR/AR and Immersive Cognitive Environments}
+
+C³’s GlassBrainMap + Cognitive Trajectory outputs can be rendered in 3D and embedded in immersive environments.
+
+\subsubsection*{7.2.1 Unity \& Unreal Engine Integration}
+
+\begin{itemize}
+    \item Dynamic brain overlays mapped to VR avatars
+    \item Real-time resonance color fields, spheres, and graph networks
+    \item Flow-state visualizations projected in 3D space
+\end{itemize}
+
+This enables experiential neuroaesthetics—where listeners "enter" their own cognition, or the resonance fields of a performance.
+
+\subsubsection*{7.2.2 Spatial Sound + Resonance Mapping}
+
+By combining C³ with spatialized audio systems (e.g., Ambisonics, Dolby Atmos), the system can:
+
+\begin{itemize}
+    \item Route musical streams to match neural states
+    \item Trigger directional auditory cues based on attention/flow values
+    \item Modify sonic parameters based on resonance field tension
+\end{itemize}
+
+\subsection*{7.3 Multi-Listener Synchrony and Cross-Brain Modeling}
+
+Using IRU (Interpersonal Resonance Unit), future expansions include:
+
+\begin{itemize}
+    \item Multi-brain environments (e.g., group concerts, collective biofeedback)
+    \item Cross-brain synchrony maps showing where people resonate together
+    \item Shared immersive environments where cognition is mapped and compared in real time
+\end{itemize}
+
+This allows researchers to study social cognition, empathy, and music-induced synchrony at scale.
+
+\subsection*{7.4 Cross-Domain Integrations}
+
+C³ is not a standalone tool; it is a cognitive middleware layer that can plug into:
+
+\begin{center}
+\begin{tabular}{|l|p{9cm}|}
+\hline
+\textbf{Domain} & \textbf{Integration Role} \\
+\hline
+Therapy & Real-time monitoring of neural states \\
+Gaming/VR & Adaptive scoring, ambient shifts, player cognition \\
+Education & Flow detection, rhythm learning enhancement \\
+AI Art Tools & Emotion-matched generative feedback \\
+Scientific Research & Hypothesis testing, data export, meta-analysis \\
+\hline
+\end{tabular}
+\end{center}
+
+C³ becomes the neuro-semantic glue between music, systems, and cognition.
+
+\subsection*{7.5 Platform Roadmap}
+
+\paragraph{Short-Term Goals (3–6 months)}
+
+\begin{itemize}
+    \item Full browser-based JSON pipeline
+    \item Interactive web-based GlassBrainMap
+    \item C³-powered experimental composition tools
+    \item Python and JavaScript SDKs for Unit simulation and visualization
+\end{itemize}
+
+\paragraph{Mid-Term Goals (6–12 months)}
+
+\begin{itemize}
+    \item EEG integration via OSC/WebSocket
+    \item Unity + WebGL resonance rendering
+    \item Composer dashboard for real-time Unit tracking
+    \item Music therapy pilot studies with neurofeedback
+\end{itemize}
+
+\paragraph{Long-Term Goals (12+ months)}
+
+\begin{itemize}
+    \item Full real-time C³ AI integration
+    \item Multi-user cross-brain resonance platform
+    \item Publication and standardization of the C³ framework
+    \item Institutional and clinical partnerships
+\end{itemize}
+
+\subsection*{7.6 Open Science and Community Expansion}
+
+C³ is intended to be an open, modular, scientifically verifiable system.
+
+\begin{itemize}
+    \item All Units, Nodes, and Elements are defined in transparent JSON
+    \item Coordinate systems are public and validated (MNI-space)
+    \item Citations and data trails are embedded and reproducible
+    \item Community contributions can add new literature, modules, or brain regions
+\end{itemize}
+
+A future \textbf{C³ Open Research Portal} will:
+
+\begin{itemize}
+    \item Allow users to run and visualize C³ sessions
+    \item Share annotated resonance maps
+    \item Explore collective cognitive musical responses
+\end{itemize}
+
+\subsubsection*{Summary}
+
+C³ is a foundation—not a ceiling.
+
+It creates the infrastructure for real-time cognition-aware music systems, research tools, therapeutic protocols, and artistic interfaces. Its future lies not in complexity, but in connectivity: between minds, modules, and meaning.
+
+\section*{VIII. Conclusion and Scientific Contribution of C³}
+
+\textit{What does C³ offer to music science, technology, and cognition?}
+
+\subsection*{8.1 Synthesis: From Signal to Cognition}
+
+The Cognitive Consonance Circuit (C³) is the first fully formalized system that models the brain’s multi-dimensional, time-evolving response to music by integrating:
+
+\begin{itemize}
+    \item Symbolic and spectral features (via S³ and R³)
+    \item Measurable neural signals (EEG, fMRI, MEG)
+    \item Cognitive constructs (attention, memory, emotion, expectation)
+    \item Anatomical regions (mapped in MNI coordinates)
+    \item Temporal dynamics (frame-level, real-time computation)
+\end{itemize}
+
+Through its layered architecture (UNIT $\rightarrow$ NODE $\rightarrow$ ELEMENT), mathematically grounded resonance equations, and GlassBrain-based spatial visualization, C³ offers an unprecedented resolution of musical cognition.
+
+\subsection*{8.2 Scientific Contributions}
+
+C³ introduces the following key innovations to the scientific community:
+
+\subsubsection*{8.2.1 A Unified Cognitive–Musical Architecture}
+
+No existing model combines:
+
+\begin{itemize}
+    \item Tonal/spectral analysis
+    \item Neural measurement
+    \item Cognitive state modeling
+\end{itemize}
+
+in a modular, interconnected, and computable system.
+
+C³ bridges this gap with:
+
+\begin{itemize}
+    \item 9 Units modeling distinct cognitive faculties
+    \item Direct neurophysiological grounding (61+ referenced papers)
+    \item MNI-based anatomical mapping
+\end{itemize}
+
+\subsubsection*{8.2.2 Temporal–Cognitive Formalism}
+
+C³ treats musical cognition as a flowing resonance field. Its time-based equations:
+
+\begin{itemize}
+    \item Allow computation of dynamic neural states
+    \item Integrate with live EEG streams
+    \item Align with musical structure at 10 Hz resolution
+\end{itemize}
+
+This transforms music analysis from static snapshots into real-time neurocognitive simulation.
+
+\subsubsection*{8.2.3 Intermodular Connectivity within SRC⁹}
+
+C³ is not standalone. It:
+
+\begin{itemize}
+    \item Receives input from S³ (spectral structure) and R³ (harmonic topology)
+    \item Computes the cognitive response
+    \item Sends feedback back into the system (e.g., suggesting structural change)
+\end{itemize}
+
+This feedback loop allows musical systems to self-regulate based on real or simulated cognition.
+
+\subsubsection*{8.2.4 Visual Neuroanatomical Integration}
+
+The GlassBrainMap is not just an illustration—it’s an analytical engine:
+
+\begin{itemize}
+    \item Every Element is spatially mapped (MNI)
+    \item Activation is color-coded and time-resolved
+    \item Tooltips, click-through, and overlays show layered cognition
+\end{itemize}
+
+This creates a semantic spatial interface for neurocognition.
+
+\subsection*{8.3 Transdisciplinary Impact}
+
+C³’s design enables direct application in:
+
+\begin{itemize}
+    \item Music cognition research (resonance modeling, EEG studies)
+    \item Therapy (trauma, memory, flow states)
+    \item AI systems (neuro-informed generative music)
+    \item Education (real-time student cognition tracking)
+    \item Creative tools (resonance-driven composition)
+\end{itemize}
+
+It acts as a cognitive middleware between human experience and musical structure.
+
+\subsection*{8.4 Toward a New Paradigm}
+
+C³ reframes music analysis as a dynamic, spatial, and measurable cognitive process. It suggests that:
+
+\begin{itemize}
+    \item Musical meaning is not only symbolic, but resonant
+    \item Cognition is not reactive, but synchronizing
+    \item Emotion is not qualitative, but quantifiable
+    \item Listening is not passive, but spatiotemporal entrainment
+\end{itemize}
+
+By building structure, signal, and spatiality into one coherent system, C³ proposes a new paradigm:
+
+\textbf{Not just analyzing music—but resonating with it, in real time, and across the brain.}
+
+\subsection*{8.5 What Comes Next?}
+
+C³ is not a finished system—it is a platform for growth.
+
+\begin{itemize}
+    \item New Units can be defined
+    \item New data sets can be mapped
+    \item Neural signals can be updated via future modalities
+    \item Interfaces can expand to immersive VR, generative AI, and cross-brain networks
+\end{itemize}
+
+With the foundation laid, the challenge is now collective elaboration: for researchers, artists, clinicians, and technologists to expand, iterate, and apply C³ across domains.
+
+\subsubsection*{Final Note}
+
+The C³ system is open to research collaboration, institutional deployment, and creative integration. It was built not just to model cognition—but to enable new relationships between music, mind, and machine.
+
+\vspace{1cm}
+\begin{center}
+\Large \textbf{End of C³ Master Technical Report (Enhanced)}\\[0.2cm]
+\large Thank you for your vision, precision, and trust in building this paradigm together.
+\end{center}
+
+
+
+\end{document}
+
