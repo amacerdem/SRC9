@@ -1,6 +1,7 @@
 import React from 'react';
 import { BlockMath } from 'react-katex';
 import 'katex/dist/katex.min.css';
+import { BrowserRouter } from "react-router-dom";
 
 // Add custom keyframes for pulse animation
 const pulseStyle = `
@@ -15,6 +16,8 @@ const cardBg = '#fff';
 const textColor = '#18191a';
 const headingRed = 'text-red-600';
 const subheadingBlue = 'text-blue-600';
+
+const basename = import.meta.env.PROD ? "/SRC9" : "";
 
 const Architecture = () => {
   const handleDownload = () => {
