@@ -1,0 +1,121 @@
+{
+  "id": "SRC9",
+  "label": "SRC⁹",
+  "type": "root",
+  "colorTheme": "white-glow",
+  "description": "A unified framework that models music from sound to structure to cognition.",
+  "children": [
+    {
+      "id": "S3",
+      "label": "S³",
+      "type": "module",
+      "colorTheme": "purple-pink",
+      "description": "Extracts and visualizes the raw acoustic structure of sound.",
+      "children": [
+        {
+          "id": "S3-U1",
+          "label": "Microtonal Tracker",
+          "type": "unit",
+          "children": [
+            { "id": "S3-U1-N1", "label": "Cent Calculator", "type": "node" },
+            { "id": "S3-U1-N2", "label": "Deviation Mapper", "type": "node" },
+            { "id": "S3-U1-N3", "label": "Symbol Encoder", "type": "node" }
+          ]
+        },
+        {
+          "id": "S3-U2",
+          "label": "Harmonic Extractor",
+          "type": "unit",
+          "children": [
+            { "id": "S3-U2-N1", "label": "CREPE Interface", "type": "node" },
+            { "id": "S3-U2-N2", "label": "Harmonic Expander", "type": "node" },
+            { "id": "S3-U2-N3", "label": "Amplitude Tracker", "type": "node" }
+          ]
+        },
+        {
+          "id": "S3-U3",
+          "label": "Spectral Visualizer",
+          "type": "unit",
+          "children": [
+            { "id": "S3-U3-N1", "label": "Donut Spectrum Mapper", "type": "node" },
+            { "id": "S3-U3-N2", "label": "2D Plot Generator", "type": "node" },
+            { "id": "S3-U3-N3", "label": "3D Mesh Exporter", "type": "node" }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "R3",
+      "label": "R³",
+      "type": "module",
+      "colorTheme": "red-orange",
+      "description": "Models harmonic structure via topological and energetic relationships.",
+      "children": [
+        {
+          "id": "R3-U1",
+          "label": "PRU (Phantom Root Unit)",
+          "type": "unit",
+          "children": [
+            { "id": "R3-U1-N1", "label": "Harmonic Group Matcher", "type": "node" },
+            { "id": "R3-U1-N2", "label": "Cent Tracker", "type": "node" },
+            { "id": "R3-U1-N3", "label": "Root Symbol Mapper", "type": "node" }
+          ]
+        },
+        {
+          "id": "R3-U2",
+          "label": "RPU (Resonance Potential Unit)",
+          "type": "unit",
+          "children": [
+            { "id": "R3-U2-N1", "label": "Pairwise Φ Matrix", "type": "node" },
+            { "id": "R3-U2-N2", "label": "Temporal Φ Integrator", "type": "node" },
+            { "id": "R3-U2-N3", "label": "Variance Analyzer", "type": "node" }
+          ]
+        },
+        {
+          "id": "R3-U3",
+          "label": "RFMU (Resonance Field Mapping Unit)",
+          "type": "unit",
+          "children": [
+            { "id": "R3-U3-N1", "label": "Field Generator", "type": "node" },
+            { "id": "R3-U3-N2", "label": "∇RFM Calculator", "type": "node" },
+            { "id": "R3-U3-N3", "label": "Peak Tracker", "type": "node" }
+          ]
+        },
+        {
+          "id": "R3-U4",
+          "label": "CRVU (Cognitive Resonance Vectoring Unit)",
+          "type": "unit",
+          "children": [
+            { "id": "R3-U4-N1", "label": "TPS Node", "type": "node" },
+            { "id": "R3-U4-N2", "label": "TFI Node", "type": "node" },
+            { "id": "R3-U4-N3", "label": "NSF Node", "type": "node" }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "C3",
+      "label": "C³",
+      "type": "module",
+      "colorTheme": "yellow-green",
+      "description": "Maps resonance into affect, attention, memory, and perception.",
+      "children": [
+        { "id": "C3-U1", "label": "CTU (Cognitive Tension Unit)", "type": "unit", "children": [] },
+        { "id": "C3-U2", "label": "AOU (Affective Orientation Unit)", "type": "unit", "children": [] },
+        { "id": "C3-U3", "label": "IEU (Intuitive Expectation Unit)", "type": "unit", "children": [] },
+        { "id": "C3-U4", "label": "SRU (Somatic Resonance Unit)", "type": "unit", "children": [] },
+        { "id": "C3-U5", "label": "SAU (Semantic-Autobiographical Unit)", "type": "unit", "children": [] },
+        { "id": "C3-U6", "label": "PIU (Phenomenological Immersion Unit)", "type": "unit", "children": [] },
+        { "id": "C3-U7", "label": "IRU (Interpersonal Resonance Unit)", "type": "unit", "children": [] },
+        { "id": "C3-U8", "label": "NSU (Neural Synchronization Unit)", "type": "unit", "children": [] },
+        { "id": "C3-U9", "label": "RSU (Resonance Synthesis Unit)", "type": "unit", "children": [] }
+      ]
+    }
+  ],
+  "links": [
+    { "source": "R3-U4", "target": "C3-U1", "type": "inter-module" },
+    { "source": "R3-U4", "target": "C3-U8", "type": "inter-module" },
+    { "source": "R3-U3", "target": "C3-U6", "type": "inter-module" },
+    { "source": "C3-U5", "target": "S3", "type": "feedback" }
+  ]
+} 
