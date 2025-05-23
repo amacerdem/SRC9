@@ -10,38 +10,48 @@ const navItems = [
 ];
 
 const Navbar = () => (
-  <nav className="fixed bottom-0 left-1/2 -translate-x-1/2 z-50 bg-white shadow-lg rounded-t-xl flex items-center justify-center h-14 w-auto px-2 animate-fadein">
-    <div className="flex flex-row items-center">
-      {navItems.map(({ to, label }, index) => (
-        <React.Fragment key={to}>
+  <nav className="fixed top-0 left-1/2 -translate-x-1/2 w-1/3 z-50 bg-black flex flex-col items-center justify-center h-16 px-2 animate-fadein rounded-b-xl shadow-lg">
+    <div className="flex flex-row items-center justify-between w-full px-4 h-full">
+      {/* Left: SRC⁹ Home */}
+      <NavLink
+        to={navItems[0].to}
+        className={({ isActive }) =>
+          `px-4 py-2 text-base font-bold transition-all duration-200 rounded text-white ${isActive ? 'scale-105' : 'hover:bg-gray-800 hover:scale-105'}`
+        }
+      >
+        {navItems[0].label}
+      </NavLink>
+      {/* Center: S³, R³, C³ */}
+      <div className="flex flex-row items-center gap-6">
+        {navItems.slice(1, 4).map(({ to, label }) => (
           <NavLink
+            key={to}
             to={to}
-            className={({ isActive }) => {
-              let activeClass = '';
-              if (isActive) {
-                if (label === 'S³') {
-                  activeClass = 'bg-gradient-to-r from-indigo-800 via-indigo-500 to-pink-600 text-white shadow-md scale-105';
-                } else if (label === 'R³') {
-                  activeClass = 'bg-gradient-to-r from-red-500 via-orange-400 to-yellow-300 text-white shadow-md scale-105';
-                } else if (label === 'C³') {
-                  activeClass = 'bg-gradient-to-r from-yellow-300 via-lime-400 to-green-500 text-white shadow-md scale-105';
-                } else {
-                  activeClass = 'bg-amber-100 text-black shadow-md scale-105';
-                }
-              } else {
-                activeClass = 'text-black hover:bg-amber-50 hover:shadow-md hover:scale-102';
-              }
-              return `px-4 py-2 text-base font-bold transition-all duration-200 ${activeClass}`;
-            }}
+            className={({ isActive }) =>
+              `px-4 py-2 text-base font-bold transition-all duration-200 rounded text-white ${
+                isActive ? 'scale-105' : 
+                label === 'S³' ? 'hover:bg-gradient-to-r hover:from-purple-500 hover:to-pink-500 hover:scale-105' :
+                label === 'R³' ? 'hover:bg-gradient-to-r hover:from-red-500 hover:to-orange-500 hover:scale-105' :
+                'hover:bg-gradient-to-r hover:from-yellow-500 hover:to-green-500 hover:scale-105'
+              }`
+            }
           >
             {label}
           </NavLink>
-          {index < navItems.length - 1 && (
-            <div className="h-6 w-[1px] bg-gray-200" />
-          )}
-        </React.Fragment>
-      ))}
+        ))}
+      </div>
+      {/* Right: Architecture */}
+      <NavLink
+        to={navItems[4].to}
+        className={({ isActive }) =>
+          `px-4 py-2 text-base font-bold transition-all duration-200 rounded text-white ${isActive ? 'scale-105' : 'hover:bg-gray-800 hover:scale-105'}`
+        }
+      >
+        {navItems[4].label}
+      </NavLink>
     </div>
+    {/* Subtle white line under navbar */}
+    <div className="w-full h-[2px] bg-gradient-to-r from-transparent via-white/60 to-transparent opacity-60 mt-0" />
   </nav>
 );
 

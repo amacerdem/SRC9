@@ -21,40 +21,35 @@ const RootLayout = () => {
     { path: '/about', label: 'About' },
   ]
 
-  // Add custom keyframes for border pulse
-  const borderPulse = `
-  @keyframes borderPulse {
-    0%, 100% { box-shadow: 0 0 0 0 rgba(255,255,255,0); border-color: #222; }
-    50% { box-shadow: 0 0 0 4px rgba(255,255,255,0.5); border-color: #fff; }
+  // Add custom keyframes for animated border around navbar
+  const navBarBorder = `
+  @keyframes borderMove {
+    0% { box-shadow: 0 0 0 0 #fff, 0 0 0 0 #fff inset; }
+    25% { box-shadow: 0 0 0 4px #fff, 0 0 0 0 #fff inset; }
+    50% { box-shadow: 0 0 0 0 #fff, 0 0 0 4px #fff inset; }
+    75% { box-shadow: 0 0 0 4px #fff, 0 0 0 0 #fff inset; }
+    100% { box-shadow: 0 0 0 0 #fff, 0 0 0 0 #fff inset; }
   }
   `;
 
   return (
     <div className="min-h-screen bg-black text-white">
-      <style>{borderPulse}</style>
+      <style>{navBarBorder}</style>
       {/* Navigation Bar */}
-      <nav className={`fixed top-0 w-full z-50 transition-all duration-300 ${
-        isScrolled ? 'bg-black/80 backdrop-blur-lg' : 'bg-transparent'
-      }`}>
+      <nav className="fixed top-0 left-0 w-full z-50 bg-black" style={{ animation: 'borderMove 2.5s linear infinite', boxShadow: '0 0 0 0 #fff' }}>
         <div className="max-w-7xl mx-auto flex items-center justify-between px-6 py-3">
           <Link
             to="/"
-            className="bg-black text-white rounded-lg px-5 py-2 font-bold shadow-lg border border-white hover:bg-neutral-900 hover:brightness-125 transition-all duration-200 cursor-pointer text-lg"
-            style={{ boxShadow: '0 2px 12px 0 rgba(0,0,0,0.25)' }}
+            className="text-white rounded-lg px-5 py-2 font-bold text-lg cursor-pointer"
           >
             SRC9 Home
           </Link>
-          <div className="flex gap-6">
+          <div className="flex gap-8">
             {navItems.map(({ path, label }) => (
               <Link
                 key={path}
                 to={path}
-                className="bg-black text-white rounded-lg px-5 py-2 font-semibold border-2 border-[#222] transition-all duration-200 mx-2 relative"
-                style={{
-                  animation: 'borderPulse 2s infinite',
-                }}
-                onMouseEnter={e => e.currentTarget.style.animation = 'borderPulse 1s infinite'}
-                onMouseLeave={e => e.currentTarget.style.animation = 'borderPulse 2s infinite'}
+                className="text-white font-semibold px-5 py-2 rounded-lg transition-all duration-200 mx-2 relative"
               >
                 {label}
               </Link>

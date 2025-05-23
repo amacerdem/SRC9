@@ -61,7 +61,7 @@ const floatStyle = `
 const Home = () => (
   <div className="min-h-screen bg-black flex flex-col items-center justify-center pt-16 relative">
     <style>{floatStyle}</style>
-    <div className="absolute top-24 left-1/2 z-30 -translate-x-1/2 pointer-events-none select-none">
+    <div className="absolute top-[33vh] left-1/2 z-30 -translate-x-1/2 pointer-events-none select-none">
       <h1 className="text-6xl md:text-8xl font-extrabold text-white drop-shadow-2xl tracking-wide text-center">SRC⁹</h1>
       <div className="text-2xl md:text-3xl text-white font-light tracking-wide text-center">Spectral. Resonant. Cognitive.</div>
     </div>
@@ -87,6 +87,9 @@ const Home = () => (
           </div>
         </Link>
       ))}
+    </div>
+    <div className="fixed left-4 bottom-2 z-50 text-white text-xs opacity-80 select-none pointer-events-none">
+      © 2025 All rights reserved.
     </div>
   </div>
 );
