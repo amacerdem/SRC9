@@ -21,7 +21,12 @@ const basename = import.meta.env.PROD ? "/SRC9" : "";
 
 const Architecture = () => {
   const handleDownload = () => {
-    window.open('/full/ARC of SRC.pdf', '_blank');
+    const link = document.createElement('a');
+    link.href = '/SRC9/full/ARC of SRC.pdf';
+    link.download = 'ARC of SRC.pdf';
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
   };
 
   return (
